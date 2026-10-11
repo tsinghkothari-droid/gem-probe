@@ -1,0 +1,38 @@
+{
+  "company": "Navoday Sciences",
+  "does": "Makes a curing-reducing admixture for cement plaster and concrete, plus premixed plaster, wall putty, and repair mortar used on house and quarter finishes.",
+  "keep": [
+    "cement plaster",
+    "plastering",
+    "internal plaster",
+    "external plaster",
+    "ceiling plaster",
+    "wall putty",
+    "brick masonry",
+    "brick work"
+  ],
+  "drop": [
+    "plaster of paris bandage",
+    "plaster cutting",
+    "pop bandage",
+    "carton box",
+    "ventilator",
+    "tracksuit",
+    "manpower outsourcing",
+    "security manpower"
+  ],
+  "phrases": [
+    {"query": "12 mm cement plaster", "pages": 4},
+    {"query": "15 mm cement plaster", "pages": 3},
+    {"query": "internal plaster", "pages": 3},
+    {"query": "external plaster", "pages": 2},
+    {"query": "ceiling plaster", "pages": 2},
+    {"query": "plastering", "pages": 2},
+    {"query": "dismantling old plaster", "pages": 2},
+    {"query": "wall putty", "pages": 2},
+    {"query": "brick masonry", "pages": 3},
+    {"query": "construction of barracks", "pages": 2},
+    {"query": "residential quarter", "pages": 2},
+    {"query": "staff quarter", "pages": 2}
+  ]
+}

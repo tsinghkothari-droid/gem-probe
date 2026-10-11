@@ -78,11 +78,11 @@ impl Gem {
         Ok(Self { http, csrf })
     }
 
-    pub async fn search(&self, query: &str, page: u32) -> Result<Page, String> {
+    pub async fn search(&self, query: &str, page: u32, status: &str) -> Result<Page, String> {
         let payload = json!({
             "param": {"searchBid": query, "searchType": "fullText"},
             "filter": {
-                "bidStatusType": "ongoing_bids",
+                "bidStatusType": status,
                 "byType": "all",
                 "highBidValue": "",
                 "byEndDate": {"from": "", "to": ""},
@@ -109,6 +109,38 @@ impl Gem {
         let envelope: Envelope = response.json().await.map_err(|e| e.to_string())?;
         Ok(envelope.response.response)
     }
+
+    pub async fn document_text(&self, id: u64) -> Result<String, String> {
+        let url = format!("https://bidplus.gem.gov.in/showbidDocument/{id}");
+        let response = self.http.get(&url).send().await.map_err(|e| e.to_string())?;
+        let response = response.error_for_status().map_err(|e| e.to_string())?;
+        let bytes = response.bytes().await.map_err(|e| e.to_string())?;
+        document_body_text(&bytes)
+    }
+}
+
+pub fn document_body_text(bytes: &[u8]) -> Result<String, String> {
+    if bytes.starts_with(b"%PDF") {
+        return pdf_first_pages(bytes);
+    }
+    Ok(html_to_text(&String::from_utf8_lossy(bytes)))
+}
+
+fn pdf_first_pages(bytes: &[u8]) -> Result<String, String> {
+    let pages = pdf_extract::extract_text_from_mem_by_pages(bytes).map_err(|err| err.to_string())?;
+    Ok(pages.into_iter().take(5).collect::<Vec<_>>().join("\n"))
+}
+
+fn html_to_text(body: &str) -> String {
+    let without = regex::Regex::new(r"(?is)<script[\s\S]*?</script>|<style[\s\S]*?</style>")
+        .expect("strip")
+        .replace_all(body, " ");
+    regex::Regex::new(r"(?s)<[^>]+>")
+        .expect("tags")
+        .replace_all(&without, " ")
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join(" ")
 }
 
 pub fn bid_from_doc(doc: &Value) -> Bid {
@@ -154,6 +186,18 @@ fn join_text(value: Option<&Value>) -> String {
             .collect::<Vec<_>>()
             .join(" "),
         other => first_text(other),
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::document_body_text;
+
+    #[test]
+    fn html_document_keeps_the_bill_words() {
+        let body = b"<html><body><p>SIEM and SOAR Software</p></body></html>";
+        let text = document_body_text(body).unwrap();
+        assert!(text.contains("SIEM and SOAR Software"));
     }
 }
 

@@ -1,0 +1,1078 @@
+[
+  {
+    "url": "https://eprocure.gov.in/eprocure/app",
+    "status": 200,
+    "final": "https://eprocure.gov.in/eprocure/app",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocure.gov.in/eprocure/app",
+      "https://eprocure.gov.in/eprocure/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eprocure.gov.in/epublish/app",
+    "status": 200,
+    "final": "https://eprocure.gov.in/epublish/app",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "titles-visible",
+    "titles": true,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocure.gov.in/epublish/app",
+      "https://eprocure.gov.in/epublish/app?page=FrontEndLatestActiveTenders&service=page"
+    ],
+    "note": "1,446,827 is the visitor counter. Active and archive searches ask for a captcha. The archive page says 'No Archived Tenders found' before a search."
+  },
+  {
+    "url": "https://etenders.gov.in/",
+    "status": 200,
+    "final": "https://etenders.gov.in/",
+    "error": "",
+    "family": "other",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://etenders.gov.in/",
+      "https://etenders.gov.in/eprocure/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://gem.gov.in/",
+    "status": 200,
+    "final": "https://gem.gov.in/",
+    "error": "",
+    "family": "ireps",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://gem.gov.in/",
+      "https://eprocure.gov.in/eprocure/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://bidplus.gem.gov.in/all-bids",
+    "status": 200,
+    "final": "https://bidplus.gem.gov.in/all-bids",
+    "error": "",
+    "family": "gem-bidplus",
+    "challenge": "none",
+    "group": "titles-visible",
+    "titles": true,
+    "present": 46049,
+    "past": 5744348,
+    "present_label": 46049,
+    "checked": [
+      "https://bidplus.gem.gov.in/all-bids"
+    ],
+    "note": "Public all-bids-data. ongoing_bids 46049. bid_awarded 5744348. The HTML shell has no table."
+  },
+  {
+    "url": "https://gepnic.gov.in/",
+    "status": 0,
+    "final": "https://gepnic.gov.in/",
+    "error": "<urlopen error timed out>",
+    "family": "",
+    "challenge": "none",
+    "group": "error",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://gepnic.gov.in/"
+    ],
+    "note": "Timed out."
+  },
+  {
+    "url": "https://tender.apeprocurement.gov.in/",
+    "status": 200,
+    "final": "https://tender.apeprocurement.gov.in/",
+    "error": "",
+    "family": "other",
+    "challenge": "none",
+    "group": "empty-shell",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://tender.apeprocurement.gov.in/"
+    ]
+  },
+  {
+    "url": "https://arunachaltenders.gov.in/",
+    "status": 200,
+    "final": "https://arunachaltenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://arunachaltenders.gov.in/",
+      "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://assamtenders.gov.in/",
+    "status": 200,
+    "final": "https://assamtenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://assamtenders.gov.in/",
+      "https://assamtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eproc2.bihar.gov.in/EPSV2Web/",
+    "status": 200,
+    "final": "https://eproc2.bihar.gov.in/EPSV2Web/",
+    "error": "unverified-tls",
+    "family": "bihar-eps",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eproc2.bihar.gov.in/EPSV2Web/",
+      "https://eprocure.gov.in/eprocure/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://cgeproc.cgstate.gov.in/",
+    "status": 200,
+    "final": "https://cgeproc.cgstate.gov.in/",
+    "error": "unverified-tls",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://cgeproc.cgstate.gov.in/",
+      "https://cgeproc.cgstate.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eprocure.goa.gov.in/",
+    "status": 200,
+    "final": "https://eprocure.goa.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocure.goa.gov.in/",
+      "http://eprocure.goa.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://www.nprocure.com/",
+    "status": 0,
+    "final": "https://www.nprocure.com/",
+    "error": "<urlopen error timed out>",
+    "family": "",
+    "challenge": "none",
+    "group": "error",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://www.nprocure.com/"
+    ],
+    "note": "Timed out. tender.nprocure.com returned captcha and OTP."
+  },
+  {
+    "url": "https://etenders.hry.nic.in/",
+    "status": 200,
+    "final": "https://etenders.hry.nic.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://etenders.hry.nic.in/",
+      "https://etenders.hry.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://hptenders.gov.in/",
+    "status": 200,
+    "final": "https://hptenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://hptenders.gov.in/",
+      "https://hptenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://jharkhandtenders.gov.in/",
+    "status": 200,
+    "final": "https://jharkhandtenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://jharkhandtenders.gov.in/",
+      "https://jharkhandtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://kppp.karnataka.gov.in/",
+    "status": 200,
+    "final": "https://kppp.karnataka.gov.in/",
+    "error": "",
+    "family": "angular",
+    "challenge": "none",
+    "group": "empty-shell",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://kppp.karnataka.gov.in/"
+    ]
+  },
+  {
+    "url": "https://etenders.kerala.gov.in/",
+    "status": 200,
+    "final": "https://etenders.kerala.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://etenders.kerala.gov.in/",
+      "https://etenders.kerala.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://mptenders.gov.in/",
+    "status": 200,
+    "final": "https://mptenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://mptenders.gov.in/",
+      "http://mptenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://mahatenders.gov.in/nicgep/app",
+    "status": 200,
+    "final": "https://mahatenders.gov.in/nicgep/app",
+    "error": "unverified-tls",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://mahatenders.gov.in/nicgep/app",
+      "https://mahatenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://manipurtenders.gov.in/",
+    "status": 200,
+    "final": "https://manipurtenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://manipurtenders.gov.in/",
+      "https://manipurtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://meghalayatenders.gov.in/",
+    "status": 200,
+    "final": "https://meghalayatenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://meghalayatenders.gov.in/",
+      "https://meghalayatenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://mizoramtenders.gov.in/",
+    "status": 200,
+    "final": "https://mizoramtenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://mizoramtenders.gov.in/",
+      "https://mizoramtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://nagalandtenders.gov.in/",
+    "status": 200,
+    "final": "https://nagalandtenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://nagalandtenders.gov.in/",
+      "https://nagalandtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://tendersodisha.gov.in/",
+    "status": 200,
+    "final": "https://tendersodisha.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://tendersodisha.gov.in/",
+      "https://tendersodisha.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eproc.punjab.gov.in/",
+    "status": 200,
+    "final": "https://eproc.punjab.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eproc.punjab.gov.in/",
+      "https://eproc.punjab.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://shpp.rajasthan.gov.in/",
+    "status": 200,
+    "final": "https://shpp.rajasthan.gov.in/",
+    "error": "",
+    "family": "angular",
+    "challenge": "none",
+    "group": "empty-shell",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://shpp.rajasthan.gov.in/"
+    ]
+  },
+  {
+    "url": "https://eproc.rajasthan.gov.in/",
+    "status": 200,
+    "final": "https://eproc.rajasthan.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eproc.rajasthan.gov.in/",
+      "https://eproc.rajasthan.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://sikkimtender.gov.in/",
+    "status": 200,
+    "final": "https://sikkimtender.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://sikkimtender.gov.in/",
+      "https://sikkimtender.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://tntenders.gov.in/",
+    "status": 200,
+    "final": "https://tntenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://tntenders.gov.in/",
+      "https://tntenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://tender.telangana.gov.in/",
+    "status": 200,
+    "final": "https://tender.telangana.gov.in/",
+    "error": "",
+    "family": "other",
+    "challenge": "none",
+    "group": "empty-shell",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://tender.telangana.gov.in/"
+    ]
+  },
+  {
+    "url": "https://tripuratenders.gov.in/",
+    "status": 200,
+    "final": "https://tripuratenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://tripuratenders.gov.in/",
+      "https://tripuratenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://etender.up.nic.in/",
+    "status": 200,
+    "final": "https://etender.up.nic.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://etender.up.nic.in/",
+      "https://etender.up.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://uktenders.gov.in/",
+    "status": 200,
+    "final": "https://uktenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://uktenders.gov.in/",
+      "https://uktenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://tenders.wb.gov.in/",
+    "status": 0,
+    "final": "https://tenders.wb.gov.in/",
+    "error": "<urlopen error [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1016)>",
+    "family": "",
+    "challenge": "none",
+    "group": "error",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://tenders.wb.gov.in/"
+    ],
+    "note": "TLS renegotiation blocked. wbtenders.gov.in asks for a captcha."
+  },
+  {
+    "url": "https://wbtenders.gov.in/",
+    "status": 200,
+    "final": "https://wbtenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://wbtenders.gov.in/",
+      "https://wbtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eprocure.andamannicobar.gov.in/",
+    "status": 200,
+    "final": "https://eprocure.andamannicobar.gov.in/",
+    "error": "unverified-tls",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocure.andamannicobar.gov.in/",
+      "https://eprocure.andamannicobar.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://etenders.chd.nic.in/",
+    "status": 200,
+    "final": "https://etenders.chd.nic.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://etenders.chd.nic.in/",
+      "https://etenders.chd.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://dnhtenders.gov.in/",
+    "status": 200,
+    "final": "https://dnhtenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://dnhtenders.gov.in/",
+      "https://dnhtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://ddtenders.gov.in/",
+    "status": 200,
+    "final": "https://ddtenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://ddtenders.gov.in/",
+      "https://ddtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://ddd.gov.in/notice-category/tenders/",
+    "status": 200,
+    "final": "https://ddd.gov.in/notice-category/tenders/",
+    "error": "",
+    "family": "wordpress",
+    "challenge": "none",
+    "group": "empty-shell",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://ddd.gov.in/notice-category/tenders/"
+    ]
+  },
+  {
+    "url": "https://govtprocurement.delhi.gov.in/",
+    "status": 200,
+    "final": "https://govtprocurement.delhi.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://govtprocurement.delhi.gov.in/",
+      "https://govtprocurement.delhi.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://jktenders.gov.in/",
+    "status": 200,
+    "final": "https://jktenders.gov.in/",
+    "error": "unverified-tls",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://jktenders.gov.in/",
+      "https://jktenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://tenders.ladakh.gov.in/",
+    "status": 200,
+    "final": "https://tenders.ladakh.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://tenders.ladakh.gov.in/",
+      "https://tenders.ladakh.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://tendersutl.gov.in/",
+    "status": 200,
+    "final": "https://tendersutl.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://tendersutl.gov.in/",
+      "https://tendersutl.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://pudutenders.gov.in/",
+    "status": 200,
+    "final": "https://pudutenders.gov.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://pudutenders.gov.in/",
+      "https://pudutenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://defproc.gov.in/",
+    "status": 200,
+    "final": "https://defproc.gov.in/nicgep/app",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://defproc.gov.in/",
+      "https://defproc.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://www.ireps.gov.in/",
+    "status": 200,
+    "final": "https://www.ireps.gov.in/",
+    "error": "",
+    "family": "ireps",
+    "challenge": "none",
+    "group": "empty-shell",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://www.ireps.gov.in/"
+    ]
+  },
+  {
+    "url": "https://nbccindia.in/",
+    "status": 200,
+    "final": "https://nbccindia.in/",
+    "error": "",
+    "family": "other",
+    "challenge": "none",
+    "group": "empty-shell",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://nbccindia.in/"
+    ]
+  },
+  {
+    "url": "https://www.pmgsytenders.gov.in/",
+    "status": 200,
+    "final": "https://www.pmgsytenders.gov.in/nicgep/app",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://www.pmgsytenders.gov.in/",
+      "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://coalindiatenders.nic.in/",
+    "status": 200,
+    "final": "https://coalindiatenders.nic.in/nicgep/app",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://coalindiatenders.nic.in/",
+      "https://coalindiatenders.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eprocurentpc.nic.in/",
+    "status": 200,
+    "final": "https://eprocurentpc.nic.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocurentpc.nic.in/",
+      "https://eprocurentpc.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eprocurebhel.co.in/",
+    "status": 200,
+    "final": "https://eprocurebhel.co.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocurebhel.co.in/",
+      "https://eprocurebhel.co.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://iocletenders.nic.in/",
+    "status": 200,
+    "final": "https://iocletenders.nic.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://iocletenders.nic.in/",
+      "https://iocletenders.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eprocurebel.co.in/",
+    "status": 200,
+    "final": "https://eprocurebel.co.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocurebel.co.in/",
+      "https://eprocurebel.co.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eprocurehsl.nic.in/",
+    "status": 200,
+    "final": "https://eprocurehsl.nic.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocurehsl.nic.in/",
+      "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eprocuremdl.nic.in/",
+    "status": 200,
+    "final": "https://eprocuremdl.nic.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocuremdl.nic.in/",
+      "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eprocuregsl.nic.in/",
+    "status": 200,
+    "final": "https://eprocuregsl.nic.in/",
+    "error": "",
+    "family": "gepnic",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocuregsl.nic.in/",
+      "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page"
+    ]
+  },
+  {
+    "url": "https://eprocure.gov.in/cppp/latestactivetendersnew/cpppdata",
+    "status": 200,
+    "final": "https://eprocure.gov.in/cppp/latestactivetendersnew/cpppdata",
+    "error": "",
+    "family": "ireps",
+    "challenge": "captcha",
+    "group": "titles-visible",
+    "titles": true,
+    "present": 31070,
+    "past": "hidden",
+    "present_label": 31070,
+    "checked": [
+      "https://eprocure.gov.in/cppp/latestactivetendersnew/cpppdata"
+    ]
+  },
+  {
+    "url": "https://eprocure.gov.in/cppp/latestactivetendersnew/mmpdata",
+    "status": 200,
+    "final": "https://eprocure.gov.in/cppp/latestactivetendersnew/mmpdata",
+    "error": "",
+    "family": "ireps",
+    "challenge": "captcha",
+    "group": "titles-visible",
+    "titles": true,
+    "present": 54759,
+    "past": "hidden",
+    "present_label": 54759,
+    "checked": [
+      "https://eprocure.gov.in/cppp/latestactivetendersnew/mmpdata"
+    ]
+  },
+  {
+    "url": "https://eprocure.gov.in/cppp/highvaluetenders/cpppdata",
+    "status": 200,
+    "final": "https://eprocure.gov.in/cppp/highvaluetenders/cpppdata",
+    "error": "",
+    "family": "ireps",
+    "challenge": "captcha",
+    "group": "titles-visible",
+    "titles": true,
+    "present": 575,
+    "past": "hidden",
+    "present_label": 575,
+    "checked": [
+      "https://eprocure.gov.in/cppp/highvaluetenders/cpppdata"
+    ]
+  },
+  {
+    "url": "https://eprocure.gov.in/cppp/latestactivetendersnew/gemdata",
+    "status": 200,
+    "final": "https://eprocure.gov.in/cppp/latestactivetendersnew/gemdata",
+    "error": "",
+    "family": "ireps",
+    "challenge": "captcha",
+    "group": "titles-visible",
+    "titles": true,
+    "present": 34552,
+    "past": "hidden",
+    "present_label": 34552,
+    "checked": [
+      "https://eprocure.gov.in/cppp/latestactivetendersnew/gemdata"
+    ]
+  },
+  {
+    "url": "https://eprocure.gov.in/cppp/tendersclosingbydays/bytoday",
+    "status": 200,
+    "final": "https://eprocure.gov.in/cppp/tendersclosingbydays/bytoday",
+    "error": "",
+    "family": "ireps",
+    "challenge": "none",
+    "group": "titles-visible",
+    "titles": true,
+    "present": 11,
+    "past": "hidden",
+    "present_label": 11,
+    "checked": [
+      "https://eprocure.gov.in/cppp/tendersclosingbydays/bytoday"
+    ]
+  },
+  {
+    "url": "https://eprocure.gov.in/cppp/resultoftendersnew/cpppdata",
+    "status": 200,
+    "final": "https://eprocure.gov.in/cppp/resultoftendersnew/cpppdata",
+    "error": "",
+    "family": "ireps",
+    "challenge": "captcha",
+    "group": "challenge-required",
+    "titles": false,
+    "present": null,
+    "past": "hidden",
+    "present_label": "hidden",
+    "checked": [
+      "https://eprocure.gov.in/cppp/resultoftendersnew/cpppdata"
+    ]
+  }
+]

@@ -1,0 +1,2585 @@
+[
+  {
+    "host": "https://arunachaltenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://assamtenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://assamtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://assamtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://assamtenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://assamtenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://cgeproc.cgstate.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "unverified-tls",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://cgeproc.cgstate.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://cgeproc.cgstate.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://cgeproc.cgstate.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://cgeproc.cgstate.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://coalindiatenders.nic.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://coalindiatenders.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://coalindiatenders.nic.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://coalindiatenders.nic.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 1,
+        "total": null,
+        "titles": true
+      }
+    ]
+  },
+  {
+    "host": "https://ddd.gov.in/notice-category/tenders/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://ddd.gov.in/notice-category/tenders/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "orgwise",
+        "url": "https://ddd.gov.in/notice-category/tenders/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "by-date",
+        "url": "https://ddd.gov.in/notice-category/tenders/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "closing",
+        "url": "https://ddd.gov.in/notice-category/tenders/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "link:0",
+        "url": "https://ddd.gov.in/notice-category/tenders/feed/",
+        "status": 0,
+        "error": "HTTP Error 500: Internal Server Error",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "link:1",
+        "url": "https://ddd.gov.in/notice-category/tenders/",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "link:2",
+        "url": "https://www.facebook.com/sharer/sharer.php?u=https://ddd.gov.in/notice-category/tenders/&t=Department+of+Tourism%2C+DNH+%26amp%3B+DD+%3A+CORRIGENDUM+II+FOR+RFP+TO+ENGAGE+A+SURVEY+AGENCY+FOR+CONDUCTING+TOURISM+SURVEY+IN+THE+UT+OF+DNH+%26amp%3B+DD",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "link:3",
+        "url": "https://x.com/share?url=https://ddd.gov.in/notice-category/tenders/&via=TWITTER_HANDLE&text=Department+of+Tourism%2C+DNH+%26amp%3B+DD+%3A+CORRIGENDUM+II+FOR+RFP+TO+ENGAGE+A+SURVEY+AGENCY+FOR+CONDUCTING+TOURISM+SURVEY+IN+THE+UT+OF+DNH+%26amp%3B+DD",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://ddtenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://ddtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://ddtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://ddtenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://ddtenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://defproc.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://defproc.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://defproc.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://defproc.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 1,
+        "total": null,
+        "titles": true
+      }
+    ]
+  },
+  {
+    "host": "https://dnhtenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://dnhtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://dnhtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://dnhtenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://dnhtenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://eproc.punjab.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eproc.punjab.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eproc.punjab.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://eproc.punjab.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://eproc.punjab.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://eproc.rajasthan.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eproc.rajasthan.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eproc.rajasthan.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://eproc.rajasthan.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 5,
+        "total": null,
+        "titles": true
+      }
+    ]
+  },
+  {
+    "host": "https://eproc2.bihar.gov.in/EPSV2Web/",
+    "home": {
+      "status": 200,
+      "error": "unverified-tls",
+      "challenge": "captcha"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eproc2.bihar.gov.in/EPSV2Web/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 0,
+        "error": "HTTP Error 500: Internal Server Error",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eproc2.bihar.gov.in/EPSV2Web/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 0,
+        "error": "HTTP Error 500: Internal Server Error",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "by-date",
+        "url": "https://eproc2.bihar.gov.in/EPSV2Web/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 500: Internal Server Error",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "closing",
+        "url": "https://eproc2.bihar.gov.in/EPSV2Web/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 500: Internal Server Error",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      }
+    ]
+  },
+  {
+    "host": "https://eprocure.andamannicobar.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "unverified-tls",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eprocure.andamannicobar.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eprocure.andamannicobar.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://eprocure.andamannicobar.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://eprocure.andamannicobar.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://eprocure.goa.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "http://eprocure.goa.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "http://eprocure.goa.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "http://eprocure.goa.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "http://eprocure.goa.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://eprocure.gov.in/cppp/resultoftendersnew/cpppdata",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "captcha"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eprocure.gov.in/cppp/resultoftendersnew/cpppdata/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eprocure.gov.in/cppp/resultoftendersnew/cpppdata/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "by-date",
+        "url": "https://eprocure.gov.in/cppp/resultoftendersnew/cpppdata/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "closing",
+        "url": "https://eprocure.gov.in/cppp/resultoftendersnew/cpppdata/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "link:0",
+        "url": "https://eprocure.gov.in/cppp/standard_biddingdocs",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "link:1",
+        "url": "https://eprocure.gov.in/cppp/latestactivetendersnew",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 7,
+        "total": "31070",
+        "titles": true
+      }
+    ]
+  },
+  {
+    "host": "https://eprocure.gov.in/eprocure/app",
+    "home": {
+      "status": 0,
+      "error": "HTTP Error 404: 404",
+      "challenge": "error"
+    },
+    "pages": []
+  },
+  {
+    "host": "https://eprocurebel.co.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eprocurebel.co.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eprocurebel.co.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://eprocurebel.co.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://eprocurebel.co.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://eprocurebhel.co.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eprocurebhel.co.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eprocurebhel.co.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://eprocurebhel.co.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://eprocurebhel.co.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://eprocuregsl.nic.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://eprocurehsl.nic.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://eprocuremdl.nic.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://eprocurentpc.nic.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://eprocurentpc.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://eprocurentpc.nic.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://eprocurentpc.nic.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://eprocurentpc.nic.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://etender.up.nic.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://etender.up.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://etender.up.nic.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://etender.up.nic.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://etender.up.nic.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://etenders.chd.nic.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://etenders.chd.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://etenders.chd.nic.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://etenders.chd.nic.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://etenders.chd.nic.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://etenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://etenders.gov.in/eprocure/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://etenders.gov.in/eprocure/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://etenders.gov.in/eprocure/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://etenders.gov.in/eprocure/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://etenders.hry.nic.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://etenders.hry.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://etenders.hry.nic.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://etenders.hry.nic.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 1,
+        "total": null,
+        "titles": true
+      }
+    ]
+  },
+  {
+    "host": "https://etenders.kerala.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://etenders.kerala.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://etenders.kerala.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://etenders.kerala.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://etenders.kerala.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://gem.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "captcha"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://gem.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://gem.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://gem.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://gem.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "link:0",
+        "url": "https://forwardauction.gem.gov.in/eprocure/bidder-registration",
+        "status": 200,
+        "error": "",
+        "challenge": "otp",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "link:1",
+        "url": "https://gem.gov.in/page/url_track/?q=https://bidplus.gem.gov.in/advance-search ",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "link:2",
+        "url": "https://gem.gov.in/page/url_track/?q=https://bidplus.gem.gov.in/bidresultlists",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "link:3",
+        "url": "https://www.ireps.gov.in/epsn/anonymSearchPO.do?searchParam=showPageSupply&language=en",
+        "status": 200,
+        "error": "",
+        "challenge": "otp",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://govtprocurement.delhi.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://govtprocurement.delhi.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://govtprocurement.delhi.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://govtprocurement.delhi.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://govtprocurement.delhi.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://hptenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://hptenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://hptenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://hptenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 1,
+        "total": null,
+        "titles": true
+      }
+    ]
+  },
+  {
+    "host": "https://iocletenders.nic.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://iocletenders.nic.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://iocletenders.nic.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://iocletenders.nic.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://iocletenders.nic.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://jharkhandtenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://jharkhandtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://jharkhandtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://jharkhandtenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://jharkhandtenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://jktenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "unverified-tls",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://jktenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://jktenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://jktenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "unverified-tls",
+        "challenge": "captcha",
+        "ids": 1,
+        "total": null,
+        "titles": true
+      }
+    ]
+  },
+  {
+    "host": "https://kppp.karnataka.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": []
+  },
+  {
+    "host": "https://mahatenders.gov.in/nicgep/app",
+    "home": {
+      "status": 0,
+      "error": "HTTP Error 404: 404",
+      "challenge": "error"
+    },
+    "pages": []
+  },
+  {
+    "host": "https://manipurtenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://manipurtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://manipurtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://manipurtenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://manipurtenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://meghalayatenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://meghalayatenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://meghalayatenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://meghalayatenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://meghalayatenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://mizoramtenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://mizoramtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://mizoramtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://mizoramtenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://mizoramtenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://mptenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "http://mptenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "http://mptenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "http://mptenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "http://mptenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://nagalandtenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://nagalandtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://nagalandtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://nagalandtenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://nagalandtenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://nbccindia.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://nbccindia.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "orgwise",
+        "url": "https://nbccindia.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "by-date",
+        "url": "https://nbccindia.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "closing",
+        "url": "https://nbccindia.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      }
+    ]
+  },
+  {
+    "host": "https://pudutenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://pudutenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://pudutenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://pudutenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://pudutenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://shpp.rajasthan.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": []
+  },
+  {
+    "host": "https://sikkimtender.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://sikkimtender.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://sikkimtender.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://sikkimtender.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://sikkimtender.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://tender.apeprocurement.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://tender.apeprocurement.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: ",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "orgwise",
+        "url": "https://tender.apeprocurement.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: ",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "by-date",
+        "url": "https://tender.apeprocurement.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: ",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "closing",
+        "url": "https://tender.apeprocurement.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: ",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      }
+    ]
+  },
+  {
+    "host": "https://tender.telangana.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://tender.telangana.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "orgwise",
+        "url": "https://tender.telangana.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "by-date",
+        "url": "https://tender.telangana.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "closing",
+        "url": "https://tender.telangana.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      }
+    ]
+  },
+  {
+    "host": "https://tenders.ladakh.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://tenders.ladakh.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://tenders.ladakh.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://tenders.ladakh.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://tenders.ladakh.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://tendersodisha.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://tendersodisha.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://tendersodisha.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://tendersodisha.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://tendersodisha.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://tendersutl.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://tendersutl.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://tendersutl.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://tendersutl.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://tendersutl.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://tntenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://tntenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://tntenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://tntenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://tntenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://tripuratenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://tripuratenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://tripuratenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://tripuratenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://tripuratenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://uktenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://uktenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://uktenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://uktenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://uktenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://wbtenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://wbtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://wbtenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://wbtenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://wbtenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      }
+    ]
+  },
+  {
+    "host": "https://www.ireps.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://www.ireps.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "orgwise",
+        "url": "https://www.ireps.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "by-date",
+        "url": "https://www.ireps.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "closing",
+        "url": "https://www.ireps.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 0,
+        "error": "HTTP Error 404: Not Found",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      }
+    ]
+  },
+  {
+    "host": "https://www.pmgsytenders.gov.in/",
+    "home": {
+      "status": 200,
+      "error": "",
+      "challenge": "none"
+    },
+    "pages": [
+      {
+        "name": "active",
+        "url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "orgwise",
+        "url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndLatestActiveTendersOrgwise&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "by-date",
+        "url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "captcha",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "closing",
+        "url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndTendersByDate&service=page",
+        "status": 200,
+        "error": "",
+        "challenge": "none",
+        "ids": 0,
+        "total": null,
+        "titles": false
+      },
+      {
+        "name": "link:0",
+        "url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndAdvancedSearch&amp;service=page",
+        "status": 0,
+        "error": "HTTP Error 400: 400",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "link:1",
+        "url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndLatestActiveTenders&amp;service=page",
+        "status": 0,
+        "error": "HTTP Error 400: 400",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "link:2",
+        "url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndListTendersbyDate&amp;service=page",
+        "status": 0,
+        "error": "HTTP Error 400: 400",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      },
+      {
+        "name": "link:3",
+        "url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndLatestActiveCorrigendums&amp;service=page",
+        "status": 0,
+        "error": "HTTP Error 400: 400",
+        "challenge": "error",
+        "ids": 0,
+        "total": null
+      }
+    ]
+  }
+]

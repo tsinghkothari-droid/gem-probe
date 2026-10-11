@@ -1,0 +1,11 @@
+{
+  "source": "jda-rajasthan",
+  "url": "https://jdaservice.rajasthan.gov.in/jdamicroportalproject/NoticeBoard/AuctionProgramme",
+  "method": "GET",
+  "require": "osdrm.jda@rajasthan.gov.in",
+  "fill": {
+    "title": "E-auction sale of development authority property osdrm.jda@rajasthan.gov.in",
+    "place": "Rajasthan",
+    "asset": "land"
+  }
+}

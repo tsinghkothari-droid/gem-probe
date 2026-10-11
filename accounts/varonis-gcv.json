@@ -1,0 +1,3962 @@
+[
+  {
+    "legal_name": "Ahmedabad Smart City Development Ltd",
+    "short_name": "ASCDL",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Department of Science & Technology, Gujarat",
+    "short_name": "DST Gujarat",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Digital Gujarat / SSDG programme (under DST/GIL)",
+    "short_name": "Digital Gujarat",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Gujarat Cooperative Milk Marketing Federation Ltd (Amul / GCMMF)",
+    "short_name": "GCMMF / Amul",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Gujarat Informatics Limited (GIL)",
+    "short_name": "GIL",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Surat Municipal Corporation",
+    "short_name": "SMC",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Surat Smart City Development Ltd",
+    "short_name": "SSCDL",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Department of Information Technology and Communication",
+    "short_name": "DoIT&C",
+    "state": "RJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "RajCOMP Info Services Limited (RISL)",
+    "short_name": "RISL",
+    "state": "RJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Rajasthan Jan Aadhaar Authority",
+    "short_name": "Jan Aadhaar",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Science and Technology",
+    "short_name": "ST",
+    "state": "RJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "e-Mitra / SSO Rajasthan (under DoIT&C)",
+    "short_name": "e-Mitra / SSO",
+    "state": "RJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Bank of Baroda HQ / PSU bank circles GJ",
+    "short_name": "PSU Banks GJ",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat Urja Vikas Nigam Limited",
+    "short_name": "GUVNL",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "National Forensic Sciences University",
+    "short_name": "NFSU",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "All India Institute of Medical Sciences Jodhpur",
+    "short_name": "AIIMS Jodhpur",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Jaipur Smart City Limited",
+    "short_name": "JSCL",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat International Finance Tec-City Company Ltd",
+    "short_name": "GIFT City",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Ahmedabad Municipal Corporation",
+    "short_name": "AMC",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "BISAG-N / BISAG Gujarat",
+    "short_name": "BISAG",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Banaskantha District Cooperative Milk Producers Union Ltd (Banas Dairy)",
+    "short_name": "Banas Dairy",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Dakshin Gujarat Vij Company Limited",
+    "short_name": "DGVCL",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Gujarat Gas Limited",
+    "short_name": "Gujarat Gas",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat Police",
+    "short_name": "Gujarat Police",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Gujarat State Cooperative Bank Ltd",
+    "short_name": "GSC Bank",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Indian Institute of Management Ahmedabad",
+    "short_name": "IIM Ahmedabad",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Indian Institute of Technology Gandhinagar",
+    "short_name": "IIT Gandhinagar",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Kaira District Cooperative Milk Producers Union Ltd (Amul Dairy)",
+    "short_name": "Amul Dairy Anand",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Madhya Gujarat Vij Company Limited",
+    "short_name": "MGVCL",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Paschim Gujarat Vij Company Limited",
+    "short_name": "PGVCL",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Uttar Gujarat Vij Company Limited",
+    "short_name": "UGVCL",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Ajmer Vidyut Vitran Nigam Limited",
+    "short_name": "AVVNL",
+    "state": "RJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Bank of Baroda / PSU bank circles RJ (aggregate prospect)",
+    "short_name": "PSU Banks RJ",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Indian Institute of Management Udaipur",
+    "short_name": "IIM Udaipur",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Indian Institute of Technology Jodhpur",
+    "short_name": "IIT Jodhpur",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Jaipur Vidyut Vitran Nigam Limited",
+    "short_name": "JVVNL",
+    "state": "RJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Jodhpur Vidyut Vitran Nigam Limited",
+    "short_name": "JdVVNL",
+    "state": "RJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "RAJASTHAN URJA VIKAS AND IT SERVICES LIMIT (RUVNL)",
+    "short_name": "RUVNL",
+    "state": "RJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Rajasthan Cooperative Dairy Federation Ltd (Saras)",
+    "short_name": "RCDF / Saras",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "The Rajasthan State Co-operative Bank Ltd",
+    "short_name": "RStCB",
+    "state": "RJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "All India Institute of Medical Sciences Rajkot",
+    "short_name": "AIIMS Rajkot",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat Fibre Grid Network Limited",
+    "short_name": "GFGNL",
+    "state": "GJ",
+    "tier": 1
+  },
+  {
+    "legal_name": "Gujarat Medical Education & Research Society (GMERS)",
+    "short_name": "GMERS",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat Public Service Commission",
+    "short_name": "GPSC",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Secondary and Higher Secondary Education Board",
+    "short_name": "GSHSEB",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat State Civil Supplies Corporation Limited",
+    "short_name": "GSCSCL",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Technological University",
+    "short_name": "GTU",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Ahmedabad District Co-operative Bank Ltd",
+    "short_name": "ADCB",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Board of Secondary Education, Rajasthan, Ajmer",
+    "short_name": "SEA",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Directorate Medical & Health Services, ESI Scheme",
+    "short_name": "DMHSES",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Home Department",
+    "short_name": "Home Department",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Medical & Health Department",
+    "short_name": "MH",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Medical Education",
+    "short_name": "ME",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "NAGAR NIGAM UDAIPUR",
+    "short_name": "NNU",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Nagar Nigam Ajmer",
+    "short_name": "NNA",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Nagar Nigam Bikaner",
+    "short_name": "NNB",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "National Health Mission",
+    "short_name": "NHM",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rajasthan Medical Services Corporation Limited",
+    "short_name": "MS",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rajasthan Police",
+    "short_name": "Rajasthan Police",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rajasthan Public Service Commission",
+    "short_name": "PSC",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Sawai Mansingh Hospital Jaipur",
+    "short_name": "SMHJ",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "State Institute of Health and Family welfare",
+    "short_name": "IHFW",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat Industrial Development Corporation",
+    "short_name": "GIDC",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat Metro Rail Corporation Limited",
+    "short_name": "GMRC",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat Narmada Valley Fertilisers Company Limited",
+    "short_name": "NVF",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rajasthan State Road Transport Corporation",
+    "short_name": "RT",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat Medical Services Corporation Limited",
+    "short_name": "GMSCL",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Indian Institute of Information Technology Surat",
+    "short_name": "IIIT Surat",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Indian Institute of Information Technology Vadodara",
+    "short_name": "IIIT Vadodara",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Mehsana District Cooperative Milk Producers Union Ltd (Dudhsagar)",
+    "short_name": "Dudhsagar Dairy",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "National Cooperative Dairy Federation of India Ltd",
+    "short_name": "NCDFI",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "National Institute of Design Ahmedabad",
+    "short_name": "NID Ahmedabad",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "National Institute of Pharmaceutical Education and Research Ahmedabad",
+    "short_name": "NIPER Ahmedabad",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Rajkot Municipal Corporation",
+    "short_name": "RMC",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rashtriya Raksha University",
+    "short_name": "RRU",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Sardar Vallabhbhai National Institute of Technology Surat",
+    "short_name": "SVNIT Surat",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Space Applications Centre (ISRO)",
+    "short_name": "SAC ISRO",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Surat District Cooperative Milk Producers Union Ltd (Sumul)",
+    "short_name": "Sumul",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Vadodara Municipal Corporation",
+    "short_name": "VMC",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Indian Institute of Information Technology Kota",
+    "short_name": "IIIT Kota",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Integral Urban Co-operative Bank Ltd",
+    "short_name": "Integral UCB",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Jaipur Metro Rail Corporation",
+    "short_name": "JMRC",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Jaipur Municipal Corporation (Heritage / Greater)",
+    "short_name": "JMC",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Malaviya National Institute of Technology Jaipur",
+    "short_name": "MNIT Jaipur",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Rajasthan Technical University, Kota",
+    "short_name": "TUK",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Jaipur Central Co-operative Bank Ltd",
+    "short_name": "JCCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gandhinagar Municipal Corporation",
+    "short_name": "GMC",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Energy Transmission Corporation Limited",
+    "short_name": "GETCO",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat State Electricity Corporation Limited",
+    "short_name": "GSECL",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat State Petroleum Corporation",
+    "short_name": "GSPC",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat State Petronet Limited",
+    "short_name": "GSPL",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Institute of Rural Management Anand (IRMA)",
+    "short_name": "IRMA",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Oil and Natural Gas Corporation — Western assets (GJ)",
+    "short_name": "ONGC GJ",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Sardar Sarovar Narmada Nigam Limited",
+    "short_name": "SSNNL",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "DRDO labs / establishments in Rajasthan (aggregate)",
+    "short_name": "DRDO RJ",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Rajasthan Pollution Control Board",
+    "short_name": "PC",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan Rajya Vidyut Prasaran Nigam Limited",
+    "short_name": "RVPN",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "The Rajasthan Urban Co-Operative Banks Federation Ltd",
+    "short_name": "RJ UCB Federation",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Bhavnagar District Cooperative Milk Producers Union Ltd",
+    "short_name": "Bhavnagar Dairy",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Central University of Gujarat",
+    "short_name": "CUG",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Education Department",
+    "short_name": "Education Department",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Energy & Petrochemicals Department",
+    "short_name": "EP",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Food, Civil Supplies & Consumer Affairs Department",
+    "short_name": "FCSCA",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat National Law University",
+    "short_name": "GNLU",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Cooperative Agricultural & Rural Development Bank Ltd",
+    "short_name": "GSCARDB",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat State Cooperative Housing Finance Federation / apex",
+    "short_name": "GJ Coop Housing",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat State Cooperative Marketing Federation Ltd",
+    "short_name": "GUJCOMASOL",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat State Road Transport Corp.",
+    "short_name": "RTC",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Road Transport Corporation",
+    "short_name": "GSRTC",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat University",
+    "short_name": "GU",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Health & Family Welfare Department",
+    "short_name": "HFW",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Home Department",
+    "short_name": "Home Department",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "ICMR-National Institute of Occupational Health Ahmedabad",
+    "short_name": "NIOH Ahmedabad",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Institute of Teaching and Research in Ayurveda Jamnagar",
+    "short_name": "ITRA Jamnagar",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Junagadh District Cooperative Milk Producers Union Ltd",
+    "short_name": "Junagadh Dairy",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Maharaja Sayajirao University of Baroda",
+    "short_name": "MSU Baroda",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Panchmahal District Cooperative Milk Producers Union Ltd",
+    "short_name": "Panchmahal Dairy",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Ports & Transport Department",
+    "short_name": "PT",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajkot District Cooperative Milk Producers Union Ltd (Rajkot Dairy)",
+    "short_name": "Rajkot Dairy",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Revenue Department",
+    "short_name": "Revenue Department",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Shri Rajkot District Co-operative Bank Ltd",
+    "short_name": "RDCB",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Social Justice & Empowerment Department",
+    "short_name": "SJE",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "The Anand District Co-operative Bank Ltd",
+    "short_name": "Anand DCCB",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Banaskantha District Central Co-operative Bank Ltd",
+    "short_name": "Banaskantha DCCB",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Bhavnagar District Co-operative Bank Ltd",
+    "short_name": "BDCB",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Gandhinagar District Co-operative Bank Ltd",
+    "short_name": "Gandhinagar DCCB",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Junagadh District Co-operative Bank Ltd",
+    "short_name": "JDCB GJ",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Kheda District Co-operative Bank Ltd",
+    "short_name": "Kheda DCCB",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Mehsana District Central Co-operative Bank Ltd",
+    "short_name": "MDCB",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Surat District Co-operative Bank Ltd",
+    "short_name": "SDCB Surat",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Vadodara District Co-operative Bank Ltd",
+    "short_name": "VDCB",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Urban Development & Urban Housing Department",
+    "short_name": "UDUH",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Vadodara District Cooperative Milk Producers Union Ltd (Baroda Dairy)",
+    "short_name": "Baroda Dairy",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Ajmer Urban Co-operative Bank Ltd",
+    "short_name": "Ajmer UCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Ajmer Zila Dugdh Utpadak Sahakari Sangh Ltd",
+    "short_name": "Ajmer Dairy",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Alwar Urban Co-operative Bank Ltd",
+    "short_name": "Alwar UCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Alwar Zila Dugdh Utpadak Sahakari Sangh Ltd",
+    "short_name": "Alwar Dairy",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Baran Kendriya Sahakari Bank Ltd",
+    "short_name": "Baran CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Bharatpur Zila Dugdh Utpadak Sahakari Sangh Ltd",
+    "short_name": "Bharatpur Dairy",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Bhilwara Urban Co-operative Bank Ltd",
+    "short_name": "Bhilwara UCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Bikaner Urban Co-operative Bank Ltd",
+    "short_name": "Bikaner UCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Bikaner Zila Dugdh Utpadak Sahakari Sangh Ltd",
+    "short_name": "Bikaner Dairy",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Central University of Rajasthan",
+    "short_name": "CURAJ",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Department of College Education",
+    "short_name": "CE",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Directorate of Literacy & Continuing Education",
+    "short_name": "DLCE",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Directorate of homeopathy",
+    "short_name": "DH",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Elementary Education Department",
+    "short_name": "EE",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Energy Department",
+    "short_name": "Energy Department",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Food Department",
+    "short_name": "Food Department",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Hanumangarh Kendriya Sahakari Bank Ltd",
+    "short_name": "Hanumangarh CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Higher Education",
+    "short_name": "HE",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Home Guards Department",
+    "short_name": "HG",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "ICMR-National Institute for Implementation Research on Non Communicable Diseases Jodhpur",
+    "short_name": "NIIRNCD Jodhpur",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Jaipur Zila Dugdh Utpadak Sahakari Sangh Ltd",
+    "short_name": "Jaipur Dairy",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Jhalawar Kendriya Sahkari Bank Ltd",
+    "short_name": "Jhalawar CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Jodhpur Central Cooperative Bank Ltd",
+    "short_name": "JdCCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Jodhpur Urban Co-operative Bank Ltd",
+    "short_name": "Jodhpur UCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Jodhpur Zila Dugdh Utpadak Sahakari Sangh Ltd",
+    "short_name": "Jodhpur Dairy",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Kota Urban Co-operative Bank Ltd",
+    "short_name": "Kota UCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Kota Zila Dugdh Utpadak Sahakari Sangh Ltd",
+    "short_name": "Kota Dairy",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "National Institute of Ayurveda Jaipur",
+    "short_name": "NIA Jaipur",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Rajasthan Rajya Sahakari Bhoomi Vikas Bank Ltd",
+    "short_name": "RRSBVB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Rajasthan State Cooperative Housing Federation Ltd",
+    "short_name": "RJ Coop Housing",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rajasthan State Cooperative Marketing Federation Ltd (RAJFED)",
+    "short_name": "RAJFED",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rajasthan University of Health Sciences",
+    "short_name": "RUHS",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan Urban Co-operative Bank Ltd",
+    "short_name": "RJ Urban Coop Bank",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Revenue Department",
+    "short_name": "Revenue Department",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Revenue Research and Training Institute,Ajmer",
+    "short_name": "RRTIA",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Sanskrit Education",
+    "short_name": "SE",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Secondary Education",
+    "short_name": "SE",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Social Justice and Empowerment Department",
+    "short_name": "SJE",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "State Insurance & Provident Fund Department",
+    "short_name": "IPF",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Technical Education",
+    "short_name": "TE",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "The Ajmer Central Cooperative Bank Ltd",
+    "short_name": "ACCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Alwar Central Cooperative Bank Ltd",
+    "short_name": "Alwar CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Banswara Central Cooperative Bank Ltd",
+    "short_name": "Banswara CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Barmer Central Co-operative Bank Ltd",
+    "short_name": "Barmer CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Bharatpur Central Co-operative Bank Ltd",
+    "short_name": "Bharatpur CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Bhilwara Central Co-operative Bank Ltd",
+    "short_name": "Bhilwara CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Bundi Central Co-operative Bank Ltd",
+    "short_name": "Bundi CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Central Co-operative Bank Ltd Bikaner",
+    "short_name": "Bikaner CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Chittorgarh Central Co-operative Bank Ltd",
+    "short_name": "Chittorgarh CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Churu Central Co-operative Bank Ltd",
+    "short_name": "Churu CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Dausa Central Co-operative Bank Ltd",
+    "short_name": "Dausa CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Dungarpur Central Co-operative Bank Ltd",
+    "short_name": "Dungarpur CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Ganganagar Kendriya Sahakari Bank Ltd",
+    "short_name": "Sri Ganganagar CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Jaisalmer Central Co-operative Bank Ltd",
+    "short_name": "Jaisalmer CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Jalore Central Co-operative Bank Ltd",
+    "short_name": "Jalore CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Jhunjhunu Central Co-operative Bank Ltd",
+    "short_name": "Jhunjhunu CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Kota Central Co-operative Bank Ltd",
+    "short_name": "KCCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Nagaur Central Co-operative Bank Ltd",
+    "short_name": "Nagaur CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Pali Central Cooperative Bank Ltd",
+    "short_name": "Pali CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Sawai Madhopur Central Co-operative Bank Ltd",
+    "short_name": "Sawai Madhopur CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Sikar Central Co-operative Bank Ltd",
+    "short_name": "Sikar CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Sirohi Central Co-operative Bank Ltd",
+    "short_name": "Sirohi CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Tonk Central Co-operative Bank Ltd",
+    "short_name": "Tonk CCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Udaipur Central Co-operative Bank Ltd",
+    "short_name": "UCCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "The Udaipur Mahila Samridhi Urban Co-operative Bank Ltd",
+    "short_name": "Udaipur Mahila UCB",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Transport & Road Safety Department",
+    "short_name": "TRS",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Udaipur Zila Dugdh Utpadak Sahakari Sangh Ltd",
+    "short_name": "Udaipur Dairy",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "University of Rajasthan",
+    "short_name": "UOR",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Urban Development and Housing(UIT)",
+    "short_name": "UIT",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "GSPC Pipavav Power Corporation Limited",
+    "short_name": "GPP",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat Industries Power Company Limited",
+    "short_name": "IP",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat Mineral Development Corporation",
+    "short_name": "GMDC",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Narmada Valley Fertilizers & Chemicals",
+    "short_name": "GNFC",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Power Corporation Limited",
+    "short_name": "Gujarat Power Corporation Limited",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Gujarat State Fertilisers & Chemicals Limited",
+    "short_name": "FC",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat State Fertilizers & Chemicals Limited",
+    "short_name": "GSFC",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "National Hydroelectric Power Corporation",
+    "short_name": "NHP",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "National Mineral Development Corporation",
+    "short_name": "NMD",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "North Eastern Electric Power Corporation",
+    "short_name": "NEEP",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Power Finance Corporation REC",
+    "short_name": "PFR",
+    "state": "GJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rajasthan Electricity Regulatory Commission, Jaipur",
+    "short_name": "ERCJ",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rajasthan Rajya Vidyut Utpadan Nigam Limited",
+    "short_name": "RVUNL",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rajasthan State Power Finance and Financial Services Corporation Limited",
+    "short_name": "PFFS",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Rajasthan Vidyut Utpadan Nigam Ltd.",
+    "short_name": "VUN",
+    "state": "RJ",
+    "tier": 2
+  },
+  {
+    "legal_name": "Bhavnagar Municipal Corporation",
+    "short_name": "BMC Bhavnagar",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Cooperation Department, Government of Gujarat",
+    "short_name": "Coop Dept GJ",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Dholera Special Investment Regional Development Authority",
+    "short_name": "DSIRD",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Chemical and Petrochemicals Special Investment Regional Development Authority",
+    "short_name": "CPSIRD",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Industrial Investment Corporation Limited",
+    "short_name": "II",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat International Finance Tech City Urban Dev. Auth.",
+    "short_name": "Gujarat International Finance Tech City",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Minority Finance & Development Corporation Limited",
+    "short_name": "MFD",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Municipal Finance Board",
+    "short_name": "MF",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Pollution Control Board",
+    "short_name": "GPCB",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat State Consumer Cooperative Federation",
+    "short_name": "GJ Consumer Coop",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Federation of Cooperative Sugar Factories Ltd",
+    "short_name": "GSFCSF",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Financial Corporation",
+    "short_name": "Gujarat State Financial Corporation",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat State Investments Ltd",
+    "short_name": "Gujarat State Investments Ltd",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat State Warehousing / coop warehousing apex",
+    "short_name": "GJ Coop Warehouse",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Infrastructure Finance Company of Gujarat Limited",
+    "short_name": "IF",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "International Financial Services Centres Authority (IFSCA)",
+    "short_name": "IFSCA",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Mandal Becharaji Investment Regional Development Authority",
+    "short_name": "MBIRD",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Physical Research Laboratory",
+    "short_name": "PRL",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Tribhuvan Sahkari University Anand",
+    "short_name": "TSU Anand",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Ayurved University & College",
+    "short_name": "AUC",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Bureau Of Investment Promotion",
+    "short_name": "BIP",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Cooperation Department, Government of Rajasthan",
+    "short_name": "Coop Dept RJ",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Finance Department",
+    "short_name": "Finance Department",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "MUNICIPAL COUNCIL",
+    "short_name": "MC",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Maharshi Dayanand Saraswati University",
+    "short_name": "MDSU",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Public Health Engineering Department",
+    "short_name": "PHE",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "RAJASTHAN RAJYA BUNKAR SAHKARI SANGH LTD. JAIPUR",
+    "short_name": "RBSSJ",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan Finance Corporation",
+    "short_name": "Rajasthan Finance Corporation",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Rajasthan Scheduled Caste Scheduled Tribe Finance and Development Cooperative Corporation Ltd., Jaip",
+    "short_name": "Rajasthan Scheduled Caste Scheduled Trib",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan State Consumer Cooperative Federation Ltd",
+    "short_name": "RJ Consumer Coop",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan State Warehousing Corporation / coop warehousing link",
+    "short_name": "RJ Warehouse",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan Urban Infrastructure Finance and Development Corporation Ltd(RUIDP)",
+    "short_name": "RUIDP",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Sardar Patel University of police, security and criminal Justice",
+    "short_name": "Sardar Patel University of police, secur",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Anand Agricultural University",
+    "short_name": "AAU",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Alkalies and Chemicals Limited",
+    "short_name": "GACL",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Ayurved University",
+    "short_name": "GAU",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Hemchandracharya North Gujarat University",
+    "short_name": "HNGU",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Sardar Patel University",
+    "short_name": "SPU",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Veer Narmad South Gujarat University",
+    "short_name": "VNSGU",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Jai Narain Vyas University",
+    "short_name": "JNVU",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Mohanlal Sukhadia University",
+    "short_name": "MLSU",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "* As per latest C& AG report of PSU",
+    "short_name": "* As per latest C& AG report of PSU",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Antrix Corporation",
+    "short_name": "Antrix Corporation",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Armoured Vehicles Nigam Limited",
+    "short_name": "AVN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Artificial Limbs Manufacturing Corporation of India",
+    "short_name": "ALMI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Bhavnagar Energy Company Limited",
+    "short_name": "BE",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Bin Anamat Varg Shixanik & Arthik Vikas Nigam",
+    "short_name": "Bin Anamat Varg Shixanik & Arthik Vikas",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Cement Corporation of India",
+    "short_name": "CI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Central Warehousing Corporation",
+    "short_name": "CW",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Chennai Petroleum Corporation",
+    "short_name": "CP",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Container Corporation of India",
+    "short_name": "CI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Cotton Corporation of India",
+    "short_name": "CI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Creative Infocity Limited",
+    "short_name": "CI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Dahej SEZ Limited",
+    "short_name": "DS",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Dholera International Airport Company Limited",
+    "short_name": "DIA",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Diamond Research and Mercantile City Limited",
+    "short_name": "DRMC",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Dr. Ambedkar Antyoday Vikas Nigam",
+    "short_name": "DAAVN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Ferro Scrap Nigam",
+    "short_name": "FSN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "GSPC (JPDA) Limited",
+    "short_name": "JPDA",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "GSPC LNG Limited",
+    "short_name": "GL",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "GSPL India Gasnet Limited",
+    "short_name": "GIG",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "GSPL India Transco Limited",
+    "short_name": "GIT",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gandhinagar Railway and Urban Development Corporation Limited",
+    "short_name": "GRUD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gromex Agri Equipment Limited",
+    "short_name": "GAE",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Agro Industries Corporation Limited",
+    "short_name": "AI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Backward Class Development Corporation",
+    "short_name": "BCD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Dairy Dev. Corporation Ltd.",
+    "short_name": "DD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Electricity Regulatory Commission",
+    "short_name": "GERC",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Fisheries Dev. Corporation Ltd.",
+    "short_name": "FD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Gopalak Vikas Nigam Limited",
+    "short_name": "GVN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Green Revolution Company Limited",
+    "short_name": "GR",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Growth Centre Development Corporation Limited",
+    "short_name": "GCD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Handloom & Handicraft Development Corporation Ltd.",
+    "short_name": "HHD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat ISP Services Limited",
+    "short_name": "IS",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Industrial & Technical Consultancy Limited",
+    "short_name": "ITC",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Industrial Corridor Corporation Limited",
+    "short_name": "IC",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Info Petro Limited",
+    "short_name": "IP",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Leather Industries Corporation Ltd.",
+    "short_name": "LI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Livelihood Promotion Company Limited",
+    "short_name": "LP",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Rail Infrastructure Development Corporation Limited",
+    "short_name": "RID",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Railway and Urban Development Company Limited",
+    "short_name": "RUD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Rural Industrial Marketing Corporation Limited",
+    "short_name": "RIM",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Safai Kamdar Vikas Nigam Limited",
+    "short_name": "SKVN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Sheep & Wool Development Corporation Limited",
+    "short_name": "SWD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Small Industries Corporation Ltd.",
+    "short_name": "SI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Aviation Infrastructure Company Limited",
+    "short_name": "AI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Energy Generation Company Limited",
+    "short_name": "EG",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Forest Development Corporation Limited",
+    "short_name": "FD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Land Development Corporation Limited",
+    "short_name": "LD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Police Housing Corporation Limited",
+    "short_name": "GSPHC",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Road Development Corporation Limited",
+    "short_name": "RD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Rural Development Corporation Limited",
+    "short_name": "RD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Schedule Castes Development Corporation",
+    "short_name": "SCD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Seeds Corporation Limited",
+    "short_name": "Gujarat State Seeds Corporation Limited",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Textile Corporation",
+    "short_name": "Gujarat State Textile Corporation",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat State Warehousing Corporation",
+    "short_name": "Gujarat State Warehousing Corporation",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Thakor & Koli Vikas Nigam Limited",
+    "short_name": "TKVN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Tour Development Corporation Limited",
+    "short_name": "TD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Tribal Development Corporation",
+    "short_name": "TD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Urban Development Company Limited",
+    "short_name": "UD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Vicharati & Vimukt Jati Vikas Nigam",
+    "short_name": "VVJVN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Water Resources Development Corporation Ltd.",
+    "short_name": "WRD",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Gujarat Women Economic Development Corporation Limited",
+    "short_name": "WED",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "HMT Limited",
+    "short_name": "HMT Limited",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Hindustan Paper Corporation",
+    "short_name": "HP",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Mahanagar Telephone Nigam",
+    "short_name": "MTN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Metals and Minerals Trading Corporation of India",
+    "short_name": "MMTI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Mineral Exploration Corporation",
+    "short_name": "ME",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Mishra Dhatu Nigam",
+    "short_name": "MDN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "NTPC Limited",
+    "short_name": "NTPC Limited",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "National Buildings Construction Corporation",
+    "short_name": "NBC",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "National Film Development Corporation of India",
+    "short_name": "NFDI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "National Projects Construction Corporation",
+    "short_name": "NPC",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "National Seed Corporation",
+    "short_name": "NS",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "National Small Industries Corporation",
+    "short_name": "NSI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Petrofils Cooperative Ltd",
+    "short_name": "Petrofils",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rail Vikas Nigam",
+    "short_name": "RVN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rashtriya Ispat Nigam",
+    "short_name": "RIN",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Sabarmati Gas Company Limited",
+    "short_name": "SG",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Security Printing and Minting Corporation of India",
+    "short_name": "SPMI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Shipping Corporation of India",
+    "short_name": "SI",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Tourism Corporation of Gujarat Limited",
+    "short_name": "Tourism Corporation of Gujarat Limited",
+    "state": "GJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "JAIPUR CITY TRANSPORT SERVICES LIMITED (JCTSL)",
+    "short_name": "JCTSL",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "RIICO Limited",
+    "short_name": "RIICO Limited",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan Renewable Energy Corporation",
+    "short_name": "RE",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan Small Industries Corporation Ltd",
+    "short_name": "SI",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan State Beverages Corporation Limited",
+    "short_name": "Rajasthan State Beverages Corporation Li",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan State Ganga Nagar Sugar Mill Limited",
+    "short_name": "GNSM",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan State Handloom Development Corporation Ltd., Jaipur",
+    "short_name": "HDJ",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan State Mines and Minerals Limited",
+    "short_name": "MM",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan State Road Development & Construction Corporation",
+    "short_name": "RDC",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan State Seeds Corporation Limited",
+    "short_name": "Rajasthan State Seeds Corporation Limite",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan State Warehousing Corporation",
+    "short_name": "Rajasthan State Warehousing Corporation",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan Water Grid Corporation Limited",
+    "short_name": "WG",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Agriculture & Co-operation Department",
+    "short_name": "ACO",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Finance Department",
+    "short_name": "Finance Department",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Forests & Environment Department",
+    "short_name": "FE",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Port Infrastructure & Development Company",
+    "short_name": "PID",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat State Cooperative Fisheries Federation",
+    "short_name": "GJ Fisheries Coop",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat State Cooperative Union",
+    "short_name": "GSCU",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat State Women Cooperative Federation / apex",
+    "short_name": "GJ Women Coop",
+    "state": "GJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Gujarat Water Infrastructure Ltd.",
+    "short_name": "WI",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Industries & Mines Department",
+    "short_name": "IM",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Information & Broadcasting Department",
+    "short_name": "IB",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Labour, Skill Development & Employment Department",
+    "short_name": "LSDE",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Narmada, Water Resources, Water Supply & Kalpsar Department",
+    "short_name": "NWRWSK",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Panchayats, Rural Housing & Rural Development Department",
+    "short_name": "PRHRD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Roads & Buildings Department",
+    "short_name": "RB",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Sports, Youth & Cultural Activities Department",
+    "short_name": "SYCA",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Tribal Development Department",
+    "short_name": "TD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Women & Child Development Department",
+    "short_name": "WCD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Agriculture Marketing",
+    "short_name": "AM",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Art Culture and Archeology Department",
+    "short_name": "ACA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Co-operative department",
+    "short_name": "CO",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Delhi-Mumbai-Industrial Corridor Department",
+    "short_name": "DMIC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Department of Agriculture",
+    "short_name": "Department of Agriculture",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Department of Horticulture",
+    "short_name": "Department of Horticulture",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Directorate of Employment",
+    "short_name": "DE",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Directorate of Petroleum",
+    "short_name": "DP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Directorate of child right",
+    "short_name": "DCR",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Forest Department",
+    "short_name": "Forest Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Ground Water Department",
+    "short_name": "GW",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Labour Department",
+    "short_name": "Labour Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Labour Skill Employment and Entrepreneurship",
+    "short_name": "LSEE",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Mines and Geology",
+    "short_name": "MG",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Pensions and Pensioners Welfare",
+    "short_name": "PPW",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Rajya Bunkar Sahkari Sangh Ltd",
+    "short_name": "RRBSS",
+    "state": "RJ",
+    "tier": 4
+  },
+  {
+    "legal_name": "Rajasthan State Cooperative Fisheries Federation Ltd",
+    "short_name": "RJ Fisheries Coop",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Rajasthan State Cooperative Union",
+    "short_name": "RSCU",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Rajasthan State Women Cooperative Federation / apex",
+    "short_name": "RJ Women Coop",
+    "state": "RJ",
+    "tier": 3
+  },
+  {
+    "legal_name": "Rural Development",
+    "short_name": "RD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rural Non Farm Development Agency (RUDA)",
+    "short_name": "RUDA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Skills Employment & Entrepreneurship Department",
+    "short_name": "SEE",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Tourism Department",
+    "short_name": "Tourism Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Tribal Area Development Department",
+    "short_name": "TAD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Water Resources Department",
+    "short_name": "WR",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Women & Child Development (ICDS)",
+    "short_name": "ICDS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Women Empowerment (WCD)",
+    "short_name": "WCD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Youth Affairs and Sports Department",
+    "short_name": "YAS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Administrative Reforms & Training Department",
+    "short_name": "ART",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Ahmedabad Urban Development Authority",
+    "short_name": "AUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Airports Authority of India",
+    "short_name": "AI",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Alang Area Development Authority",
+    "short_name": "AAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Ambaji Area Development Authority",
+    "short_name": "AAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Anand-Vallabh vidhyanagar-Karamsad Urban Dev. Authority",
+    "short_name": "AVVKUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Anjar Area Development Authority",
+    "short_name": "AAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Bardoli Urban Development Authority",
+    "short_name": "BUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Bechraji Area Development Authority [ 24 ]",
+    "short_name": "BAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Bhachau Area Development Authority",
+    "short_name": "BAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Bharuch-Ankaleshwar Urban Development Authority",
+    "short_name": "BAUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Bhavnagar Area Development Authority",
+    "short_name": "BAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Bhuj Area Development Authority",
+    "short_name": "BAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Bridge & Roof Company",
+    "short_name": "BR",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Central Railside Warehouse Company",
+    "short_name": "CRW",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Chief Commissioner of Central GST and Central Excise, Vadodara Zone",
+    "short_name": "Chief Commissioner of Central GST and Ce",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Chief Commissioner, Central Excise, Ahmedabad Zone",
+    "short_name": "CCCEAZ",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Climate Change Department",
+    "short_name": "CC",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Director General of Income Tax (Inv.), Ahmedabad",
+    "short_name": "DGITIA",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Engineering Projects",
+    "short_name": "EP",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "GSFS Capital and Securities Ltd.",
+    "short_name": "GCS",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gandhidham Area Development Authority",
+    "short_name": "GAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gandhinagar Urban Development Authority",
+    "short_name": "GUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "General Administration Department",
+    "short_name": "GA",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Communication & Electronics Ltd.",
+    "short_name": "CE",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Fintex Ltd.",
+    "short_name": "Gujarat Fintex Ltd.",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Housing Board",
+    "short_name": "Gujarat Housing Board",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Infrastructure Development Board",
+    "short_name": "ID",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Maritime Board",
+    "short_name": "Gujarat Maritime Board",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Medicinal plant Board",
+    "short_name": "MP",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Rural Housing Board",
+    "short_name": "RH",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Siltex Ltd.",
+    "short_name": "Gujarat Siltex Ltd.",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat State Construction Co. Ltd.",
+    "short_name": "CC",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat State Khadi Gramodhyog Board",
+    "short_name": "KG",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat State Machine Tools Ltd.",
+    "short_name": "MT",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Texfab Ltd.",
+    "short_name": "Gujarat Texfab Ltd.",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Trans-Receivers Ltd.",
+    "short_name": "TR",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Water Supply & Sewerage Board (GWSSB)",
+    "short_name": "GWSSB",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Himmatnagar Urban Development Authority",
+    "short_name": "HUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Income Tax Appellate Tribunal, Ahmedabad",
+    "short_name": "ITATA",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Income Tax Appellate Tribunal, Rajkot",
+    "short_name": "ITATR",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Income Tax Appellate Tribunal, Surat",
+    "short_name": "ITATS",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Jamnagar Area Development Authority",
+    "short_name": "JAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Junagadh Urban Development Authority",
+    "short_name": "JUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Khajod Area Development Authority",
+    "short_name": "KAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Khajod Urban Development Authority [ 23 ]",
+    "short_name": "KUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Khambhadiya Area Development Authority",
+    "short_name": "KAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Kudremukh Iron Ore Company",
+    "short_name": "KIO",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Legal Department",
+    "short_name": "Legal Department",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Legislative & Parliamentary Affairs Department",
+    "short_name": "LPA",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Morbi-Vankaner Urban Development Authority",
+    "short_name": "MVUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Naini Coal company Ltd.",
+    "short_name": "NC",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Narmada Clean Tech",
+    "short_name": "NCT",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "National Aluminium Company",
+    "short_name": "NA",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Navsari Urban Development Authority",
+    "short_name": "NUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "OFFICE OF THE CHIEF COMMISSIONER OF CUSTOMS GUJARAT ZONE",
+    "short_name": "OCCCZ",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Prinicipal Chief Commissioner of Income Tax (CCA) , Ahmedabad",
+    "short_name": "CCA",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajkot Urban Development Authority",
+    "short_name": "RUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rapar Area Development Authority",
+    "short_name": "RAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Science & Technology Department",
+    "short_name": "ST",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Shamalaji Area Development Authority",
+    "short_name": "SAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Surat Urban Development Authority",
+    "short_name": "SUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Surendranagar-Dudharage-Vadhavan Urban Dev. Authority",
+    "short_name": "SDVUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Vadinar Area Development Authority",
+    "short_name": "VAD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Vadodara Urban Development Authority",
+    "short_name": "VUD",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Administrative Reforms & Coordination Department",
+    "short_name": "ARC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Advocate General office of Rajasthan",
+    "short_name": "AGO",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Ajmer development Authority",
+    "short_name": "AD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Amber Development & Management Authority, Jaipur",
+    "short_name": "ADMJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Animal Husbandry Department, Rajasthan",
+    "short_name": "AH",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Anti Corruption Bureau",
+    "short_name": "ACB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Archaeology and Museum Department",
+    "short_name": "AM",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Bhartiya Lok Kala Mandal, Udaipur",
+    "short_name": "BLKMU",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Biofuel Authority",
+    "short_name": "Biofuel Authority",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Board of Revenue",
+    "short_name": "Board of Revenue",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Chief Commissioner, CGST & Central Excise, Jaipur Zone",
+    "short_name": "Chief Commissioner, CGST & Central Excis",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Ajmer",
+    "short_name": "CA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Alwar",
+    "short_name": "CA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Anupgarh",
+    "short_name": "CA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Balotra",
+    "short_name": "CB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Baran",
+    "short_name": "CB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Barmer",
+    "short_name": "CB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Bikaner",
+    "short_name": "CB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Bundi",
+    "short_name": "CB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Chittorgarh",
+    "short_name": "CC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Dausa",
+    "short_name": "CD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Deedwana-kuchaman",
+    "short_name": "CDK",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Deeg",
+    "short_name": "CD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Gangapur city",
+    "short_name": "CGC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Jalore",
+    "short_name": "CJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Jhalawar",
+    "short_name": "CJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Karauli",
+    "short_name": "CK",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Khairtal",
+    "short_name": "CK",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Kota",
+    "short_name": "CK",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Kotputli-Behror",
+    "short_name": "CKB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Nagaur",
+    "short_name": "CN",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Phalodi",
+    "short_name": "CP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Sawai Madhopur",
+    "short_name": "CSM",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Sikar",
+    "short_name": "CS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate Udaipur",
+    "short_name": "CU",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate kekri",
+    "short_name": "CK",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Banswara",
+    "short_name": "CB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Beawar",
+    "short_name": "CB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Bharatpur",
+    "short_name": "CB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Bhilwara",
+    "short_name": "CB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Churu",
+    "short_name": "CC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Dholpur",
+    "short_name": "CD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Dungarpur",
+    "short_name": "CD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Hanumangarh",
+    "short_name": "CH",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Jaipur",
+    "short_name": "CJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Jaisalmer",
+    "short_name": "CJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Jhunjhunun",
+    "short_name": "CJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Jodhpur",
+    "short_name": "CJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Neem ka thana",
+    "short_name": "CNKT",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Pali",
+    "short_name": "CP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Pratapgarh",
+    "short_name": "CP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Rajasamand",
+    "short_name": "CR",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Salumbar",
+    "short_name": "CS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Sirohi",
+    "short_name": "CS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Sri Ganganagar",
+    "short_name": "CSG",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Collectorate, Tonk",
+    "short_name": "CT",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Colonisation Department",
+    "short_name": "Colonisation Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Command Area Development",
+    "short_name": "CAD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Commercial Taxes Department",
+    "short_name": "CT",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Commissionerate Watershed Development & Soil Conservation",
+    "short_name": "CWDSC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Commissionerate, Mid Day Meal",
+    "short_name": "CMDM",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Consumer Affairs Department",
+    "short_name": "CA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "DIVISIONAL COMMISSIONER JAIPUR",
+    "short_name": "DCJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "DIVISIONAL COMMISSIONER OFFICE, UDAIPUR",
+    "short_name": "DCOU",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Department of Ayurveda",
+    "short_name": "Department of Ayurveda",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Department of Information and Public Relations",
+    "short_name": "IPR",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Department of Personnel",
+    "short_name": "Department of Personnel",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Department of Sainik Welfare",
+    "short_name": "SW",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Departmental Enquiry Department",
+    "short_name": "DE",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Devasthan Department",
+    "short_name": "Devasthan Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Director General of Income Tax (Inv.) Jaipur",
+    "short_name": "DGITIJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Directorate of Specially Abled Person",
+    "short_name": "DSAP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Disaster Management, Relief & Civil Defence",
+    "short_name": "DMRCD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Divisional Commissioner Ajmer",
+    "short_name": "DCA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Divisional Commissioner Bharatpur",
+    "short_name": "DCB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Divisional Commissioner Jodhpur",
+    "short_name": "DCJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Divisional Commissioner, Bikaner",
+    "short_name": "DCB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Divisional Commissioner, Kota",
+    "short_name": "DCK",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Economics and Statistics",
+    "short_name": "ES",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Election Department",
+    "short_name": "Election Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Electrical Inspectorate Department",
+    "short_name": "EI",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Environment Department",
+    "short_name": "Environment Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Evaluation Organization, Planning Department",
+    "short_name": "EOP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Excise Department",
+    "short_name": "Excise Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Factories and Boilers Inspection Department",
+    "short_name": "FBI",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Fisheries Department",
+    "short_name": "Fisheries Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "General Administration Department",
+    "short_name": "GA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gopalan Department",
+    "short_name": "Gopalan Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Government Pesticide Residue Testing Laboratory",
+    "short_name": "GPRTL",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Governors Secretariat",
+    "short_name": "GS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "HCM Rajasthan State Institute of Public Administration (HCM RIPA)",
+    "short_name": "HIPAHR",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Income Tax Appellate Tribunal, Jaipur",
+    "short_name": "ITATJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Income Tax Appellate Tribunal, Jodhpur",
+    "short_name": "ITATJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Indira Gandhi Nahar Project",
+    "short_name": "IGNP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Indira Gandhi Panchayati Raj Ev Gramin Vikas Sansthan, Jaipur",
+    "short_name": "Indira Gandhi Panchayati Raj Ev Gramin V",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Industries Department",
+    "short_name": "Industries Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Inspection Department",
+    "short_name": "Inspection Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Jaipur Development Authority, Jaipur",
+    "short_name": "JDJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Jaipur kathak Kendra, Jaipur",
+    "short_name": "JKKJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Jawahar Kala Kendra",
+    "short_name": "JKK",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Jodhpur Development Authority",
+    "short_name": "JD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Justice Department",
+    "short_name": "Justice Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Language and Library Department",
+    "short_name": "LL",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Law and Legal Affairs Department",
+    "short_name": "LLA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Local Fund Audit Department",
+    "short_name": "LFA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Local Self Government",
+    "short_name": "LSG",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Lokayukta jaipur",
+    "short_name": "LJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Maulana Abul Kalam Azad Arabic Persian Research Institute, Tonk",
+    "short_name": "Maulana Abul Kalam Azad Arabic Persian R",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Minority Affairs Department",
+    "short_name": "MA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Panchayati Raj Department",
+    "short_name": "PR",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Parliament Affairs Department",
+    "short_name": "PA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Planning Department",
+    "short_name": "Planning Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Principal Chief Commissioner of Income Tax  (CCA) , Jaipur",
+    "short_name": "CCA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Printing & Stationery Department",
+    "short_name": "PS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Prison Department",
+    "short_name": "Prison Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Prosecution department",
+    "short_name": "Prosecution department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Public Grievances Redressal",
+    "short_name": "PGR",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Public Works Department",
+    "short_name": "PW",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "RAJASTHAN GRAMEEN AJEEVIKA VIKAS PARISHAD",
+    "short_name": "GAVP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "RAJASTHAN HERITAGE AUTHORITY JAIPUR",
+    "short_name": "HJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "RAJASTHAN SHIKSHA KARMI BOARD",
+    "short_name": "SK",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "RAJASTHAN STATE COUNCIL of EDUCATIONAL RESEARCH and TRAINING, UDAIPUR",
+    "short_name": "CERTU",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Ayurveda Nursing Council Jaipur",
+    "short_name": "ANCJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Civil Services Appellate Tribunal, Jaipur",
+    "short_name": "CSATJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Council of School Education (RCScE)",
+    "short_name": "RCScE",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Housing Board",
+    "short_name": "Rajasthan Housing Board",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Khadi and Village Industries Board",
+    "short_name": "KVI",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Real Estate Regulatory Authority",
+    "short_name": "RER",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Staff Selection Board",
+    "short_name": "SS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan State AYUSH Society",
+    "short_name": "AS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan State Agricultural Marketing Board",
+    "short_name": "AM",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan State Archives",
+    "short_name": "Rajasthan State Archives",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan State Commission for Protection of Child Rights",
+    "short_name": "CPCR",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan State Commission for Women",
+    "short_name": "CW",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan State Haj Committee Jaipur",
+    "short_name": "HCJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan State Human Rights Commission",
+    "short_name": "HRC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan State Open School, Jaipur",
+    "short_name": "OSJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan State Text Book Board , JAIPUR",
+    "short_name": "TBJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan State information Commission",
+    "short_name": "IC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Tax Board Ajmer",
+    "short_name": "TA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Water Supply and Sewerage Management Board",
+    "short_name": "WSSM",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Ravindra Manch Society",
+    "short_name": "RMS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Registration and Stamps",
+    "short_name": "RS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Resident Commissioner",
+    "short_name": "RC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Settlement Department",
+    "short_name": "Settlement Department",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Society for Social Audit Accountability & Transparency Rajasthan, Jaipur",
+    "short_name": "SSAATJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "State Election Commission",
+    "short_name": "EC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "State Enterprise",
+    "short_name": "State Enterprise",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "State Forensic Science Laboratory",
+    "short_name": "FSL",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Town Planning Department",
+    "short_name": "TP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Treasury and Accounts",
+    "short_name": "TA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Unani Medicine Department Rajasthan",
+    "short_name": "UM",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "ZILA PARISHAD BHILWARA",
+    "short_name": "ZPB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "ZILA PARISHAD CHURU",
+    "short_name": "ZPC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "ZILA PARISHAD DUNGARPUR",
+    "short_name": "ZPD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "ZILA PARISHAD HANUMANGARH",
+    "short_name": "ZPH",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "ZILA PARISHAD JAISALMER",
+    "short_name": "ZPJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "ZILA PARISHAD JODHPUR",
+    "short_name": "ZPJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "ZILA PARISHAD KOTA",
+    "short_name": "ZPK",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "ZILA PARISHAD TONK",
+    "short_name": "ZPT",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Ajmer",
+    "short_name": "ZPA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Alwar",
+    "short_name": "ZPA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Banswara",
+    "short_name": "ZPB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Baran",
+    "short_name": "ZPB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Barmer",
+    "short_name": "ZPB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Bharatpur",
+    "short_name": "ZPB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Bikaner",
+    "short_name": "ZPB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Bundi",
+    "short_name": "ZPB",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Chittorgarh",
+    "short_name": "ZPC",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Dausa",
+    "short_name": "ZPD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Dholpur",
+    "short_name": "ZPD",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad JHUNJHUNU",
+    "short_name": "ZPJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Jaipur",
+    "short_name": "ZPJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Jalor",
+    "short_name": "ZPJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Jhalawar",
+    "short_name": "ZPJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Karauli",
+    "short_name": "ZPK",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Nagaur",
+    "short_name": "ZPN",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Pali",
+    "short_name": "ZPP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Pratapgarh",
+    "short_name": "ZPP",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Rajsamand",
+    "short_name": "ZPR",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Sawai Madhopur",
+    "short_name": "ZPSM",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Sikar",
+    "short_name": "ZPS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Sirohi",
+    "short_name": "ZPS",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Sri Ganganagar",
+    "short_name": "ZPSG",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Zila Parishad Udaipur",
+    "short_name": "ZPU",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Gujarat Pavitra Yatradham Vikas Board",
+    "short_name": "PYV",
+    "state": "GJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Brij Bhasha Academy, Jaipur",
+    "short_name": "BBAJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Foundation",
+    "short_name": "Rajasthan Foundation",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Hindi Granth Academy",
+    "short_name": "HGA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Lalit Kala Academy, Jaipur",
+    "short_name": "LKAJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Madarsa Board",
+    "short_name": "Rajasthan Madarsa Board",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Oriental Research Institure, Jodhpur",
+    "short_name": "ORIJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Punjabi Bhasha Academy Sri Ganaganagar",
+    "short_name": "PBASG",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Sahitya Academy",
+    "short_name": "SA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Sangeet Natak Akademi, Jodhpur",
+    "short_name": "SNAJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Sanskrit Academy",
+    "short_name": "SA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Sindhi Academy",
+    "short_name": "SA",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthan Urdu Academy, Jaipur",
+    "short_name": "UAJ",
+    "state": "RJ",
+    "tier": 5
+  },
+  {
+    "legal_name": "Rajasthani Language Literature Culture Academy",
+    "short_name": "RLLCA",
+    "state": "RJ",
+    "tier": 5
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "source": "mstcauction",
+  "url": "https://mstcauction.com/",
+  "method": "GET",
+  "contains": ["Scrap", "Customs", "Coal", "Linkage"],
+  "fill": {
+    "title": "{item}",
+    "asset": "auction-family"
+  }
+}

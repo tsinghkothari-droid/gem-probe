@@ -1,4 +1,6 @@
 /target
 *.csv
+state.json
+intel.db
 .env
 .env.*

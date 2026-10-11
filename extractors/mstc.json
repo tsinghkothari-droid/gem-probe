@@ -1,0 +1,10 @@
+{
+  "source": "mstc",
+  "url": "https://www.mstcecommerce.com/",
+  "method": "GET",
+  "contains": ["Scrap", "Customs", "Coal", "Linkage"],
+  "fill": {
+    "title": "{item}",
+    "asset": "auction-family"
+  }
+}

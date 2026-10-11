@@ -1,0 +1,10 @@
+{
+  "source": "c1india",
+  "url": "https://eauctions.c1india.com/",
+  "method": "GET",
+  "row": "(?P<place>[A-Z][A-Za-z]+(?: & [A-Z][A-Za-z]+)?) (?P<date>\\d{2}-[A-Za-z]{3}-\\d{4})",
+  "fill": {
+    "title": "{place} {date}",
+    "asset": "auction"
+  }
+}
