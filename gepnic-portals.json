@@ -51,7 +51,7 @@
   },
   {
     "host": "eprocure.goa.gov.in",
-    "url": "http://eprocure.goa.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "url": "https://eprocure.goa.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
     "organisation": ""
   },
   {
@@ -161,7 +161,7 @@
   },
   {
     "host": "mptenders.gov.in",
-    "url": "http://mptenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "url": "https://mptenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
     "organisation": ""
   },
   {
@@ -224,5 +224,29 @@
     "url": "https://eproc2.bihar.gov.in/EPSV2Web/openarea/tenderListingPage.action",
     "organisation": "",
     "kind": "bihar"
+  },
+  {
+    "host": "kppp.karnataka.gov.in",
+    "url": "https://kppp.karnataka.gov.in/#/portal/searchTender/live",
+    "kind": "karnataka",
+    "organisation": ""
+  },
+  {
+    "host": "shpp.rajasthan.gov.in",
+    "url": "https://shpp.rajasthan.gov.in/",
+    "kind": "shpp",
+    "organisation": ""
+  },
+  {
+    "host": "tender.apeprocurement.gov.in",
+    "url": "https://tender.apeprocurement.gov.in/",
+    "kind": "ap_home",
+    "organisation": ""
+  },
+  {
+    "host": "tender.telangana.gov.in",
+    "url": "https://tender.telangana.gov.in/",
+    "kind": "telangana_home",
+    "organisation": ""
   }
 ]

@@ -13,13 +13,15 @@ pub struct Options {
     pub max_organisations: usize,
     #[arg(long, default_value_t = 90, value_parser = clap::value_parser!(u64).range(1..))]
     pub portal_timeout: u64,
+    #[arg(long, default_value_t = 2, value_parser = clap::value_parser!(u32).range(1..))]
+    pub listing_pages: u32,
     #[arg(long, default_value = "none", value_parser = ["none", "local"])]
     pub captcha_solver: String,
 }
 
 impl Default for Options {
     fn default() -> Self {
-        Self { portals: Vec::new(), max_organisations: 0, portal_timeout: 90, captcha_solver: "none".into() }
+        Self { portals: Vec::new(), max_organisations: 0, portal_timeout: 90, listing_pages: 2, captcha_solver: "none".into() }
     }
 }
 
@@ -48,7 +50,7 @@ pub struct Notice {
 pub struct Scan {
     pub organisation: String,
     #[serde(default)]
-    pub advertised_count: usize,
+    pub advertised_count: Option<usize>,
     #[serde(default)]
     pub parsed_count: Option<usize>,
     pub status: String,
@@ -66,6 +68,8 @@ pub struct Report {
     pub status: String,
     #[serde(default)]
     pub organisation_filter: String,
+    #[serde(default)]
+    pub scope: String,
     #[serde(default)]
     pub organisations_listed: usize,
     #[serde(default)]
@@ -93,6 +97,10 @@ impl Report {
             return format!("{state}; {} records, advertised total {}", self.tenders.len(),
                 self.advertised_active_tenders.map(|n| n.to_string()).unwrap_or_else(|| "unknown".into()));
         }
+        if !self.kind.is_empty() {
+            let state = if self.complete_selected_snapshot { "complete selected listing" } else { "partial public listing" };
+            return format!("{state}; {} records; {}", self.tenders.len(), self.scope);
+        }
         let matched = self.scans.iter().filter(|s| s.status == "count_matches").count();
         let scope = if self.organisation_filter.is_empty() {
             "all organisations".to_string()
@@ -118,7 +126,7 @@ impl Report {
             let solver_error = self.captcha_attempts.last().and_then(|a| a.get("error")).and_then(|e| e.as_str());
             return Some(solver_error.map(|e| format!("{}: {e}", self.status)).unwrap_or_else(|| self.status.clone()));
         }
-        let failures = self.scans.iter().filter(|s| s.status != "count_matches")
+        let failures = self.scans.iter().filter(|s| !matches!(s.status.as_str(), "count_matches" | "page_limit" | "sample_only" | "unverified_total"))
             .map(|s| format!("{}: {}", s.organisation, s.error.as_deref().unwrap_or(&s.status)))
             .collect::<Vec<_>>();
         if failures.is_empty() { None } else { Some(failures.join("; ")) }
@@ -143,6 +151,7 @@ pub async fn fetch(options: Options) -> Result<Vec<Report>, String> {
             .arg(options.max_organisations.to_string())
             .arg("--timeout").arg(options.portal_timeout.to_string())
             .arg("--captcha-solver").arg(options.captcha_solver)
+            .arg("--listing-pages").arg(options.listing_pages.to_string())
             .stdin(Stdio::piped()).stdout(Stdio::piped()).stderr(Stdio::inherit())
             .spawn().map_err(|e| format!("start organisation collector (requires Python 3 and curl): {e}"))?;
         let input = serde_json::to_vec(&portals).map_err(|e| e.to_string())?;
@@ -160,6 +169,19 @@ pub async fn fetch(options: Options) -> Result<Vec<Report>, String> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn public_samples_keep_unknown_totals_without_a_false_failure() {
+        let report: Report = serde_json::from_value(serde_json::json!({
+            "host":"example.test", "kind":"ap_home", "scope":"Homepage only",
+            "source_url":"https://example.test", "checked_at":"2026-10-11",
+            "status":"records_returned", "scans":[{"organisation":"Homepage",
+            "advertised_count":null, "parsed_count":5, "status":"sample_only"}], "tenders":[]
+        })).unwrap();
+        assert!(report.coverage().contains("partial public listing"));
+        assert!(report.coverage().contains("Homepage only"));
+        assert!(report.failure().is_none());
+    }
 
     #[test]
     fn aliases_select_the_intended_buyers() {

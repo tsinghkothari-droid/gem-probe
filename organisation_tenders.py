@@ -385,6 +385,194 @@ def collect_bihar(timeout=30):
     return result
 
 
+class PublicSession:
+    def __init__(self, timeout):
+        self.timeout = timeout
+        self.directory = tempfile.TemporaryDirectory(prefix='gem-probe-public-')
+        self.cookie = Path(self.directory.name) / 'cookies'
+        self.headers = Path(self.directory.name) / 'headers'
+
+    def close(self):
+        self.directory.cleanup()
+
+    def fetch(self, url, data=None, content_type='application/json'):
+        command = ['curl', '--fail', '--silent', '--show-error', '--max-time', str(self.timeout),
+                   '--max-filesize', '16000000', '--proto', '=https',
+                   '--cookie', str(self.cookie), '--cookie-jar', str(self.cookie),
+                   '--dump-header', str(self.headers), url]
+        if data is not None:
+            command += ['--header', 'Content-Type: ' + content_type, '--data-binary', '@-']
+        response = subprocess.run(command, input=data, capture_output=True)
+        if response.returncode:
+            raise ValueError(response.stderr.decode('utf-8', 'replace').strip()[:200])
+        headers = self.headers.read_text(errors='replace')
+        return response.stdout.decode('utf-8', 'replace'), headers
+
+
+def public_notice(identifier, title, buyer, reference, closing, published, source, opening=''):
+    return {'id': identifier, 'title': text(title), 'reference': reference or '',
+            'organisation': buyer or '', 'buyer_chain': buyer or '', 'closing': closing or '',
+            'published': published or '', 'opening': opening or '', 'source_url': source}
+
+
+def karnataka_notices(records, source, category='UNKNOWN'):
+    def date(value):
+        if not value:
+            return ''
+        try:
+            return datetime.strptime(value, '%d-%m-%Y %H:%M:%S').isoformat() + '+05:30'
+        except ValueError:
+            return value
+    return [public_notice('KPPP_' + str(row.get('category') or category) + '_' + str(row['id']), row['title'],
+                          ' || '.join(filter(None, [row.get('deptName'), row.get('locationName')])),
+                          row.get('tenderNumber'), date(row.get('tenderClosureDate')),
+                          date(row.get('publishedDate')), source)
+            for row in records if row.get('id') and row.get('title')]
+
+
+def shpp_notices(records, source):
+    notices = []
+    for row in records:
+        identifier = row.get('ubnNumber') or row.get('tenderRef')
+        if not identifier or not row.get('titleName'):
+            continue
+        notices.append(public_notice('RAJ_' + str(identifier), row['titleName'],
+                       ' || '.join(filter(None, [row.get('departmentName'), row.get('officeName')])),
+                       row.get('tenderRef'), row.get('bidSubmissionEndDate'), row.get('publishedDate'),
+                       source, row.get('bidOpeningDate')))
+    return notices
+
+
+class HomepageNotices(HTMLParser):
+    def __init__(self, prefix, source):
+        super().__init__()
+        self.prefix, self.source = prefix, source
+        self.notices = {}
+        self.current = None
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'a' and re.search(r'\bviewtender\(\d+\)', attrs.get('onclick', ''), re.I):
+            title = attrs.get('title', '')
+            if title.startswith('(') and title.endswith(')'):
+                title = title[1:-1]
+            self.current = {'title': title, 'id': ''}
+
+    def handle_data(self, data):
+        if self.current is not None:
+            self.current['id'] += data
+
+    def handle_endtag(self, tag):
+        if tag == 'a' and self.current is not None:
+            identifier = self.current['id'].strip()
+            if identifier.isdigit() and self.current['title']:
+                self.notices[identifier] = public_notice(self.prefix + identifier, self.current['title'],
+                                                        '', '', '', '', self.source)
+            self.current = None
+
+
+def homepage_notices(body, prefix, source):
+    parser = HomepageNotices(prefix, source)
+    parser.feed(re.sub(r'<!--[\s\S]*?-->', '', body))
+    return list(parser.notices.values())
+
+
+def collect_public(portal, timeout=30, pages=2):
+    source, kind = portal['url'], portal['kind']
+    result = {'host': portal['host'], 'kind': kind, 'source_url': source,
+              'checked_at': datetime.now(timezone.utc).isoformat(), 'status': 'unresolved',
+              'scope': '', 'scans': [], 'tenders': [], 'complete_active_snapshot': False,
+              'complete_selected_snapshot': False, 'advertised_active_tenders': None}
+    session = PublicSession(timeout)
+    seen = set()
+
+    def retain(notices):
+        fresh = 0
+        for notice in notices:
+            if notice['id'] not in seen:
+                result['tenders'].append(notice)
+                seen.add(notice['id'])
+                fresh += 1
+        return fresh
+
+    try:
+        if kind in ('ap_home', 'telangana_home'):
+            result['scope'] = 'Public homepage notices only, including any displayed corrigenda; buyer names and dates not extracted'
+            body, _ = session.fetch(source)
+            form = CaptchaForm()
+            form.feed(body)
+            fields = next((f['fields'] for f in form.forms if 'CSRFToken' in f['fields']), None)
+            if fields is None:
+                raise ValueError('Anonymous entry form was not found')
+            body, _ = session.fetch(urljoin(source, 'login.html'), urlencode(fields).encode(),
+                                    'application/x-www-form-urlencoded')
+            retain(homepage_notices(body, 'AP_' if kind == 'ap_home' else 'TS_', urljoin(source, 'login.html')))
+            result['scans'].append({'organisation': 'Public homepage', 'advertised_count': None,
+                                    'parsed_count': len(result['tenders']), 'status': 'sample_only'})
+        else:
+            if kind == 'karnataka':
+                base = 'https://kppp.karnataka.gov.in/supplier-registration-service/v1/api/portal-service/'
+                routes = [('GOODS', base + 'search-eproc-tenders'), ('WORKS', base + 'works/search-eproc-tenders'),
+                          ('SERVICES', base + 'services/search-eproc-tenders')]
+                result['scope'] = 'Published OPEN tenders: goods, works, services; bounded pages per category'
+            else:
+                base = 'https://shpp.rajasthan.gov.in/data/tenderuploadservice/api/v1/alltenders/'
+                routes = [('SHPP', base + 'publishedTenders'), ('SPPP', base + 'publishedTendersSppp')]
+                result['scope'] = 'Published SHPP and SPPP listings; SPPP full total is unverified'
+            for label, endpoint in routes:
+                scan = {'organisation': label, 'advertised_count': None, 'parsed_count': 0, 'status': 'page_limit'}
+                local_ids = set()
+                result['scans'].append(scan)
+                try:
+                    for page in range(pages):
+                        if page:
+                            time.sleep(1)
+                        if kind == 'karnataka':
+                            url = endpoint + '?' + urlencode({'page': page, 'size': 100, 'order-by-tender-publish': 'true'})
+                            payload = {'category': label, 'status': 'PUBLISHED', 'tenderType': 'OPEN'}
+                        else:
+                            url, payload = endpoint, {'pageNumber': page, 'pageSize': 100}
+                        body, headers = session.fetch(url, json.dumps(payload).encode())
+                        data = json.loads(body)
+                        if kind == 'karnataka':
+                            records = data
+                            match = re.search(r'^x-total-count:\s*(\d+)', headers, re.I | re.M)
+                            total = int(match[1]) if match else None
+                            notices = karnataka_notices(records, source, label) if isinstance(records, list) else []
+                        else:
+                            if data.get('msgStatus') != 'S' or (label == 'SPPP' and not data.get('result', {}).get('spppIncluded')):
+                                raise ValueError('Public listing reported a failed or deferred response')
+                            records = data['result'].get('publishedTenders')
+                            total = data['result'].get('shppRecordCount') if label == 'SHPP' else None
+                            notices = shpp_notices(records, source) if isinstance(records, list) else []
+                        if not isinstance(records, list):
+                            raise ValueError('Unexpected public listing response format')
+                        scan['advertised_count'] = total
+                        old_count = len(local_ids)
+                        local_ids.update(row['id'] for row in notices)
+                        retain(notices)
+                        scan['parsed_count'] = len(local_ids)
+                        if len(notices) != len(records):
+                            scan['status'] = 'parse_mismatch'
+                            break
+                        if total is not None and len(local_ids) == total:
+                            scan['status'] = 'count_matches'
+                            break
+                        if not records or len(local_ids) == old_count:
+                            scan['status'] = 'count_mismatch' if total is not None else 'unverified_total'
+                            break
+                except Exception as error:
+                    scan.update(status='fetch_error', error=str(error)[:200])
+            result['complete_selected_snapshot'] = bool(result['scans']) and all(
+                s['status'] == 'count_matches' for s in result['scans'])
+        result['status'] = 'records_returned' if result['tenders'] else 'no_records_returned'
+    except Exception as error:
+        result.update(status='fetch_error', error=str(error)[:200])
+    finally:
+        session.close()
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description='Collect public active tenders from GePNIC and Bihar.')
     source = parser.add_mutually_exclusive_group(required=True)
@@ -396,12 +584,19 @@ def main():
     parser.add_argument('--transport', choices=('urllib', 'curl'), default='urllib')
     parser.add_argument('--captcha-solver', choices=('none', 'local'), default='none')
     parser.add_argument('--timeout', type=int, default=30, help='Seconds per request; large organisations can need more time.')
+    parser.add_argument('--listing-pages', type=int, default=2, help='Pages per category for public JSON listings.')
     parser.add_argument('--query', default='', help='Filter collected titles, references and buyer chains locally.')
     args = parser.parse_args()
-    if args.max_orgs < 0 or args.timeout < 1 or (args.url and not args.url.startswith('https://')):
+    if args.max_orgs < 0 or args.timeout < 1 or args.listing_pages < 1 or (args.url and not args.url.startswith('https://')):
         parser.error('Use an HTTPS URL, a nonnegative organisation limit and a positive timeout.')
     def run_one(portal):
-        if portal.get('kind') == 'bihar':
+        if not portal.get('url', '').startswith('https://'):
+            report = {'source_url': portal.get('url', ''), 'checked_at': datetime.now(timezone.utc).isoformat(),
+                      'status': 'configuration_error', 'error': 'Portal URL must use HTTPS',
+                      'complete_active_snapshot': False, 'scans': [], 'tenders': []}
+        elif portal.get('kind') in ('karnataka', 'shpp', 'ap_home', 'telangana_home'):
+            report = collect_public(portal, timeout=args.timeout, pages=args.listing_pages)
+        elif portal.get('kind') == 'bihar':
             report = collect_bihar(timeout=args.timeout)
         else:
             report = collect(portal['url'], args.max_orgs, portal.get('organisation', ''),
@@ -418,8 +613,9 @@ def main():
 
     if args.batch:
         portals = json.load(sys.stdin)
-        if not isinstance(portals, list) or any(not p.get('url', '').startswith('https://') for p in portals):
-            parser.error('Batch input must be a list of HTTPS portal configurations.')
+        if not isinstance(portals, list) or any(not isinstance(p, dict) or not isinstance(p.get('host'), str)
+                                                or not isinstance(p.get('url'), str) for p in portals):
+            parser.error('Batch input must be a list of portal configurations with host and URL strings.')
         with ThreadPoolExecutor(max_workers=4) as pool:
             report = list(pool.map(run_one, portals))
     else:

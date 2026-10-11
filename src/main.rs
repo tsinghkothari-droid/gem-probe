@@ -45,7 +45,7 @@ enum Command {
     },
     /// Open every public feed once and print whether it returned rows.
     Sample,
-    /// Collect active GePNIC and Bihar listings with coverage counts.
+    /// Collect public tender listings with coverage counts.
     Organisations {
         #[command(flatten)]
         options: organisation::Options,
@@ -388,7 +388,9 @@ async fn watch(
                     if !tender_ids.insert(notice.id.clone()) { continue; }
                     let text = format!("{} {} {}", notice.title, notice.reference, notice.buyer_chain);
                     push_title_row(&mut rows, &mut this_run, &known, &profile,
-                        if report.kind == "bihar" { "Bihar EPS".into() } else { "GePNIC".into() }, notice.id, notice.buyer_chain, notice.title, text,
+                        match report.kind.as_str() { "bihar" => "Bihar EPS", "karnataka" => "Karnataka KPPP",
+                            "shpp" => "Rajasthan SHPP", "ap_home" => "Andhra Pradesh",
+                            "telangana_home" => "Telangana", _ => "GePNIC" }.into(), notice.id, notice.buyer_chain, notice.title, text,
                         notice.closing, notice.source_url);
                 }
                 feeds.push(FeedStat { name: report.host, rows: count, error, detail: Some(detail) });

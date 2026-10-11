@@ -11,9 +11,9 @@ cargo run --release -- run \
   --state state/varonis.json
 ```
 
-The run searches GeM, collects GePNIC organisation listings and Bihar EPS records, and reads four CPPP lists. It reports feed errors and partial coverage. Title-only matches remain separate from matches in bill text.
+The run searches GeM, collects GePNIC, Bihar EPS, Karnataka, and Rajasthan SHPP listings, reads AP/Telangana homepage notices, and reads four CPPP lists. It reports feed errors and partial coverage. Title-only matches remain separate from matches in bill text.
 
-Use `--portal HOST` to select public listing hosts. Use `--max-organisations N` for a bounded partial scan. These options do not limit GeM phrases or CPPP lists. The default scans all configured public listing hosts and organisations.
+Use `--portal HOST` to select public listing hosts. Use `--max-organisations N` for a bounded partial scan. These options do not limit GeM phrases or CPPP lists. The default scans all configured hosts and GePNIC organisations. Karnataka and Rajasthan use `--listing-pages`, which defaults to two per category. AP and Telangana have homepage-only coverage.
 
 Use `organisations --out out/active.json` to export raw public tender records and coverage counts. Use `boards` for the older six-site by-date diagnostic. `fetch` and `ask` remain separate auction/database tools.
 

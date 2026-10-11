@@ -1,10 +1,11 @@
 import json
+import io
 import subprocess
 import sys
 import unittest
 from unittest.mock import MagicMock, patch
 
-from organisation_tenders import bihar_notices, collect, collect_bihar, restore_case, unlock_directory
+from organisation_tenders import bihar_notices, collect, collect_bihar, main, restore_case, unlock_directory
 
 
 class CaptchaTests(unittest.TestCase):
@@ -80,6 +81,24 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(len(result['tenders']), 1)
         self.assertFalse(result['complete_selected_snapshot'])
         self.assertFalse(result['complete_active_snapshot'])
+
+    def test_invalid_url_does_not_abort_other_hosts(self):
+        portals = [{'host': 'bad.test', 'url': 'http://bad.test'},
+                   {'host': 'good.test', 'url': 'https://good.test'}]
+        output = io.StringIO()
+        with patch('sys.argv', ['collector', '--batch', '--out', '-']), \
+             patch('sys.stdin', io.StringIO(json.dumps(portals))), \
+             patch('sys.stdout', output), patch('sys.stderr', io.StringIO()), \
+             patch('organisation_tenders.collect', return_value={'status': 'records_returned', 'tenders': []}) as collect_mock:
+            main()
+        reports = json.loads(output.getvalue())
+        self.assertEqual([r['status'] for r in reports], ['configuration_error', 'records_returned'])
+        collect_mock.assert_called_once()
+
+    def test_every_configured_portal_uses_https(self):
+        from pathlib import Path
+        portals = json.loads(Path('gepnic-portals.json').read_text())
+        self.assertTrue(all(p['url'].startswith('https://') for p in portals))
 
     def test_batch_stdout_is_json(self):
         result = subprocess.run([sys.executable, 'organisation_tenders.py', '--batch', '--out', '-'],

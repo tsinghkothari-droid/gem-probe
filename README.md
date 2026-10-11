@@ -1,6 +1,6 @@
 # gem-probe
 
-Watch public GeM, GePNIC, Bihar EPS, and CPPP tender feeds for the work a company sells.
+Watch public GeM, GePNIC, Bihar EPS, Karnataka KPPP, Rajasthan SHPP, AP, Telangana, and CPPP tender feeds for the work a company sells.
 
 An agent looks at the company first: products, where they are used, and the words a tender bill would use. That becomes a profile. The watch searches those phrases and keeps a bid only when the returned bill text contains one of the company's keep terms. Re-running the same command with `--state` reports only bids that were not in the last run.
 
@@ -33,7 +33,7 @@ If the page asks for a captcha, an OTP, or a password and no row is found, the r
 
 `run` is the daily command. `watch` calls the same path. Install Python 3 and curl alongside the Rust binary.
 
-The run searches GeM phrases, collects active listings from 44 GePNIC hosts and Bihar EPS, and reads four CPPP lists. It scans every listed organisation by default. Large portals can take several minutes. A GeM connection failure appears in the report while other feeds continue.
+The run searches GeM phrases, collects listings from 49 configured hosts, and reads four CPPP lists. The hosts include 44 GePNIC portals, Bihar EPS, Karnataka KPPP, Rajasthan SHPP, AP, and Telangana. It scans every listed GePNIC organisation by default. Other coverage limits appear below. Large portals can take several minutes. A GeM connection failure appears in the report while other feeds continue.
 
 ```bash
 cargo run --release -- run \
@@ -128,7 +128,7 @@ cargo run --release -- organisations \
   --out out/active-tenders.json
 ```
 
-Omit `--portal` to select all configured hosts. Repeat it to select several. `--max-organisations 0` scans every matching organisation and is the Rust default. Set a positive limit for a partial scan. `--portal-timeout 90` sets the timeout for each request. These limits apply to GePNIC organisation requests; Bihar returns its complete public list in one response.
+Omit `--portal` to select all configured hosts. Repeat it to select several. `--max-organisations 0` scans every matching organisation and is the Rust default. Set a positive limit for a partial scan. `--portal-timeout 90` sets the timeout for each request. `--max-organisations` applies only to GePNIC. `--portal-timeout` applies to each collector request. Bihar returns its public list in one response.
 
 BEL, HSL, MDL, and GSL domains share a directory. Their configuration selects the named company, so an unrelated BEML listing does not count as that company's result. The daily run removes duplicate GePNIC tender IDs across hosts.
 
@@ -147,6 +147,30 @@ python3 organisation_tenders.py \
 
 The standalone default is two organisations. Its local `--query` filter checks titles, references, and buyer chains. Normal daily profile matching checks these listing fields and labels the result as title-only coverage.
 
+## Additional public routes
+
+Goa and Madhya Pradesh now use verified HTTPS URLs. An invalid HTTP entry produces a `configuration_error` for that host without stopping valid entries.
+
+Karnataka uses its public JSON listing for published OPEN tenders in goods, works, and services. `--listing-pages` defaults to two pages of 100 records per category. Increase it for broader coverage. A matching category total can establish complete selected coverage; reserved and prequalification tenders are outside this filter.
+
+Rajasthan SHPP reads both its SHPP and SPPP published-tender feeds. The same page limit applies to each feed. SPPP's reported count increases with pagination, so it is not treated as a verified full total.
+
+AP and Telangana follow the anonymous entry form and read public homepage notices. These may include corrigenda. Full-list requests remain unresolved. Homepage records have IDs and titles; buyer names, references, and dates remain empty where they were not extracted. Their reports always state partial coverage.
+
+```bash
+cargo run --release -- organisations --portal kppp.karnataka.gov.in \
+  --portal shpp.rajasthan.gov.in --listing-pages 2 --out out/public-listings.json
+```
+
+A bounded check of every configured host:
+
+```bash
+cargo run --release -- organisations --max-organisations 1 --listing-pages 1 \
+  --portal-timeout 25 --out out/all-hosts.json
+```
+
+No browser automation, paid solver, CAPTCHA submission, or login is required for these added routes. See [public-route validation](public-route-validation.md) for results and limits.
+
 ## Optional free CAPTCHA attempt
 
 The default is `--captcha-solver none`. `--captcha-solver local` tries an embedded GePNIC image at most twice. It keeps the same session and refreshes hidden form fields after rejection. It uses `ddddocr` and Pillow in the selected Python 3 environment. If Tesseract is on `PATH`, it also checks character case. No paid service or API key is used.
@@ -164,7 +188,7 @@ Live Mizoram tests on 11 October 2026 rejected the automatic predictions. The fa
 
 ```bash
 cargo test --offline
-python3 -m unittest discover -s tests -p 'test_organisation*.py'
+python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
 A separate network test checks CPPP pagination:
