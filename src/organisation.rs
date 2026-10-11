@@ -15,13 +15,11 @@ pub struct Options {
     pub portal_timeout: u64,
     #[arg(long, default_value_t = 2, value_parser = clap::value_parser!(u32).range(1..))]
     pub listing_pages: u32,
-    #[arg(long, default_value = "none", value_parser = ["none", "local"])]
-    pub captcha_solver: String,
 }
 
 impl Default for Options {
     fn default() -> Self {
-        Self { portals: Vec::new(), max_organisations: 0, portal_timeout: 90, listing_pages: 2, captcha_solver: "none".into() }
+        Self { portals: Vec::new(), max_organisations: 0, portal_timeout: 90, listing_pages: 2 }
     }
 }
 
@@ -150,7 +148,6 @@ pub async fn fetch(options: Options) -> Result<Vec<Report>, String> {
             .args(["-c", COLLECTOR, "--batch", "--out", "-", "--transport", "curl", "--max-orgs"])
             .arg(options.max_organisations.to_string())
             .arg("--timeout").arg(options.portal_timeout.to_string())
-            .arg("--captcha-solver").arg(options.captcha_solver)
             .arg("--listing-pages").arg(options.listing_pages.to_string())
             .stdin(Stdio::piped()).stdout(Stdio::piped()).stderr(Stdio::inherit())
             .spawn().map_err(|e| format!("start organisation collector (requires Python 3 and curl): {e}"))?;

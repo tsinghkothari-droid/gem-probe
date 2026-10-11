@@ -4,11 +4,10 @@ Use `run` for a company profile. `watch` uses the same collection path.
 
 ```bash
 cargo run --release -- run \
-  --profile profiles/varonis.json \
-  --accounts accounts/varonis-gcv.json \
+  --profile profiles/navoday-sciences.json \
   --within 14 \
-  --out out/varonis.md \
-  --state state/varonis.json
+  --out out/navoday.md \
+  --state state/navoday.json
 ```
 
 The run searches GeM, collects GePNIC, Bihar EPS, Karnataka, and Rajasthan SHPP listings, reads AP/Telangana homepage notices, and reads four CPPP lists. It reports feed errors and partial coverage. Title-only matches remain separate from matches in bill text.
@@ -19,6 +18,6 @@ Use `organisations --out out/active.json` to export raw public tender records an
 
 Start a new company with `prompt`, then save and review its profile JSON. Use buyer terms rather than brand names. `keep` and `drop` control matches. Account names match buyer fields.
 
-Optional local OCR requires `--captcha-solver local` and the dependencies in the README. It has not resolved Mizoram. There is no paid-solver dependency. CPPP Results of Tenders, OTP-only services, and other unimplemented portals remain outside the active-list collection.
+The collector does not submit a captcha, an OTP, or a login. CPPP Results of Tenders, OTP-only services, and other unimplemented portals remain outside the active-list collection.
 
 See [README.md](README.md) for commands and [integration-validation.md](integration-validation.md) for tested results.

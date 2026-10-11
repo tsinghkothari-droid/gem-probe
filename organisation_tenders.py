@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 import argparse
-import base64
 import json
-import io
 import re
 import subprocess
 import sys
@@ -97,89 +95,7 @@ class CaptchaForm(HTMLParser):
             self.select = None
 
 
-def restore_case(prediction, reference):
-    if not re.fullmatch(r'[A-Za-z0-9]{6}', prediction):
-        return prediction
-    position = 0
-    corrected = []
-    for character in prediction:
-        match = reference.casefold().find(character.casefold(), position)
-        if match < 0:
-            return prediction
-        corrected.append(reference[match])
-        position = match + 1
-    return ''.join(corrected)
-
-
-def solve_image(image, solver):
-    try:
-        import ddddocr
-        from PIL import Image
-    except ImportError:
-        raise ValueError('Local solving requires ddddocr and Pillow in the Python environment') from None
-    prediction = ddddocr.DdddOcr(show_ad=False).classification(image, png_fix=True)
-    source = Image.open(io.BytesIO(image)).convert('RGBA')
-    background = Image.new('RGBA', source.size, 'white')
-    background.alpha_composite(source)
-    prepared = background.convert('RGB').resize((source.width * 4, source.height * 4))
-    data = io.BytesIO()
-    prepared.save(data, format='PNG')
-    try:
-        output = subprocess.run(['tesseract', 'stdin', 'stdout', '--psm', '7',
-                                 '-c', 'tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789',
-                                 '-c', 'load_system_dawg=0', '-c', 'load_freq_dawg=0'],
-                                input=data.getvalue(), capture_output=True, timeout=20, check=True)
-        reference = output.stdout.decode().strip()
-    except (FileNotFoundError, subprocess.SubprocessError):
-        return prediction
-    corrected = restore_case(prediction, reference)
-    if corrected != prediction:
-        return corrected
-    if re.fullmatch(r'[A-Za-z0-9]{6}', reference):
-        return reference
-    return prediction
-
-
-def unlock_directory(directory, url, fetch, solver):
-    attempts = []
-    for number in range(1, 3):
-        parser = CaptchaForm()
-        parser.feed(directory)
-        form = next((f for f in parser.forms if 'captchaText' in f['fields']), None)
-        attempt = {'attempt': number, 'solver': solver}
-        attempts.append(attempt)
-        if form is None or not (form['image'] or '').startswith('data:image/'):
-            attempt['status'] = 'unsupported_challenge'
-            break
-        target = urljoin(url, form['action'])
-        if urlparse(target).netloc != urlparse(url).netloc or urlparse(target).scheme != 'https':
-            attempt['status'] = 'invalid_form_action'
-            break
-        try:
-            answer = solve_image(base64.b64decode(form['image'].split(',', 1)[1]), solver)
-        except Exception as error:
-            attempt.update(status='solver_error', error=str(error)[:200])
-            break
-        if not re.fullmatch(r'[A-Za-z0-9]{6}', answer):
-            attempt['status'] = 'invalid_prediction'
-            directory = fetch(url)
-            continue
-        fields = dict(form['fields'])
-        fields['captchaText'] = answer
-        directory = fetch(target, fields)
-        visible = text(re.sub(r'<(?:script|style)\b[^>]*>[\s\S]*?</(?:script|style)>', '', directory, flags=re.I))
-        if re.search(r'(invalid|incorrect)\s+captcha|captcha\s+(?:mismatch|does not match)', visible, re.I):
-            attempt['status'] = 'challenge_rejected'
-        elif organisations(directory, url):
-            attempt['status'] = 'directory_returned'
-            break
-        else:
-            attempt['status'] = 'empty_unverified' if 'No Active Tenders found' in visible else 'unresolved_response'
-            break
-    return directory, attempts
-
-
-def collect(url, max_orgs=2, organisation='', delay=1, timeout=30, transport='urllib', captcha_solver='none'):
+def collect(url, max_orgs=2, organisation='', delay=1, timeout=30, transport='urllib'):
     result = {'source_url': url, 'checked_at': datetime.now(timezone.utc).isoformat(),
               'status': 'unresolved', 'scans': [], 'tenders': [], 'transport': transport,
               'organisation_filter': organisation, 'complete_active_snapshot': False,
@@ -223,10 +139,6 @@ def collect(url, max_orgs=2, organisation='', delay=1, timeout=30, transport='ur
     try:
         directory = fetch(url)
         orgs = organisations(directory, url)
-        if not orgs and 'captchaText' in directory and captcha_solver != 'none':
-            directory, attempts = unlock_directory(directory, url, fetch, captcha_solver)
-            result['captcha_attempts'] = attempts
-            orgs = organisations(directory, url)
         result['organisations_listed'] = len(orgs)
         result['advertised_active_tenders'] = sum(org['count'] for org in orgs) if orgs else None
         if not orgs:
@@ -582,7 +494,6 @@ def main():
     parser.add_argument('--max-orgs', type=int, default=2, help='Default 2; use 0 to scan every organisation.')
     parser.add_argument('--organisation', default='')
     parser.add_argument('--transport', choices=('urllib', 'curl'), default='urllib')
-    parser.add_argument('--captcha-solver', choices=('none', 'local'), default='none')
     parser.add_argument('--timeout', type=int, default=30, help='Seconds per request; large organisations can need more time.')
     parser.add_argument('--listing-pages', type=int, default=2, help='Pages per category for public JSON listings.')
     parser.add_argument('--query', default='', help='Filter collected titles, references and buyer chains locally.')
@@ -600,7 +511,7 @@ def main():
             report = collect_bihar(timeout=args.timeout)
         else:
             report = collect(portal['url'], args.max_orgs, portal.get('organisation', ''),
-                             timeout=args.timeout, transport=args.transport, captcha_solver=args.captcha_solver)
+                             timeout=args.timeout, transport=args.transport)
         report['host'] = portal['host']
         words = args.query.casefold().split()
         report['query'] = args.query

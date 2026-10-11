@@ -23,12 +23,12 @@ Counts describe the tested snapshots. They can change as tenders open or close. 
 
 ## Remaining gaps
 
-- Mizoram rejected both automatic local OCR attempts, including the case-aware retry. It remains `challenge_required`. A separate assisted submission returned an empty table, which did not establish a verified zero.
+- Mizoram asks for a captcha before it lists organisations. It remains `challenge_required`. An empty table does not establish a verified zero.
 - CPPP Results of Tenders still requires its search CAPTCHA. Active CPPP lists do not establish awards coverage.
 - IREPS OTP access, JavaScript-only portals, and timed-out hosts from the earlier survey remain outside this implementation.
 - Listings provide title, reference, buyer, and date fields. They do not establish matches inside full tender documents.
 
-The optional local fallback uses ddddocr, Pillow, and, when installed, Tesseract. It attempts at most twice per selected host. No paid service or account key is used. Blocked listings report an unknown advertised total rather than zero.
+The collector does not submit a captcha. Blocked listings report an unknown advertised total rather than zero.
 
 ## Checks
 

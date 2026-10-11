@@ -5,49 +5,7 @@ import sys
 import unittest
 from unittest.mock import MagicMock, patch
 
-from organisation_tenders import bihar_notices, collect, collect_bihar, main, restore_case, unlock_directory
-
-
-class CaptchaTests(unittest.TestCase):
-    def form(self, token='first'):
-        return ('<form action="/app"><input name="tokenSecret" value="' + token + '">'
-                '<input name="captchaText"><select name="tenderCategory">'
-                '<option value="0">All</option><option selected value="3">Works</option></select>'
-                '<input type="submit" name="Search" value="Search">'
-                '<img id="captchaImage" src="data:image/png;base64,YWJj"></form>')
-
-    def test_rejection_refreshes_hidden_fields_in_same_session(self):
-        calls = []
-        directory = '<tr class="odd"><td>1</td><td>Public Works</td><td><a href="/app?session=T">1</a></td></tr>'
-
-        def fetch(url, fields=None):
-            calls.append((url, fields))
-            return 'Invalid Captcha!' + self.form('refreshed') if len(calls) == 1 else directory
-
-        with patch('organisation_tenders.solve_image', side_effect=['ABC123', 'DEF456']):
-            _, attempts = unlock_directory(self.form(), 'https://example.test/app', fetch, 'local')
-        self.assertEqual([a['status'] for a in attempts], ['challenge_rejected', 'directory_returned'])
-        self.assertEqual(calls[0][1]['tokenSecret'], 'first')
-        self.assertEqual(calls[1][1]['tokenSecret'], 'refreshed')
-        self.assertEqual(calls[1][1]['tenderCategory'], '3')
-        self.assertEqual(calls[1][1]['Search'], 'Search')
-
-    def test_empty_table_is_not_a_confirmed_zero(self):
-        with patch('organisation_tenders.solve_image', return_value='ABC123'):
-            _, attempts = unlock_directory(self.form(), 'https://example.test/app',
-                                           lambda *args: 'No Active Tenders found.', 'local')
-        self.assertEqual(attempts[0]['status'], 'empty_unverified')
-
-    def test_case_restoration_handles_noise_without_changing_letters(self):
-        self.assertEqual(restore_case('3yen6x', '3Yern6ix'), '3Yen6x')
-        self.assertEqual(restore_case('x2uq1e', 'x2Ud1E'), 'x2uq1e')
-
-    def test_off_host_form_action_is_rejected(self):
-        with patch('organisation_tenders.solve_image') as solver:
-            _, attempts = unlock_directory(self.form().replace('action="/app"', 'action="https://other.test/app"'),
-                                           'https://example.test/app', None, 'local')
-        solver.assert_not_called()
-        self.assertEqual(attempts[0]['status'], 'invalid_form_action')
+from organisation_tenders import bihar_notices, collect, collect_bihar, main
 
 
 class CoverageTests(unittest.TestCase):

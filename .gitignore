@@ -5,3 +5,5 @@ intel.db
 .env
 .env.*
 __pycache__/
+/accounts/
+/out/

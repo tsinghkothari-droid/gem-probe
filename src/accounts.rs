@@ -58,7 +58,6 @@ fn significant_name(raw: &str) -> Option<String> {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use std::path::Path;
 
     fn sample() -> Vec<Account> {
         vec![Account {
@@ -79,12 +78,4 @@ mod tests {
         assert_eq!(match_buyer("Department of Science Technology Gujarat", &accounts), None);
     }
 
-    #[test]
-    fn the_register_file_names_a_flagship_buyer() {
-        let accounts = load(Path::new("accounts/varonis-gcv.json")).unwrap();
-        assert_eq!(accounts.len(), 660);
-        let hit = match_buyer("Gujarat Informatics Limited", &accounts).unwrap();
-        assert!(hit.contains("GJ"));
-        assert!(hit.contains("tier 1"));
-    }
 }
