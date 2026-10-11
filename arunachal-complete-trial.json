@@ -1,0 +1,50 @@
+{
+  "source_url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+  "checked_at": "2026-10-11T08:54:31.803387+00:00",
+  "status": "records_returned",
+  "scans": [
+    {
+      "organisation": "RURAL WORKS DEPARTMENT ARUNACHAL PRADESH",
+      "advertised_count": 1,
+      "parsed_count": 1,
+      "status": "count_matches"
+    },
+    {
+      "organisation": "Town Planning and Urban Local Bodies",
+      "advertised_count": 1,
+      "parsed_count": 1,
+      "status": "count_matches"
+    }
+  ],
+  "tenders": [
+    {
+      "id": "2026_RWDAP_3712_1",
+      "title": "Construction of RWD Likabali Division Office",
+      "reference": "BE/2026-27/01",
+      "organisation": "RURAL WORKS DEPARTMENT ARUNACHAL PRADESH",
+      "buyer_chain": "RURAL WORKS DEPARTMENT ARUNACHAL PRADESH||CHIEF ENGINEERING RWD WESTERN ZONE||CIRCLE RUPA||SINGCHUNG DIVISION",
+      "published": "07-Oct-2026 09:00 AM",
+      "closing": "22-Oct-2026 04:00 PM",
+      "opening": "23-Oct-2026 11:00 AM",
+      "source_url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+    },
+    {
+      "id": "2026_TPULB_3706_1",
+      "title": "RFP FOR SELECTION OF OPERATOR FOR O AND M OF PASIGHAT READING ROOM AND COWORKING HUB",
+      "reference": "PSCDCL/District -E-Library/RFP-004/2025-26",
+      "organisation": "Town Planning and Urban Local Bodies",
+      "buyer_chain": "Town Planning and Urban Local Bodies||Director of Town Planning and Urban Local Bodies||Chief Executive Officer - PSCDCL",
+      "published": "23-Sep-2026 04:30 PM",
+      "closing": "15-Oct-2026 10:00 AM",
+      "opening": "15-Oct-2026 10:30 AM",
+      "source_url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+    }
+  ],
+  "transport": "urllib",
+  "organisations_listed": 2,
+  "advertised_active_tenders": 2,
+  "organisations_selected": 2,
+  "complete_active_snapshot": true,
+  "query": "road",
+  "matches": []
+}

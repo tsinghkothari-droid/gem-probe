@@ -1,0 +1,1812 @@
+[
+  {
+    "source_url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:22.836082+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "RURAL WORKS DEPARTMENT ARUNACHAL PRADESH",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 2,
+    "advertised_active_tenders": 2,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "arunachaltenders.gov.in",
+    "returned_records": 1,
+    "sample_records": [
+      {
+        "id": "2026_RWDAP_3712_1",
+        "title": "Construction of RWD Likabali Division Office",
+        "reference": "BE/2026-27/01",
+        "organisation": "RURAL WORKS DEPARTMENT ARUNACHAL PRADESH",
+        "buyer_chain": "RURAL WORKS DEPARTMENT ARUNACHAL PRADESH||CHIEF ENGINEERING RWD WESTERN ZONE||CIRCLE RUPA||SINGCHUNG DIVISION",
+        "published": "07-Oct-2026 09:00 AM",
+        "closing": "22-Oct-2026 04:00 PM",
+        "opening": "23-Oct-2026 11:00 AM",
+        "source_url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://assamtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:22.836336+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Animal Husbandry and Veterinary Department",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 46,
+    "advertised_active_tenders": 493,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "assamtenders.gov.in",
+    "returned_records": 1,
+    "sample_records": [
+      {
+        "id": "2026_AHVD_54341_1",
+        "title": "Construction of RCC G plus 1 Office Buidling for Deputy Director and ADDO Office inclduing staff quarter and shed for machineries at Ghungoor Silchar",
+        "reference": "E-660264/359",
+        "organisation": "Animal Husbandry and Veterinary Department",
+        "buyer_chain": "Animal Husbandry and Veterinary Department||Directorate of Dairy Development||Project Implementing Unit",
+        "published": "09-Oct-2026 10:00 AM",
+        "closing": "30-Oct-2026 02:00 PM",
+        "opening": "30-Oct-2026 03:00 PM",
+        "source_url": "https://assamtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://cgeproc.cgstate.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:54:37.105907+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Chhattisgarh Road and Infrastructure Development Corporation Limited",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      }
+    ],
+    "transport": "curl",
+    "organisations_listed": 1,
+    "advertised_active_tenders": 1,
+    "organisations_selected": 1,
+    "complete_active_snapshot": true,
+    "host": "cgeproc.cgstate.gov.in",
+    "previous_status": "fetch_error",
+    "returned_records": 1,
+    "sample_records": [
+      {
+        "id": "2026_RIDCL_10_1",
+        "title": "RFP For EMPANELMENT OF EVENT MANAGEMENT FIRMS / AGENCIES FOR CGPWD, CGRIDCL AND OTHER DEPARTMENTS / AGENCIES OF THE GOVERNMENT OF CHHATTISGARH",
+        "reference": "CGRiDCL/EMP/Event/2026/120 date 07-10-2026",
+        "organisation": "Chhattisgarh Road and Infrastructure Development Corporation Limited",
+        "buyer_chain": "Chhattisgarh Road and Infrastructure Development Corporation Limited",
+        "published": "07-Oct-2026 12:00 PM",
+        "closing": "28-Oct-2026 05:00 PM",
+        "opening": "29-Oct-2026 04:00 PM",
+        "source_url": "https://cgeproc.cgstate.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://coalindiatenders.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:22.836526+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Bharat Coking Coal Limited",
+        "advertised_count": 150,
+        "parsed_count": 150,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 10,
+    "advertised_active_tenders": 635,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "coalindiatenders.nic.in",
+    "returned_records": 150,
+    "sample_records": [
+      {
+        "id": "2026_BCCL_366946_1",
+        "title": "Dismantling of Chimney,Fan House at Laikdihunder C.V. Area (re-tender)",
+        "reference": " BCCL/XII/ACE/ e-Tender-58/2026-27/58 Date-10.10.2026 ",
+        "organisation": "Bharat Coking Coal Limited",
+        "buyer_chain": "Bharat Coking Coal Limited||BCCL_CV AREA",
+        "published": "10-Oct-2026 06:00 PM",
+        "closing": "16-Oct-2026 05:00 PM",
+        "opening": "17-Oct-2026 11:00 AM",
+        "source_url": "https://coalindiatenders.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BCCL_366811_1",
+        "title": "Renovating stone masonary wall near Tandawari",
+        "reference": "BCCL/AR III/GM/ACE/E-NIT/ 26-27/103/4485-4510",
+        "organisation": "Bharat Coking Coal Limited",
+        "buyer_chain": "Bharat Coking Coal Limited||BCCL_GOVINDPUR AREA",
+        "published": "10-Oct-2026 10:00 AM",
+        "closing": "19-Oct-2026 05:00 PM",
+        "opening": "22-Oct-2026 09:00 AM",
+        "source_url": "https://coalindiatenders.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://ddtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:23.061106+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Daman District",
+        "advertised_count": 11,
+        "parsed_count": 11,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 2,
+    "advertised_active_tenders": 18,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "ddtenders.gov.in",
+    "returned_records": 11,
+    "sample_records": [
+      {
+        "id": "2026_DAMAN_5013_1",
+        "title": "Regarding to Provide Mechanised Housekeeping and Facility Management Services at Government House, Fort Area, Moti Daman for One Year. (E-47743)",
+        "reference": "88/2026-27",
+        "organisation": "Daman District",
+        "buyer_chain": "Daman District||Public Works Department - Daman||Executive Engineer-PWD - Daman",
+        "published": "09-Oct-2026 06:15 PM",
+        "closing": "17-Oct-2026 02:00 PM",
+        "opening": "17-Oct-2026 04:00 PM",
+        "source_url": "https://ddtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_DAMAN_5012_1",
+        "title": "RFP for SELECTION OF AGENCY FOR PROVISION, OPERATION AND MAINTENANCE OF SMART SHARED MOBILITY SERVICES (BICYCLES OR E-SCOOTERS) IN DAMAN DISTRICT (2nd CALL)",
+        "reference": "3/123/DT/DDD/Bicycles/2425/413",
+        "organisation": "Daman District",
+        "buyer_chain": "Daman District||Tourism Department - Daman||Dy. Director of Tourism-Nani - Daman",
+        "published": "09-Oct-2026 01:05 PM",
+        "closing": "22-Oct-2026 06:00 PM",
+        "opening": "23-Oct-2026 12:30 PM",
+        "source_url": "https://ddtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://defproc.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:54:37.106141+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Department of Defence",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      },
+      {
+        "organisation": "Department of Defence Research and Development",
+        "advertised_count": 57,
+        "parsed_count": 57,
+        "status": "count_matches"
+      }
+    ],
+    "transport": "curl",
+    "organisations_listed": 10,
+    "advertised_active_tenders": 4704,
+    "organisations_selected": 2,
+    "complete_active_snapshot": false,
+    "host": "defproc.gov.in",
+    "previous_status": "no_records_returned",
+    "returned_records": 58,
+    "sample_records": [
+      {
+        "id": "2026_DoD_786434_1",
+        "title": "Design, Implementation and Support of ERP System (Commercial Off-The-Shelf (COTS) / Open Source) and Development of Non- Core ERP Applications.",
+        "reference": "7/EDP/13815/Office Automation-2026",
+        "organisation": "Department of Defence",
+        "buyer_chain": "Department of Defence||Armed Forces - DoD",
+        "published": "26-Aug-2026 09:00 AM",
+        "closing": "14-Nov-2026 06:00 PM",
+        "opening": "16-Nov-2026 11:00 AM",
+        "source_url": "https://defproc.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_DRDO_793144_1",
+        "title": "Supply of RNA Extraction and Isolation kit",
+        "reference": "0608/26-27/3/Q/962/FMB",
+        "organisation": "Department of Defence Research and Development",
+        "buyer_chain": "Department of Defence Research and Development||Defence Research and Development Organisation||DFMM||Office of DG (SSS)||DIBT",
+        "published": "09-Oct-2026 05:50 PM",
+        "closing": "21-Oct-2026 11:00 AM",
+        "opening": "22-Oct-2026 11:00 AM",
+        "source_url": "https://defproc.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://dnhtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:24.604154+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "UT Administration of Dadra and Nagar Haveli",
+        "advertised_count": 20,
+        "parsed_count": 20,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 1,
+    "advertised_active_tenders": 20,
+    "organisations_selected": 1,
+    "complete_active_snapshot": true,
+    "host": "dnhtenders.gov.in",
+    "returned_records": 20,
+    "sample_records": [
+      {
+        "id": "2026_UTDNH_8300_1",
+        "title": "Purchase of Biochemistry Materials",
+        "reference": "DMHS/NAMOCobas2026-27/171/325 ",
+        "organisation": "UT Administration of Dadra and Nagar Haveli",
+        "buyer_chain": "UT Administration of Dadra and Nagar Haveli||State Health Society - UTDNH",
+        "published": "10-Oct-2026 12:00 PM",
+        "closing": "22-Oct-2026 02:00 PM",
+        "opening": "22-Oct-2026 02:30 PM",
+        "source_url": "https://dnhtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_UTDNH_8299_1",
+        "title": "Comprehensive Upgradation of Sanitation facilities at Rudana Nursery (SR).",
+        "reference": "8-6/FD/CSD/2026/ESTIMATE -725/NIT",
+        "organisation": "UT Administration of Dadra and Nagar Haveli",
+        "buyer_chain": "UT Administration of Dadra and Nagar Haveli||Forest Department - UTDNH||Territotial Division - UTDNH||Office of Deputy Conservator of Forests (T)-UTDNH",
+        "published": "09-Oct-2026 06:50 PM",
+        "closing": "23-Oct-2026 02:00 PM",
+        "opening": "23-Oct-2026 04:00 PM",
+        "source_url": "https://dnhtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://eproc.punjab.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:25.102603+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "CE-PWD(B and R)",
+        "advertised_count": 39,
+        "parsed_count": 39,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 32,
+    "advertised_active_tenders": 3478,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "eproc.punjab.gov.in",
+    "returned_records": 39,
+    "sample_records": [
+      {
+        "id": "2026_CEPW_177219_1",
+        "title": "Construction of Box Type Cricket Turf and Box cricket ground at Shalimar Bagh Kapurthala",
+        "reference": "RE 60 dated 9.10.2026",
+        "organisation": "CE-PWD(B and R)",
+        "buyer_chain": "CE-PWD(B and R)||Construction Circle No.2-Jalandhar||Construction Division No.1-Kapurthala",
+        "published": "10-Oct-2026 09:00 AM",
+        "closing": "17-Oct-2026 05:00 PM",
+        "opening": "19-Oct-2026 10:00 AM",
+        "source_url": "https://eproc.punjab.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_CEPW_177207_1",
+        "title": "Special Repair to Kothi No. 31-E Model Town Patiala",
+        "reference": "Bid No. 60 Dt. 08.10.2026/31-E",
+        "organisation": "CE-PWD(B and R)",
+        "buyer_chain": "CE-PWD(B and R)||Construction Circle No.1-Patiala||Provincial Division No.1-Patiala",
+        "published": "09-Oct-2026 06:00 PM",
+        "closing": "19-Oct-2026 12:30 PM",
+        "opening": "19-Oct-2026 03:00 PM",
+        "source_url": "https://eproc.punjab.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://eproc.rajasthan.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:25.328901+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Agriculture Deptt - Commissioner",
+        "advertised_count": 7,
+        "parsed_count": 7,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 108,
+    "advertised_active_tenders": 3819,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "eproc.rajasthan.gov.in",
+    "returned_records": 7,
+    "sample_records": [
+      {
+        "id": "2026_AGRIC_602034_1",
+        "title": "Supply and installation of icar technology based digital soil testing kits Pusa STER Meter Kit and accessories for soil labs in schools",
+        "reference": "AGR2627A0498",
+        "organisation": "Agriculture Deptt - Commissioner",
+        "buyer_chain": "Agriculture Deptt - Commissioner||Addl. DAG (Ext.)",
+        "published": "03-Oct-2026 09:30 AM",
+        "closing": "26-Oct-2026 11:00 AM",
+        "opening": "26-Oct-2026 03:00 PM",
+        "source_url": "https://eproc.rajasthan.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_AGRIC_602505_1",
+        "title": "Supply and Install Soil Testing Machinery with Reagents sample shaker machine and AMC for one year. Distilled Water, pH meter, conductivity meter, Electronic balance, Glass ware, Filter-papers and other need based lab consumables",
+        "reference": "01/2026-27 SUPPLY OF SOIL TESTING KITS ",
+        "organisation": "Agriculture Deptt - Commissioner",
+        "buyer_chain": "Agriculture Deptt - Commissioner||Addl. DAG (Ext.)",
+        "published": "01-Oct-2026 01:30 PM",
+        "closing": "13-Oct-2026 12:00 PM",
+        "opening": "13-Oct-2026 03:00 PM",
+        "source_url": "https://eproc.rajasthan.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://eprocure.andamannicobar.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:54:37.106247+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Andaman and Nicobar AIDS Control Society",
+        "advertised_count": 3,
+        "parsed_count": 3,
+        "status": "count_matches"
+      },
+      {
+        "organisation": "Andaman and Nicobar Islands Institute of Medical Sciences (ANIIMS)",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      }
+    ],
+    "transport": "curl",
+    "organisations_listed": 18,
+    "advertised_active_tenders": 218,
+    "organisations_selected": 2,
+    "complete_active_snapshot": false,
+    "host": "eprocure.andamannicobar.gov.in",
+    "previous_status": "fetch_error",
+    "returned_records": 4,
+    "sample_records": [
+      {
+        "id": "2026_AIDSC_25004_1",
+        "title": "Supply of Consumable Items",
+        "reference": "1-79/ANACS/CONT ITEMS/26-27/726",
+        "organisation": "Andaman and Nicobar AIDS Control Society",
+        "buyer_chain": "Andaman and Nicobar AIDS Control Society",
+        "published": "02-Oct-2026 12:00 PM",
+        "closing": "22-Oct-2026 03:00 PM",
+        "opening": "22-Oct-2026 03:30 PM",
+        "source_url": "https://eprocure.andamannicobar.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_AIDSC_25003_1",
+        "title": "Supply of Stationary Items",
+        "reference": "1-79/ANACS/CONT ITEMS/26-27/727",
+        "organisation": "Andaman and Nicobar AIDS Control Society",
+        "buyer_chain": "Andaman and Nicobar AIDS Control Society",
+        "published": "02-Oct-2026 12:00 PM",
+        "closing": "22-Oct-2026 03:00 PM",
+        "opening": "22-Oct-2026 03:30 PM",
+        "source_url": "https://eprocure.andamannicobar.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "http://eprocure.goa.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:25.976078+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "CAPTAIN OF PORTS DEPARTMENT",
+        "advertised_count": 3,
+        "parsed_count": 3,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 33,
+    "advertised_active_tenders": 253,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "eprocure.goa.gov.in",
+    "returned_records": 3,
+    "sample_records": [
+      {
+        "id": "2026_CPD_32241_1",
+        "title": "NO. CP/HSO/355/3927",
+        "reference": "NO. CP/HSO/355/3927",
+        "organisation": "CAPTAIN OF PORTS DEPARTMENT",
+        "buyer_chain": "CAPTAIN OF PORTS DEPARTMENT||Hydrographic Survey Organization Section",
+        "published": "08-Oct-2026 05:00 PM",
+        "closing": "19-Oct-2026 01:00 PM",
+        "opening": "19-Oct-2026 04:00 PM",
+        "source_url": "http://eprocure.goa.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_CPD_32081_1",
+        "title": "Preparation of Rapid Environmental Impact Assessment Report for proposed Desilting of tributary of River Mapusa located at Moira in an area of 2.10 Km in length, 15.0 Meters wide and depth of 2.0 Meters from existing depth.",
+        "reference": "CP/HSO/360/3746 ",
+        "organisation": "CAPTAIN OF PORTS DEPARTMENT",
+        "buyer_chain": "CAPTAIN OF PORTS DEPARTMENT||Hydrographic Survey Organization Section",
+        "published": "29-Sep-2026 03:00 PM",
+        "closing": "12-Oct-2026 01:00 PM",
+        "opening": "12-Oct-2026 04:00 PM",
+        "source_url": "http://eprocure.goa.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://eprocure.gov.in/eprocure/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:39.645459+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Ahmedabad Textile Industry Research Association",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 244,
+    "advertised_active_tenders": 2607,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "eprocure.gov.in",
+    "returned_records": 1,
+    "sample_records": [
+      {
+        "id": "2026_ATIRA_927296_1",
+        "title": "Tender Document",
+        "reference": "ATIRA/SWA/11/2026",
+        "organisation": "Ahmedabad Textile Industry Research Association",
+        "buyer_chain": "Ahmedabad Textile Industry Research Association",
+        "published": "23-Sep-2026 11:00 AM",
+        "closing": "14-Oct-2026 05:00 PM",
+        "opening": "15-Oct-2026 05:00 PM",
+        "source_url": "https://eprocure.gov.in/eprocure/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://eprocurebel.co.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:26.178110+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "BEML Limited",
+        "advertised_count": 65,
+        "parsed_count": 65,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 7,
+    "advertised_active_tenders": 130,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "eprocurebel.co.in",
+    "returned_records": 65,
+    "sample_records": [
+      {
+        "id": "2026_BEML_100376_1",
+        "title": "Cable Cutting Works-(In-Sourcing)- BMRCL 5RSDM PROJECT",
+        "reference": "BEML/RMS/6670010004",
+        "organisation": "BEML Limited",
+        "buyer_chain": "BEML Limited||Bangalore Complex||Metro Rail",
+        "published": "10-Oct-2026 05:15 PM",
+        "closing": "21-Oct-2026 06:00 PM",
+        "opening": "21-Oct-2026 06:30 PM",
+        "source_url": "https://eprocurebel.co.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BEML_100374_1",
+        "title": "Retaining Clips",
+        "reference": "BEML/BC/RETAINING CLIP",
+        "organisation": "BEML Limited",
+        "buyer_chain": "BEML Limited||Bangalore Complex||Commuter Rail",
+        "published": "10-Oct-2026 04:00 PM",
+        "closing": "15-Oct-2026 04:00 PM",
+        "opening": "15-Oct-2026 04:00 PM",
+        "source_url": "https://eprocurebel.co.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://eprocurebhel.co.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:26.935011+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Bharat Heavy Electricals Limited",
+        "advertised_count": 479,
+        "parsed_count": 479,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 1,
+    "advertised_active_tenders": 479,
+    "organisations_selected": 1,
+    "complete_active_snapshot": true,
+    "host": "eprocurebhel.co.in",
+    "returned_records": 479,
+    "sample_records": [
+      {
+        "id": "2026_BHEL_66008_1",
+        "title": "CANNED MOTOR PUMP MAKE RUTSCHI TYPE - SMN-R4-160",
+        "reference": "E7263281",
+        "organisation": "Bharat Heavy Electricals Limited",
+        "buyer_chain": "Bharat Heavy Electricals Limited||HEP - Bhopal||Transformer Capacitor Bushings",
+        "published": "10-Oct-2026 06:00 PM",
+        "closing": "21-Oct-2026 03:00 PM",
+        "opening": "21-Oct-2026 04:00 PM",
+        "source_url": "https://eprocurebhel.co.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BHEL_66005_1",
+        "title": "FFD/SC/26039/202607411",
+        "reference": "FFD/SC/26039/202607411",
+        "organisation": "Bharat Heavy Electricals Limited",
+        "buyer_chain": "Bharat Heavy Electricals Limited||CFFP - Haridwar||SUB CONTRACTING",
+        "published": "10-Oct-2026 06:00 PM",
+        "closing": "30-Oct-2026 01:30 PM",
+        "opening": "30-Oct-2026 02:30 PM",
+        "source_url": "https://eprocurebhel.co.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:27.160682+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "BEML Limited",
+        "advertised_count": 65,
+        "parsed_count": 65,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 7,
+    "advertised_active_tenders": 130,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "eprocuregsl.nic.in",
+    "returned_records": 65,
+    "sample_records": [
+      {
+        "id": "2026_BEML_100376_1",
+        "title": "Cable Cutting Works-(In-Sourcing)- BMRCL 5RSDM PROJECT",
+        "reference": "BEML/RMS/6670010004",
+        "organisation": "BEML Limited",
+        "buyer_chain": "BEML Limited||Bangalore Complex||Metro Rail",
+        "published": "10-Oct-2026 05:15 PM",
+        "closing": "21-Oct-2026 06:00 PM",
+        "opening": "21-Oct-2026 06:30 PM",
+        "source_url": "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BEML_100374_1",
+        "title": "Retaining Clips",
+        "reference": "BEML/BC/RETAINING CLIP",
+        "organisation": "BEML Limited",
+        "buyer_chain": "BEML Limited||Bangalore Complex||Commuter Rail",
+        "published": "10-Oct-2026 04:00 PM",
+        "closing": "15-Oct-2026 04:00 PM",
+        "opening": "15-Oct-2026 04:00 PM",
+        "source_url": "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:27.783167+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "BEML Limited",
+        "advertised_count": 65,
+        "parsed_count": 65,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 7,
+    "advertised_active_tenders": 130,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "eprocurehsl.nic.in",
+    "returned_records": 65,
+    "sample_records": [
+      {
+        "id": "2026_BEML_100376_1",
+        "title": "Cable Cutting Works-(In-Sourcing)- BMRCL 5RSDM PROJECT",
+        "reference": "BEML/RMS/6670010004",
+        "organisation": "BEML Limited",
+        "buyer_chain": "BEML Limited||Bangalore Complex||Metro Rail",
+        "published": "10-Oct-2026 05:15 PM",
+        "closing": "21-Oct-2026 06:00 PM",
+        "opening": "21-Oct-2026 06:30 PM",
+        "source_url": "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BEML_100374_1",
+        "title": "Retaining Clips",
+        "reference": "BEML/BC/RETAINING CLIP",
+        "organisation": "BEML Limited",
+        "buyer_chain": "BEML Limited||Bangalore Complex||Commuter Rail",
+        "published": "10-Oct-2026 04:00 PM",
+        "closing": "15-Oct-2026 04:00 PM",
+        "opening": "15-Oct-2026 04:00 PM",
+        "source_url": "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:28.633068+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "BEML Limited",
+        "advertised_count": 65,
+        "parsed_count": 65,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 7,
+    "advertised_active_tenders": 130,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "eprocuremdl.nic.in",
+    "returned_records": 65,
+    "sample_records": [
+      {
+        "id": "2026_BEML_100376_1",
+        "title": "Cable Cutting Works-(In-Sourcing)- BMRCL 5RSDM PROJECT",
+        "reference": "BEML/RMS/6670010004",
+        "organisation": "BEML Limited",
+        "buyer_chain": "BEML Limited||Bangalore Complex||Metro Rail",
+        "published": "10-Oct-2026 05:15 PM",
+        "closing": "21-Oct-2026 06:00 PM",
+        "opening": "21-Oct-2026 06:30 PM",
+        "source_url": "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BEML_100374_1",
+        "title": "Retaining Clips",
+        "reference": "BEML/BC/RETAINING CLIP",
+        "organisation": "BEML Limited",
+        "buyer_chain": "BEML Limited||Bangalore Complex||Commuter Rail",
+        "published": "10-Oct-2026 04:00 PM",
+        "closing": "15-Oct-2026 04:00 PM",
+        "opening": "15-Oct-2026 04:00 PM",
+        "source_url": "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://eprocurentpc.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:28.708379+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Bhartiya Rail Bijlee Company Limited",
+        "advertised_count": 5,
+        "parsed_count": 5,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 6,
+    "advertised_active_tenders": 522,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "eprocurentpc.nic.in",
+    "returned_records": 5,
+    "sample_records": [
+      {
+        "id": "2026_BRBCL_112389_1",
+        "title": "AMC OF COMPUTER RADIOGRAPHY SYSTEMS AT JIVAK HOSPITAL BRBCL",
+        "reference": "BRBCL/Nabinagar/9900333962",
+        "organisation": "Bhartiya Rail Bijlee Company Limited",
+        "buyer_chain": "Bhartiya Rail Bijlee Company Limited||Nabinagar Thermal Power Project - BRBCL",
+        "published": "09-Oct-2026 03:00 PM",
+        "closing": "22-Oct-2026 03:00 PM",
+        "opening": "23-Oct-2026 03:00 PM",
+        "source_url": "https://eprocurentpc.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BRBCL_112086_1",
+        "title": "Insitu Complete Rewind along with Replacement of melted coil with newone of BRBCL NABINAGAR U#2 Generator Rotor.",
+        "reference": "BRBCL/Nabinagar/9900333739",
+        "organisation": "Bhartiya Rail Bijlee Company Limited",
+        "buyer_chain": "Bhartiya Rail Bijlee Company Limited||Nabinagar Thermal Power Project - BRBCL",
+        "published": "25-Sep-2026 05:00 PM",
+        "closing": "14-Oct-2026 03:00 PM",
+        "opening": "15-Oct-2026 03:00 PM",
+        "source_url": "https://eprocurentpc.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://etender.up.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:28.721057+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Agra Development Authority",
+        "advertised_count": 7,
+        "parsed_count": 7,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 132,
+    "advertised_active_tenders": 10922,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "etender.up.nic.in",
+    "returned_records": 7,
+    "sample_records": [
+      {
+        "id": "2026_ADAA_1194993_1",
+        "title": "Construction work of gate of Maharaj Daksha Prajapati Temple, Naalbandh Square, MG Road, Agra (Part D)",
+        "reference": "17/2026-27",
+        "organisation": "Agra Development Authority",
+        "buyer_chain": "Agra Development Authority",
+        "published": "09-Oct-2026 04:00 PM",
+        "closing": "17-Oct-2026 03:00 PM",
+        "opening": "19-Oct-2026 02:00 PM",
+        "source_url": "https://etender.up.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_ADAA_1194986_1",
+        "title": "Construction work of drain and interlocking tiles road between the temple and the culvert of Prakash Nagar in Nagla Bihari.",
+        "reference": "17/2026-27",
+        "organisation": "Agra Development Authority",
+        "buyer_chain": "Agra Development Authority",
+        "published": "09-Oct-2026 04:00 PM",
+        "closing": "17-Oct-2026 03:00 PM",
+        "opening": "19-Oct-2026 02:00 PM",
+        "source_url": "https://etender.up.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://etenders.chd.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:29.361100+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Chandigarh Administration",
+        "advertised_count": 172,
+        "parsed_count": 172,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 3,
+    "advertised_active_tenders": 293,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "etenders.chd.nic.in",
+    "returned_records": 172,
+    "sample_records": [
+      {
+        "id": "2026_CHD_96094_1",
+        "title": "PROVIDING PLAN CEMENT CONCRETE PATHWAY WITH BITUMEN FILLED JOINT AND ROOF TREATMENT WORK IN GOVT. HIGH SCHOOL,( A SMART SCHOOL),SECTOR-52,U.T, CHANDIGARH",
+        "reference": "CP6/2026/2520-2532/BITUMEN",
+        "organisation": "Chandigarh Administration",
+        "buyer_chain": "Chandigarh Administration||Engineering||Construction Circle - II||CP - VI",
+        "published": "09-Oct-2026 06:30 PM",
+        "closing": "23-Oct-2026 11:00 AM",
+        "opening": "23-Oct-2026 11:30 AM",
+        "source_url": "https://etenders.chd.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_CHD_96099_1",
+        "title": "RENOVATION OF HOUSE NO.237 (JUDGE HOUSE) SECTOR 16 CHANDIGARH",
+        "reference": "CP3/2026/3178518",
+        "organisation": "Chandigarh Administration",
+        "buyer_chain": "Chandigarh Administration||Engineering||Construction Circle - II||CP - III",
+        "published": "09-Oct-2026 06:25 PM",
+        "closing": "16-Oct-2026 11:00 AM",
+        "opening": "16-Oct-2026 02:00 PM",
+        "source_url": "https://etenders.chd.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://etenders.gov.in/eprocure/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:39.993648+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "AAI Cargo Logistics and Allied Services Company Ltd",
+        "advertised_count": 3,
+        "parsed_count": 3,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 84,
+    "advertised_active_tenders": 2263,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "etenders.gov.in",
+    "returned_records": 3,
+    "sample_records": [
+      {
+        "id": "2026_AAICL_293240_1",
+        "title": "Supply of 35 nos. Security Guards (without Arms) and 04 nos. Security Supervisors for Watch and Ward Security Services at International Air Cargo Terminal, AAICLAS, N.S.C.B.I. Airport, Kolkata.",
+        "reference": "AAICLAS/CCU/INTL/DGR/2026 ",
+        "organisation": "AAI Cargo Logistics and Allied Services Company Ltd",
+        "buyer_chain": "AAI Cargo Logistics and Allied Services Company Ltd||AAICLAS Kolkata Cargo Office",
+        "published": "05-Oct-2026 09:00 AM",
+        "closing": "12-Oct-2026 12:00 PM",
+        "opening": "13-Oct-2026 12:00 PM",
+        "source_url": "https://etenders.gov.in/eprocure/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_AAICL_292356_1",
+        "title": "Maintenance and Repairs for Cargo Building at Integrated Air Cargo Complex, Chennai Airport, Chennai during the year 2026-27 (Percentage rate tender)",
+        "reference": "AAICLAS/CIVIL/AMC/2026-27/",
+        "organisation": "AAI Cargo Logistics and Allied Services Company Ltd",
+        "buyer_chain": "AAI Cargo Logistics and Allied Services Company Ltd||AAICLAS Chennai Cargo Office||Operation Department",
+        "published": "25-Sep-2026 06:30 PM",
+        "closing": "16-Oct-2026 06:00 PM",
+        "opening": "21-Oct-2026 03:00 PM",
+        "source_url": "https://etenders.gov.in/eprocure/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://etenders.hry.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:30.129621+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Haryana Board Corporation",
+        "advertised_count": 828,
+        "parsed_count": 828,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 2,
+    "advertised_active_tenders": 2307,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "etenders.hry.nic.in",
+    "returned_records": 828,
+    "sample_records": [
+      {
+        "id": "2026_HBC_553575_1",
+        "title": "JOBNO.HSVP/AMB/2026-27/E-633",
+        "reference": "2026C53776FA 8B72 4723 900E 50310E8C3E94239HSV",
+        "organisation": "Haryana Board Corporation",
+        "buyer_chain": "Haryana Board Corporation||HUDA||Division Ambala",
+        "published": "10-Oct-2026 06:20 PM",
+        "closing": "15-Oct-2026 06:20 PM",
+        "opening": "16-Oct-2026 01:00 PM",
+        "source_url": "https://etenders.hry.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_HBC_553574_1",
+        "title": "JOBNO.HSVP/AMB/2026-27/E-63...",
+        "reference": "20269102F340 7F55 448D BF13 CC01B24A6980239HSV",
+        "organisation": "Haryana Board Corporation",
+        "buyer_chain": "Haryana Board Corporation||HUDA||Division Ambala",
+        "published": "10-Oct-2026 06:05 PM",
+        "closing": "15-Oct-2026 06:05 PM",
+        "opening": "16-Oct-2026 03:00 PM",
+        "source_url": "https://etenders.hry.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://etenders.kerala.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:30.151057+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Agency for Development of Aquaculture Kerala",
+        "advertised_count": 6,
+        "parsed_count": 6,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 125,
+    "advertised_active_tenders": 7024,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "etenders.kerala.gov.in",
+    "returned_records": 6,
+    "sample_records": [
+      {
+        "id": "2026_ADAK_867976_3",
+        "title": "Second Retender for the Supply Of Medium Protein Fish Feed",
+        "reference": "ADAK/RE.NZ/127/2026",
+        "organisation": "Agency for Development of Aquaculture Kerala",
+        "buyer_chain": "Agency for Development of Aquaculture Kerala||Regional Office North Zone Eranholi",
+        "published": "07-Oct-2026 12:00 PM",
+        "closing": "15-Oct-2026 02:00 PM",
+        "opening": "16-Oct-2026 03:00 PM",
+        "source_url": "https://etenders.kerala.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_ADAK_868009_3",
+        "title": "Second Retender for the supply of High Protein Fish Feed",
+        "reference": "ADAK/RE.NZ/128/2026",
+        "organisation": "Agency for Development of Aquaculture Kerala",
+        "buyer_chain": "Agency for Development of Aquaculture Kerala||Regional Office North Zone Eranholi",
+        "published": "07-Oct-2026 11:50 AM",
+        "closing": "15-Oct-2026 02:00 PM",
+        "opening": "16-Oct-2026 03:00 PM",
+        "source_url": "https://etenders.kerala.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://govtprocurement.delhi.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:30.823639+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Delhi Building and Other Construction workers Welf",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 21,
+    "advertised_active_tenders": 656,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "govtprocurement.delhi.gov.in",
+    "returned_records": 1,
+    "sample_records": [
+      {
+        "id": "2026_DBCWB_299729_1",
+        "title": "Selection of a Project Implementing Agency (PIA) for implementing Delhi Building Workers the Health Scheme under DBOCWW Board",
+        "reference": "F17(1564)/DBOCWWB/2026/PT-FL-I",
+        "organisation": "Delhi Building and Other Construction workers Welf",
+        "buyer_chain": "Delhi Building and Other Construction workers Welf",
+        "published": "09-Oct-2026 05:00 PM",
+        "closing": "22-Oct-2026 01:00 PM",
+        "opening": "22-Oct-2026 03:00 PM",
+        "source_url": "https://govtprocurement.delhi.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://hptenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:31.406787+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Baddi Barotiwala Nalagarh Development Authority",
+        "advertised_count": 4,
+        "parsed_count": 4,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 48,
+    "advertised_active_tenders": 1279,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "hptenders.gov.in",
+    "returned_records": 4,
+    "sample_records": [
+      {
+        "id": "2026_BBNDA_144858_1",
+        "title": "Providing underground drainage and Interlocking tile from H/o Jaswant singh to near borewell of sukhdev singh, village nichla malpur and C/o link road from main road to ground nichla malpur, G.P. Malpur",
+        "reference": "BBNDA-06(PROJECT)/5492-5502 dated 29.09.26",
+        "organisation": "Baddi Barotiwala Nalagarh Development Authority",
+        "buyer_chain": "Baddi Barotiwala Nalagarh Development Authority||Director Industries to the Govt. of H.P.Shimla||CEO BBNDA at Baddi Distt.Solan (H.P.)||Executive Engineer (Project Division) BBNDA",
+        "published": "03-Oct-2026 05:00 PM",
+        "closing": "15-Oct-2026 11:00 AM",
+        "opening": "15-Oct-2026 11:30 AM",
+        "source_url": "https://hptenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BBNDA_144878_1",
+        "title": "Restoration of road from Affy Pharma near Bridge to Morpen road.",
+        "reference": " BBNDA-06(PROJECT)/5492-5502 dated 29.09.26",
+        "organisation": "Baddi Barotiwala Nalagarh Development Authority",
+        "buyer_chain": "Baddi Barotiwala Nalagarh Development Authority||Director Industries to the Govt. of H.P.Shimla||CEO BBNDA at Baddi Distt.Solan (H.P.)||Executive Engineer (Project Division) BBNDA",
+        "published": "03-Oct-2026 05:00 PM",
+        "closing": "15-Oct-2026 11:00 AM",
+        "opening": "15-Oct-2026 11:30 AM",
+        "source_url": "https://hptenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://iocletenders.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:32.246336+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "IndianOil",
+        "advertised_count": 230,
+        "parsed_count": 230,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 1,
+    "advertised_active_tenders": 230,
+    "organisations_selected": 1,
+    "complete_active_snapshot": true,
+    "host": "iocletenders.nic.in",
+    "returned_records": 230,
+    "sample_records": [
+      {
+        "id": "2026_SROTN_191712_1",
+        "title": "Development of new A Site Retail Outlet (RO) at TSRTC, Shabad Village and Mandal, Rangareddy District, Telangana under Secunderabad Divisional Office of TAPSO",
+        "reference": "MnC/SR/RSR/LT/161/TAPSO/202627",
+        "organisation": "IndianOil",
+        "buyer_chain": "IndianOil||Marketing||Southern Region and Tamilnadu State Office||Contracts Cell",
+        "published": "10-Oct-2026 06:25 PM",
+        "closing": "17-Oct-2026 06:25 PM",
+        "opening": "19-Oct-2026 09:00 AM",
+        "source_url": "https://iocletenders.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_SROTN_191732_1",
+        "title": "DEVELOPMENT OF CODO-NEW RETAIL OUTLET",
+        "reference": "MnC/SR/HS/LT/164/TNSO/2026-27",
+        "organisation": "IndianOil",
+        "buyer_chain": "IndianOil||Marketing||Southern Region and Tamilnadu State Office||Contracts Cell",
+        "published": "10-Oct-2026 05:00 PM",
+        "closing": "17-Oct-2026 05:00 PM",
+        "opening": "19-Oct-2026 11:00 AM",
+        "source_url": "https://iocletenders.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://jharkhandtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:32.451136+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "BCD EinC",
+        "advertised_count": 10,
+        "parsed_count": 10,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 38,
+    "advertised_active_tenders": 556,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "jharkhandtenders.gov.in",
+    "returned_records": 10,
+    "sample_records": [
+      {
+        "id": "2026_BCD_119745_1",
+        "title": "Remaining Work for Finishing and Furnishing work at New Ministers Bungalow and Office Block (Bungalow No.-01 to 11) at Smart City, Dhurwa, Ranchi",
+        "reference": "26/2026-27/EE/BCD/DIV-2,RANCHI",
+        "organisation": "BCD EinC",
+        "buyer_chain": "BCD EinC||BCD CE||BCD SE CIRCLE-2||BCD EE, RANCHI-2.",
+        "published": "10-Oct-2026 01:00 PM",
+        "closing": "16-Oct-2026 11:00 AM",
+        "opening": "21-Oct-2026 11:30 AM",
+        "source_url": "https://jharkhandtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BCD_119714_1",
+        "title": "Proposed Semi Olympic Swimming Pool at JCSOI Club Campus at Deendayal Nagar Ranchi",
+        "reference": "BCD/Bld. Div. No.-19/2026-27",
+        "organisation": "BCD EinC",
+        "buyer_chain": "BCD EinC||BCD CE||BCD SE CHOTANAGPUR||BCD EE, RANCHI-1",
+        "published": "09-Oct-2026 03:00 PM",
+        "closing": "16-Oct-2026 01:00 PM",
+        "opening": "17-Oct-2026 01:30 PM",
+        "source_url": "https://jharkhandtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://jktenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:54:37.106334+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "AGRICULTURE PRODUCTION DEPARTMENT",
+        "advertised_count": 5,
+        "parsed_count": 5,
+        "status": "count_matches"
+      },
+      {
+        "organisation": "DC-PDD",
+        "advertised_count": 136,
+        "parsed_count": 136,
+        "status": "count_matches"
+      }
+    ],
+    "transport": "curl",
+    "organisations_listed": 34,
+    "advertised_active_tenders": 4452,
+    "organisations_selected": 2,
+    "complete_active_snapshot": false,
+    "host": "jktenders.gov.in",
+    "previous_status": "fetch_error",
+    "returned_records": 141,
+    "sample_records": [
+      {
+        "id": "2026_APD_327146_1",
+        "title": "Drilling/ installation of Bore-well at Gangbugh Agriculture Farm District Srinagar/",
+        "reference": "E-NIT NO. 04 OF 2026-27 DATED 05-10-2026",
+        "organisation": "AGRICULTURE PRODUCTION DEPARTMENT",
+        "buyer_chain": "AGRICULTURE PRODUCTION DEPARTMENT||Agriculture Department Jammu and Kashmir||Directorate Agriculture Kashmir",
+        "published": "05-Oct-2026 06:00 PM",
+        "closing": "12-Oct-2026 04:00 PM",
+        "opening": "13-Oct-2026 11:00 AM",
+        "source_url": "https://jktenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_APD_322964_2",
+        "title": "Supply Installation Testing and Commissioning of Water Management Systems for Agricultural Crops in Jammu Region",
+        "reference": "RFP-12-JKCIP-2026-27",
+        "organisation": "AGRICULTURE PRODUCTION DEPARTMENT",
+        "buyer_chain": "AGRICULTURE PRODUCTION DEPARTMENT||Mission Directorate Holistic Agriculture Development Program||Mission Directorate HADP/JKCIP Jammu",
+        "published": "07-Sep-2026 03:00 PM",
+        "closing": "16-Oct-2026 04:00 PM",
+        "opening": "16-Oct-2026 05:00 PM",
+        "source_url": "https://jktenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://mahatenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:54:39.157927+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Agriculture Marketing Board,Pune(Maharashtra)",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      },
+      {
+        "organisation": "Ahmednagar Municipal Corporation",
+        "advertised_count": 9,
+        "parsed_count": 9,
+        "status": "count_matches"
+      }
+    ],
+    "transport": "curl",
+    "organisations_listed": 134,
+    "advertised_active_tenders": 2932,
+    "organisations_selected": 2,
+    "complete_active_snapshot": false,
+    "host": "mahatenders.gov.in",
+    "previous_status": "not_tested",
+    "returned_records": 10,
+    "sample_records": [
+      {
+        "id": "2026_AMBPN_1341602_1",
+        "title": "SELECTION OF AGENCY TO OPERATE MAINTAIN AND MANAGE EXPORT FACILITY CENTRE MOHADI TALUKA DINDORI DIST NASHIK MAHARASHTRA",
+        "reference": "MSAMB/EXPORT/RFP/10/2026-27",
+        "organisation": "Agriculture Marketing Board,Pune(Maharashtra)",
+        "buyer_chain": "Agriculture Marketing Board,Pune(Maharashtra)||Corporate Head Quarters,Pune",
+        "published": "29-Sep-2026 03:00 PM",
+        "closing": "14-Oct-2026 03:00 PM",
+        "opening": "16-Oct-2026 03:00 PM",
+        "source_url": "https://mahatenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_ANMC_1343839_1",
+        "title": "construction of vegetable market and shopping centre at Ganj Bazar old city Ahilyanagar Public Private Partnership",
+        "reference": "AMC/ProjtDept/EOI/01/2026-27 ",
+        "organisation": "Ahmednagar Municipal Corporation",
+        "buyer_chain": "Ahmednagar Municipal Corporation",
+        "published": "09-Oct-2026 05:45 PM",
+        "closing": "25-Nov-2026 05:45 PM",
+        "opening": "27-Nov-2026 11:00 AM",
+        "source_url": "https://mahatenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://manipurtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:33.025259+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Chief Engineer - Public Health Engineering Department",
+        "advertised_count": 5,
+        "parsed_count": 5,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 14,
+    "advertised_active_tenders": 45,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "manipurtenders.gov.in",
+    "returned_records": 5,
+    "sample_records": [
+      {
+        "id": "2026_PHED_3524_1",
+        "title": "CONSTRUCTION OF CIVIL INFRASTRUCTURE FOR POROMPAT WATER TREATMENT PLANT",
+        "reference": "CE/PHE/ SA/2-474/M-II(P)/2026",
+        "organisation": "Chief Engineer - Public Health Engineering Department",
+        "buyer_chain": "Chief Engineer - Public Health Engineering Department||Addl. Chief Engineer - PHED||Superintending Engineer - PHED||Executive Engineer - PHED",
+        "published": "09-Oct-2026 06:30 PM",
+        "closing": "30-Oct-2026 12:00 PM",
+        "opening": "30-Oct-2026 01:00 PM",
+        "source_url": "https://manipurtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_PHED_3523_1",
+        "title": "CREATION OF INFRASTRUCTURE FOR OLD THUMBUTHONG WATER SUPPLY SCHEME 2 MLD",
+        "reference": "CE/PHE/SA/2-474/M-II(TH)/2026",
+        "organisation": "Chief Engineer - Public Health Engineering Department",
+        "buyer_chain": "Chief Engineer - Public Health Engineering Department||Addl. Chief Engineer - PHED||Superintending Engineer - PHED||Executive Engineer - PHED",
+        "published": "09-Oct-2026 06:15 PM",
+        "closing": "30-Oct-2026 12:00 PM",
+        "opening": "30-Oct-2026 01:00 PM",
+        "source_url": "https://manipurtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://meghalayatenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:33.437460+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Education Department-ADB",
+        "advertised_count": 9,
+        "parsed_count": 9,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 5,
+    "advertised_active_tenders": 22,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "meghalayatenders.gov.in",
+    "returned_records": 9,
+    "sample_records": [
+      {
+        "id": "2026_EDADB_2060_1",
+        "title": "Construction of additional facilities at DIET at Thadlaskein and Repair and Renovation of facilities at DIET at Thadlaskein Hostel",
+        "reference": "SHCDM-II/CW-09/OCB/01/Lot1",
+        "organisation": "Education Department-ADB",
+        "buyer_chain": "Education Department-ADB||PIU-1",
+        "published": "21-Sep-2026 06:30 PM",
+        "closing": "21-Oct-2026 03:00 PM",
+        "opening": "21-Oct-2026 03:30 PM",
+        "source_url": "https://meghalayatenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_EDADB_2062_1",
+        "title": "Construction of additional facilities at Maharam Govt. Higher Sec. School at Mawkyrwat (South-West Khasi Hills), Repair and Renovation of facilities at Mawlieh Govt. UPS in West Khasi Hills",
+        "reference": "SHCDM-II/CW-11/OCB/01",
+        "organisation": "Education Department-ADB",
+        "buyer_chain": "Education Department-ADB||PIU-1",
+        "published": "21-Sep-2026 06:30 PM",
+        "closing": "21-Oct-2026 03:00 PM",
+        "opening": "21-Oct-2026 03:30 PM",
+        "source_url": "https://meghalayatenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://mizoramtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:54:38.957295+00:00",
+    "status": "challenge_required",
+    "scans": [],
+    "transport": "curl",
+    "organisations_listed": 0,
+    "advertised_active_tenders": 0,
+    "host": "mizoramtenders.gov.in",
+    "previous_status": "directory_not_found",
+    "directory_reports_no_active_tenders": true,
+    "note": "The directory requests CAPTCHA submission before listing organisations. Its displayed empty table does not establish a zero tender count.",
+    "returned_records": 0,
+    "sample_records": []
+  },
+  {
+    "source_url": "http://mptenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:34.086676+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Bhopal City Link Limited",
+        "advertised_count": 16,
+        "parsed_count": 16,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 97,
+    "advertised_active_tenders": 5323,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "mptenders.gov.in",
+    "returned_records": 16,
+    "sample_records": [
+      {
+        "id": "2026_BCLL_534099_1",
+        "title": "Route B-25 Sukhisewniya to Bhojpur",
+        "reference": "B002",
+        "organisation": "Bhopal City Link Limited",
+        "buyer_chain": "Bhopal City Link Limited",
+        "published": "07-Sep-2026 09:00 AM",
+        "closing": "22-Oct-2026 05:00 PM",
+        "opening": "23-Oct-2026 05:00 PM",
+        "source_url": "http://mptenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BCLL_534100_1",
+        "title": "B28 Industrial Area Acharpura to Bilkisganj)",
+        "reference": "B003",
+        "organisation": "Bhopal City Link Limited",
+        "buyer_chain": "Bhopal City Link Limited",
+        "published": "07-Sep-2026 09:00 AM",
+        "closing": "22-Oct-2026 05:00 PM",
+        "opening": "23-Oct-2026 05:00 PM",
+        "source_url": "http://mptenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://nagalandtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:34.213386+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Department of Power",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 3,
+    "advertised_active_tenders": 3,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "nagalandtenders.gov.in",
+    "returned_records": 1,
+    "sample_records": [
+      {
+        "id": "2026_DP_845_1",
+        "title": "Engagement of Consultant for Preparation of DPR",
+        "reference": "No.CEL/DnR/D2/RTS/MSV/NIT/513",
+        "organisation": "Department of Power",
+        "buyer_chain": "Department of Power||Office of the Addl. Chief Engineer(D and R)",
+        "published": "08-Oct-2026 06:00 PM",
+        "closing": "13-Oct-2026 11:00 AM",
+        "opening": "13-Oct-2026 12:30 PM",
+        "source_url": "https://nagalandtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://pudutenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:34.491563+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Department of Local Administration",
+        "advertised_count": 2,
+        "parsed_count": 2,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 10,
+    "advertised_active_tenders": 58,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "pudutenders.gov.in",
+    "returned_records": 2,
+    "sample_records": [
+      {
+        "id": "2026_DLA_22765_1",
+        "title": "Development of White Town in Puducherry under the Challenge Based Destination Development, Scheme of Government of India. Sub work_ Electrical works components in the development of White Town, Puducherry.",
+        "reference": "PM/EE/ e-tender/ 19/2025-26",
+        "organisation": "Department of Local Administration",
+        "buyer_chain": "Department of Local Administration||Puducherry Municipality-DLA",
+        "published": "28-Aug-2026 11:30 AM",
+        "closing": "28-Oct-2026 04:00 PM",
+        "opening": "28-Oct-2026 04:30 PM",
+        "source_url": "https://pudutenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_DLA_22753_1",
+        "title": "Engagement of an Agency for Design, Supply_ Installation_ Integration_Commissioning and Maintenance of Virtual Reality (VR) / Augmentation Reality (AR) For Immersive Experience Centre at 1st Floor_ Craft Bazar_ Gandhi Thidal_ Puducherry",
+        "reference": "RFP.No.01/PM/EE/DB/2026-27",
+        "organisation": "Department of Local Administration",
+        "buyer_chain": "Department of Local Administration||Puducherry Municipality-DLA",
+        "published": "25-Aug-2026 12:00 PM",
+        "closing": "22-Oct-2026 11:00 AM",
+        "opening": "23-Oct-2026 11:00 AM",
+        "source_url": "https://pudutenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://sikkimtender.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:34.834722+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Empowerment and Welfare Department",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 3,
+    "advertised_active_tenders": 3,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "sikkimtender.gov.in",
+    "returned_records": 1,
+    "sample_records": [
+      {
+        "id": "2026_EWD_918_1",
+        "title": "Construction of Badminton Academy, Rangthu Ralap, Khamdong, Gangtok District, Sikkim",
+        "reference": "2/SWD/EC/NIT/2026-27/124",
+        "organisation": "Empowerment and Welfare Department",
+        "buyer_chain": "Empowerment and Welfare Department||Welfare Division - EWD",
+        "published": "17-Sep-2026 10:00 AM",
+        "closing": "17-Oct-2026 04:30 PM",
+        "opening": "26-Oct-2026 01:30 PM",
+        "source_url": "https://sikkimtender.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://tenders.ladakh.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:36.176063+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Forest Ecology and Environment",
+        "advertised_count": 23,
+        "parsed_count": 23,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 6,
+    "advertised_active_tenders": 113,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "tenders.ladakh.gov.in",
+    "returned_records": 23,
+    "sample_records": [
+      {
+        "id": "2026_FEE_19687_13",
+        "title": "Chain-link fencing, Plantation and maintenance work at Sharnos Monk Welfare society L-1700rft,3000nos, Thiksay Gonpa L-3800rft,1500nos, Shara community area L-7000nos and Tukchu Sakti community area L-3570rft,7000nos of Leh Forest Range",
+        "reference": "E-Tender No 13 of FDL 2026-27",
+        "organisation": "Forest Ecology and Environment",
+        "buyer_chain": "Forest Ecology and Environment||Chief Conservator Forest - Ladakh||Forest Department - Leh",
+        "published": "09-Oct-2026 11:50 AM",
+        "closing": "15-Oct-2026 04:00 PM",
+        "opening": "16-Oct-2026 12:00 PM",
+        "source_url": "https://tenders.ladakh.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_FEE_19698_8",
+        "title": "Providing and laying cement concrete channel at Chumik Tangmo Diskit , Hunder Nubra, kobet nubra, Tsogstod Diskit and construction of culvert at chumik tangmo of Forest Range Nubra for the year 2026-27 Scheme - CAMPA",
+        "reference": "E-Tender No 13 of FDL 2026-27",
+        "organisation": "Forest Ecology and Environment",
+        "buyer_chain": "Forest Ecology and Environment||Chief Conservator Forest - Ladakh||Forest Department - Leh",
+        "published": "08-Oct-2026 05:30 PM",
+        "closing": "16-Oct-2026 04:00 PM",
+        "opening": "17-Oct-2026 12:00 PM",
+        "source_url": "https://tenders.ladakh.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://tendersodisha.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:36.538996+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Bhubaneswar Development Authority",
+        "advertised_count": 2,
+        "parsed_count": 2,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 67,
+    "advertised_active_tenders": 1783,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "tendersodisha.gov.in",
+    "returned_records": 2,
+    "sample_records": [
+      {
+        "id": "2026_BDABU_142890_1",
+        "title": "Selection of an Event Management and Placemaking Agency for Conceptualization, Design and Execution of Integrated City Activations for 19th Urban Mobility India Conference and Expo 2026, Bhubaneswa",
+        "reference": "830/EM-II/BDA/2026-2027",
+        "organisation": "Bhubaneswar Development Authority",
+        "buyer_chain": "Bhubaneswar Development Authority||Bhubaneswar Development Authority||EE,BDA Division II",
+        "published": "08-Oct-2026 09:00 AM",
+        "closing": "13-Oct-2026 05:00 PM",
+        "opening": "13-Oct-2026 06:00 PM",
+        "source_url": "https://tendersodisha.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_BDABU_141727_1",
+        "title": "Improvement of Road from Patia Bigbazar Junction to Patia Railway Station Chhak at Bhubaneswar",
+        "reference": "535/EM/BDA/2026-27",
+        "organisation": "Bhubaneswar Development Authority",
+        "buyer_chain": "Bhubaneswar Development Authority||Bhubaneswar Development Authority||EE,BDA Division I",
+        "published": "25-Sep-2026 02:30 PM",
+        "closing": "12-Oct-2026 05:30 PM",
+        "opening": "13-Oct-2026 11:30 AM",
+        "source_url": "https://tendersodisha.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://tendersutl.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:36.590158+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "DEPARTMENT OF ART AND CULTURE",
+        "advertised_count": 2,
+        "parsed_count": 2,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 2,
+    "advertised_active_tenders": 21,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "tendersutl.gov.in",
+    "returned_records": 2,
+    "sample_records": [
+      {
+        "id": "2026_AC_3473_1",
+        "title": "Implementation of KOHA ILS (Integrated Library System) at the State Central Library, Kavaratti under the Directorate of Art and Culture, UTL",
+        "reference": "F.No.17/01/2025-A and C",
+        "organisation": "DEPARTMENT OF ART AND CULTURE",
+        "buyer_chain": "DEPARTMENT OF ART AND CULTURE||Department of Art and Culture",
+        "published": "28-Sep-2026 05:25 PM",
+        "closing": "26-Oct-2026 05:00 PM",
+        "opening": "27-Oct-2026 10:00 AM",
+        "source_url": "https://tendersutl.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_AC_3462_1",
+        "title": "Implementation of KOHA ILS (Integrated Library System) at the District Library, Kadmat island",
+        "reference": "F.No.17/01/2025-A and C",
+        "organisation": "DEPARTMENT OF ART AND CULTURE",
+        "buyer_chain": "DEPARTMENT OF ART AND CULTURE||Department of Art and Culture",
+        "published": "28-Sep-2026 05:10 PM",
+        "closing": "26-Oct-2026 05:00 PM",
+        "opening": "27-Oct-2026 10:00 AM",
+        "source_url": "https://tendersutl.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://tntenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:36.792066+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Anna University Chennai",
+        "advertised_count": 6,
+        "parsed_count": 6,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 66,
+    "advertised_active_tenders": 5455,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "tntenders.gov.in",
+    "returned_records": 6,
+    "sample_records": [
+      {
+        "id": "2026_AU_712485_1",
+        "title": "Operation and Maintenance of Sewage Treatment Plant (STP) - 300 KLD (MBBR) at CEG campus, Anna University, Chennai",
+        "reference": "AU-EO/STP-001/2026-27",
+        "organisation": "Anna University Chennai",
+        "buyer_chain": "Anna University Chennai||University Purchase Section",
+        "published": "09-Oct-2026 05:30 PM",
+        "closing": "22-Oct-2026 05:00 PM",
+        "opening": "23-Oct-2026 02:00 PM",
+        "source_url": "https://tntenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_AU_712651_1",
+        "title": "Operation and Maintenance of Sewage Treatment Plant (STP) - 200 KLD (ASP) at MIT campus, Anna University, Chennai",
+        "reference": "AU-EO/STP-004/2026-27",
+        "organisation": "Anna University Chennai",
+        "buyer_chain": "Anna University Chennai||University Purchase Section",
+        "published": "09-Oct-2026 05:30 PM",
+        "closing": "22-Oct-2026 05:00 PM",
+        "opening": "23-Oct-2026 02:00 PM",
+        "source_url": "https://tntenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://tripuratenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:38.159166+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Addl Director General of Police",
+        "advertised_count": 2,
+        "parsed_count": 2,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 35,
+    "advertised_active_tenders": 693,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "tripuratenders.gov.in",
+    "returned_records": 2,
+    "sample_records": [
+      {
+        "id": "2026_CC5_77909_1",
+        "title": "Renovation of damaged drill shed",
+        "reference": "CO,7/dnit/03/2026-27(2nd- call)",
+        "organisation": "Addl Director General of Police",
+        "buyer_chain": "Addl Director General of Police||Inspector General of Police (Admin)||Commandant 7th Bn. TSR",
+        "published": "09-Oct-2026 04:00 PM",
+        "closing": "28-Oct-2026 04:00 PM",
+        "opening": "28-Oct-2026 04:10 PM",
+        "source_url": "https://tripuratenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_SPSA_77696_1",
+        "title": "Construction of 01 One TTS Jawan Barrack Size 40 X 20 half wall Galvalume sheeets walling roofing with 4 front verandah at P R Bari under SP South Belonia",
+        "reference": "F.1(14)/const/SD/DNIT/02/26",
+        "organisation": "Addl Director General of Police",
+        "buyer_chain": "Addl Director General of Police||Inspector General of Police (Admin)||Superintendent of Police (South)",
+        "published": "07-Oct-2026 01:30 PM",
+        "closing": "27-Oct-2026 05:00 PM",
+        "opening": "28-Oct-2026 11:00 AM",
+        "source_url": "https://tripuratenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://uktenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:38.213996+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Add. Secretary (Urban Development)",
+        "advertised_count": 8,
+        "parsed_count": 8,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 72,
+    "advertised_active_tenders": 689,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "uktenders.gov.in",
+    "returned_records": 8,
+    "sample_records": [
+      {
+        "id": "2026_UD_101156_1",
+        "title": "Empanelment of Event Management agencies for Kumbh 2027 Haridwar",
+        "reference": "1585/KM/MELA/2027",
+        "organisation": "Add. Secretary (Urban Development)",
+        "buyer_chain": "Add. Secretary (Urban Development)||Mela Officer (Ardh Kumbh Mela-2016)||AMO Kumbh",
+        "published": "10-Oct-2026 12:40 PM",
+        "closing": "27-Oct-2026 03:00 PM",
+        "opening": "27-Oct-2026 03:30 PM",
+        "source_url": "https://uktenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_UD_101155_1",
+        "title": "Selection of Agency for Supply and Delivery of Miscellaneous Items for Kumbh Mela 2027, Haridwar",
+        "reference": "1585/KM/MELA/2027",
+        "organisation": "Add. Secretary (Urban Development)",
+        "buyer_chain": "Add. Secretary (Urban Development)||Mela Officer (Ardh Kumbh Mela-2016)||AMO Kumbh",
+        "published": "10-Oct-2026 12:00 PM",
+        "closing": "27-Oct-2026 03:00 PM",
+        "opening": "27-Oct-2026 03:30 PM",
+        "source_url": "https://uktenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://wbtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:38.708886+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "ALIAH UNIVERSITY",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 94,
+    "advertised_active_tenders": 2723,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "wbtenders.gov.in",
+    "returned_records": 1,
+    "sample_records": [
+      {
+        "id": "2026_AU_1038873_1",
+        "title": "ETENDER FOR ENGAGEMENT OF SERVICE PROVIDER TO PROVIDE CANTEEN SERVICE FOR NEW TOWN GIRLS HOSTEL OF ALIAH UNIVERSITY 2nd Call against eNIT No. AU REG eNIT 009 2025 26",
+        "reference": "AU/REG/eNIT-008/2026-27",
+        "organisation": "ALIAH UNIVERSITY",
+        "buyer_chain": "ALIAH UNIVERSITY",
+        "published": "20-Aug-2026 05:00 PM",
+        "closing": "27-Oct-2026 03:00 PM",
+        "opening": "29-Oct-2026 03:00 PM",
+        "source_url": "https://wbtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "source_url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T08:52:39.006941+00:00",
+    "status": "records_returned",
+    "scans": [
+      {
+        "organisation": "Andaman Public Works Department (APWD)",
+        "advertised_count": 3,
+        "parsed_count": 3,
+        "status": "count_matches"
+      }
+    ],
+    "organisations_listed": 16,
+    "advertised_active_tenders": 291,
+    "organisations_selected": 1,
+    "complete_active_snapshot": false,
+    "host": "www.pmgsytenders.gov.in",
+    "returned_records": 3,
+    "sample_records": [
+      {
+        "id": "2026_APWD_149684_1",
+        "title": "Up-gradation of Rural Road from NH connection (Near Basantipur Chowk) to Basantipur Panchayat (Near Brajlal House) at Mayabunder North and Middle Andaman under PMGSY-III, Batch-I, 2024-25 Package No. AN03MB307, (Length 4.549 km) (6th Call)",
+        "reference": "NIT No. 07/SE/CC-I/2025-26",
+        "organisation": "Andaman Public Works Department (APWD)",
+        "buyer_chain": "Andaman Public Works Department (APWD)||PIU-2 Office of EE NACD APWD Mayabunder",
+        "published": "28-Sep-2026 04:00 PM",
+        "closing": "13-Oct-2026 03:00 PM",
+        "opening": "16-Oct-2026 10:00 AM",
+        "source_url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      },
+      {
+        "id": "2026_APWD_149680_1",
+        "title": "Upgradation of Rural Road from NH connection (Near Webi Junction) to NH Connection (Near Bamboo Nalah Pahalgaon-1) at Mayabunder, North and Middle Andaman under PMGSY-III, Batch-I,2024-25 Package No. AN03MB308 (Length 3.100 km).(6th Call)",
+        "reference": "NIT No. 10/SE/CC-I/2025-26",
+        "organisation": "Andaman Public Works Department (APWD)",
+        "buyer_chain": "Andaman Public Works Department (APWD)||PIU-2 Office of EE NACD APWD Mayabunder",
+        "published": "28-Sep-2026 02:00 PM",
+        "closing": "13-Oct-2026 03:00 PM",
+        "opening": "16-Oct-2026 10:00 AM",
+        "source_url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  }
+]

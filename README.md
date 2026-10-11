@@ -105,3 +105,26 @@ cargo run -- search "residential quarter" --kind house --pages 3
 ```
 
 `--kind` is `plaster`, `masonry`, or `house`.
+
+## Active tenders by organisation
+
+`organisation_tenders.py` reads the public GePNIC organisation directory, keeps its session cookies, and fetches each buyer's active tenders. It searches the collected titles, references, and buyer chains locally.
+
+```bash
+python3 organisation_tenders.py \
+  --url 'https://eproc.rajasthan.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page' \
+  --transport curl --max-orgs 0 --timeout 90 \
+  --query road --out out/rajasthan-active.json
+```
+
+Python 3 uses the standard library. `--transport curl` uses the installed curl client with TLS verification enabled. The default limit is two organisations. Set `--max-orgs 0` to scan every listed buyer. Set `--organisation` to select a buyer.
+
+The JSON separates fetched records from keyword matches. It includes per-buyer advertised and parsed counts, errors, and `complete_active_snapshot`. A partial scan with zero keyword matches is not a portal-wide zero. Complete snapshots cover the visible active listings at collection time.
+
+On 11 October 2026, bounded tests returned records on 43 of 44 GePNIC hosts. All sampled buyer counts matched. Several company domains returned duplicate BEML records. Mizoram still requested a CAPTCHA before listing buyers. See [the findings](captcha-automation-findings.md) and [host evidence](organisation-route-summary.json). Protected keyword search, historical search, and the Rust daily `run` command still use their existing paths.
+
+Run the parser regression tests:
+
+```bash
+python3 -m unittest discover -s tests -p 'test_organisation_tenders.py'
+```

@@ -4,3 +4,4 @@ state.json
 intel.db
 .env
 .env.*
+__pycache__/
