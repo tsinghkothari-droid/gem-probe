@@ -1,0 +1,237 @@
+[
+  {
+    "host": "arunachaltenders.gov.in",
+    "kind": "",
+    "source_url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T09:38:02.714379+00:00",
+    "status": "records_returned",
+    "organisation_filter": "",
+    "organisations_listed": 2,
+    "organisations_selected": 2,
+    "organisations_matching": 2,
+    "advertised_active_tenders": 2,
+    "complete_active_snapshot": true,
+    "complete_selected_snapshot": true,
+    "error": null,
+    "captcha_attempts": [],
+    "scans": [
+      {
+        "organisation": "RURAL WORKS DEPARTMENT ARUNACHAL PRADESH",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches",
+        "error": null
+      },
+      {
+        "organisation": "Town Planning and Urban Local Bodies",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches",
+        "error": null
+      }
+    ],
+    "record_count": 2,
+    "sample": [
+      {
+        "id": "2026_RWDAP_3712_1",
+        "title": "Construction of RWD Likabali Division Office",
+        "reference": "BE/2026-27/01",
+        "buyer_chain": "RURAL WORKS DEPARTMENT ARUNACHAL PRADESH||CHIEF ENGINEERING RWD WESTERN ZONE||CIRCLE RUPA||SINGCHUNG DIVISION",
+        "closing": "22-Oct-2026 04:00 PM",
+        "published": "07-Oct-2026 09:00 AM",
+        "opening": "23-Oct-2026 11:00 AM",
+        "source_url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "host": "eprocurebel.co.in",
+    "kind": "",
+    "source_url": "https://eprocurebel.co.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T09:38:02.714710+00:00",
+    "status": "records_returned",
+    "organisation_filter": "Bharat Electronics Limited",
+    "organisations_listed": 7,
+    "organisations_selected": 1,
+    "organisations_matching": 1,
+    "advertised_active_tenders": 130,
+    "complete_active_snapshot": false,
+    "complete_selected_snapshot": true,
+    "error": null,
+    "captcha_attempts": [],
+    "scans": [
+      {
+        "organisation": "Bharat Electronics Limited",
+        "advertised_count": 29,
+        "parsed_count": 29,
+        "status": "count_matches",
+        "error": null
+      }
+    ],
+    "record_count": 29,
+    "sample": [
+      {
+        "id": "2026_BEL_100347_1",
+        "title": "Procurement of 3 Wheeler Battery Lithium-ion Operated Electric Cargo Vehicle",
+        "reference": "BG/ES10/2104571262",
+        "buyer_chain": "Bharat Electronics Limited||Bangalore Unit - BEL||ES - BEL||Purchase-ES - BEL",
+        "closing": "16-Oct-2026 10:00 AM",
+        "published": "08-Oct-2026 04:00 PM",
+        "opening": "16-Oct-2026 04:00 PM",
+        "source_url": "https://eprocurebel.co.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "host": "eprocuregsl.nic.in",
+    "kind": "",
+    "source_url": "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T09:38:02.714764+00:00",
+    "status": "records_returned",
+    "organisation_filter": "Goa Shipyard Limited",
+    "organisations_listed": 7,
+    "organisations_selected": 1,
+    "organisations_matching": 1,
+    "advertised_active_tenders": 130,
+    "complete_active_snapshot": false,
+    "complete_selected_snapshot": true,
+    "error": null,
+    "captcha_attempts": [],
+    "scans": [
+      {
+        "organisation": "Goa Shipyard Limited",
+        "advertised_count": 1,
+        "parsed_count": 1,
+        "status": "count_matches",
+        "error": null
+      }
+    ],
+    "record_count": 1,
+    "sample": [
+      {
+        "id": "2026_GSL_100151_1",
+        "title": "CONSTRUCTION OF NEW FIRE STATION BUILDING AT GOA SHIPYARD LIMITED",
+        "reference": "CIVIL/01/GSL/CE/ADS/ETN-275",
+        "buyer_chain": "Goa Shipyard Limited||CIVIL",
+        "closing": "13-Oct-2026 12:00 PM",
+        "published": "30-Sep-2026 12:00 PM",
+        "opening": "13-Oct-2026 03:00 PM",
+        "source_url": "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "host": "eprocurehsl.nic.in",
+    "kind": "",
+    "source_url": "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T09:38:02.714802+00:00",
+    "status": "records_returned",
+    "organisation_filter": "Hindustan Shipyard Limited",
+    "organisations_listed": 7,
+    "organisations_selected": 1,
+    "organisations_matching": 1,
+    "advertised_active_tenders": 130,
+    "complete_active_snapshot": false,
+    "complete_selected_snapshot": true,
+    "error": null,
+    "captcha_attempts": [],
+    "scans": [
+      {
+        "organisation": "Hindustan Shipyard Limited",
+        "advertised_count": 12,
+        "parsed_count": 12,
+        "status": "count_matches",
+        "error": null
+      }
+    ],
+    "record_count": 12,
+    "sample": [
+      {
+        "id": "2026_HSL_100323_1",
+        "title": "Procurement of Wash basin and Mirrors for Officer Quarters in HSL Colony",
+        "reference": "MP/3000000207/26-27 DTD 05 Oct 2026",
+        "buyer_chain": "Hindustan Shipyard Limited||MAIN PURCHASE",
+        "closing": "12-Oct-2026 11:00 AM",
+        "published": "07-Oct-2026 03:00 PM",
+        "opening": "12-Oct-2026 03:00 PM",
+        "source_url": "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "host": "eprocuremdl.nic.in",
+    "kind": "",
+    "source_url": "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "checked_at": "2026-10-11T09:38:04.240640+00:00",
+    "status": "records_returned",
+    "organisation_filter": "Mazagon Dock Shipbuilders Limited",
+    "organisations_listed": 7,
+    "organisations_selected": 1,
+    "organisations_matching": 1,
+    "advertised_active_tenders": 130,
+    "complete_active_snapshot": false,
+    "complete_selected_snapshot": true,
+    "error": null,
+    "captcha_attempts": [],
+    "scans": [
+      {
+        "organisation": "Mazagon Dock Shipbuilders Limited",
+        "advertised_count": 4,
+        "parsed_count": 4,
+        "status": "count_matches",
+        "error": null
+      }
+    ],
+    "record_count": 4,
+    "sample": [
+      {
+        "id": "2026_MDL_100363_1",
+        "title": "Construction of New Sewer Line and Stage with Roofing Shed at Belapur CBD, MDL Colony, Navi Mumbai",
+        "reference": "1900000274",
+        "buyer_chain": "Mazagon Dock Shipbuilders Limited||Ship Building Division - MDL||Outsourcing - MDL",
+        "closing": "30-Oct-2026 03:30 PM",
+        "published": "09-Oct-2026 05:30 PM",
+        "opening": "02-Nov-2026 02:30 PM",
+        "source_url": "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page"
+      }
+    ]
+  },
+  {
+    "host": "eproc2.bihar.gov.in",
+    "kind": "bihar",
+    "source_url": "https://eproc2.bihar.gov.in/EPSV2Web/openarea/tenderListingPage.action",
+    "checked_at": "2026-10-11T09:38:04.249446+00:00",
+    "status": "records_returned",
+    "organisation_filter": "",
+    "organisations_listed": 0,
+    "organisations_selected": 0,
+    "organisations_matching": 0,
+    "advertised_active_tenders": 847,
+    "complete_active_snapshot": true,
+    "complete_selected_snapshot": false,
+    "error": null,
+    "captcha_attempts": [],
+    "scans": [
+      {
+        "organisation": "Bihar public active-tender list",
+        "advertised_count": 847,
+        "parsed_count": 847,
+        "status": "count_matches",
+        "error": null
+      }
+    ],
+    "record_count": 847,
+    "sample": [
+      {
+        "id": "BIHAR_140245",
+        "title": "CONSTRUCTION OF 8 PRISONERS CELL FOR MANDAL KARA AT SHEIKHPURA FOR THE YEAR 2026-2027",
+        "reference": "RE NIT-10/2026-27",
+        "buyer_chain": "Government of Bihar || Building Construction Department",
+        "closing": "2026-10-11T15:00:00+05:30",
+        "published": "2026-09-19T21:59:26+05:30",
+        "opening": "2026-10-12T15:30:00+05:30",
+        "source_url": "https://eproc2.bihar.gov.in/EPSV2Web/openarea/tenderListingPage.action"
+      }
+    ]
+  }
+]

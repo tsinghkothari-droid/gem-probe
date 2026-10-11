@@ -47,6 +47,7 @@ pub struct FeedStat {
     pub name: String,
     pub rows: usize,
     pub error: Option<String>,
+    pub detail: Option<String>,
 }
 
 pub fn when(today: &str, end: &str, within: u32) -> When {
@@ -135,8 +136,13 @@ pub fn render(
     }
     for feed in feeds {
         match &feed.error {
-            Some(err) => out.push_str(&format!("- {}: fail, {err}\n", feed.name)),
+            Some(err) => out.push_str(&format!("- {}: {} rows retained; fail, {err}\n", feed.name, feed.rows)),
             None => out.push_str(&format!("- {}: {} rows, title only\n", feed.name, feed.rows)),
+        }
+    }
+    for feed in feeds {
+        if let Some(detail) = &feed.detail {
+            out.push_str(&format!("- {} coverage: {detail}\n", feed.name));
         }
     }
     out.push_str("\n### Title matches\n\n");
@@ -254,6 +260,15 @@ mod tests {
     }
 
     #[test]
+    fn failed_feed_retains_count_and_coverage() {
+        let feeds = vec![FeedStat { name: "Portal".into(), rows: 7, error: Some("timeout".into()),
+                                  detail: Some("partial or unresolved".into()) }];
+        let page = render("Company", "2026-10-11", 14, &[], &[], &feeds);
+        assert!(page.contains("7 rows retained; fail, timeout"));
+        assert!(page.contains("Portal coverage: partial or unresolved"));
+    }
+
+    #[test]
     fn a_date_three_days_out_is_inside_and_twenty_is_outside() {
         assert_eq!(when("2026-10-11", "2026-10-14", 14), When::Inside);
         assert_eq!(when("2026-10-11", "2026-10-31", 14), When::Outside);
@@ -277,6 +292,7 @@ mod tests {
             name: "Rajasthan".into(),
             rows: 10,
             error: None,
+            detail: None,
         }];
         let page = render("Varonis", "2026-10-11", 14, &rows, &phrases, &feeds);
         assert!(page.contains("## Act this week"));

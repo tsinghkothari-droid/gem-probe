@@ -1,0 +1,228 @@
+[
+  {
+    "host": "arunachaltenders.gov.in",
+    "url": "https://arunachaltenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "assamtenders.gov.in",
+    "url": "https://assamtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "cgeproc.cgstate.gov.in",
+    "url": "https://cgeproc.cgstate.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "coalindiatenders.nic.in",
+    "url": "https://coalindiatenders.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "ddtenders.gov.in",
+    "url": "https://ddtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "defproc.gov.in",
+    "url": "https://defproc.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "dnhtenders.gov.in",
+    "url": "https://dnhtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "eproc.punjab.gov.in",
+    "url": "https://eproc.punjab.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "eproc.rajasthan.gov.in",
+    "url": "https://eproc.rajasthan.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "eprocure.andamannicobar.gov.in",
+    "url": "https://eprocure.andamannicobar.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "eprocure.goa.gov.in",
+    "url": "http://eprocure.goa.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "eprocure.gov.in",
+    "url": "https://eprocure.gov.in/eprocure/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "eprocurebel.co.in",
+    "url": "https://eprocurebel.co.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": "Bharat Electronics Limited"
+  },
+  {
+    "host": "eprocurebhel.co.in",
+    "url": "https://eprocurebhel.co.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "eprocuregsl.nic.in",
+    "url": "https://eprocuregsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": "Goa Shipyard Limited"
+  },
+  {
+    "host": "eprocurehsl.nic.in",
+    "url": "https://eprocurehsl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": "Hindustan Shipyard Limited"
+  },
+  {
+    "host": "eprocuremdl.nic.in",
+    "url": "https://eprocuremdl.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": "Mazagon Dock Shipbuilders Limited"
+  },
+  {
+    "host": "eprocurentpc.nic.in",
+    "url": "https://eprocurentpc.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "etender.up.nic.in",
+    "url": "https://etender.up.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "etenders.chd.nic.in",
+    "url": "https://etenders.chd.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "etenders.gov.in",
+    "url": "https://etenders.gov.in/eprocure/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "etenders.hry.nic.in",
+    "url": "https://etenders.hry.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "etenders.kerala.gov.in",
+    "url": "https://etenders.kerala.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "govtprocurement.delhi.gov.in",
+    "url": "https://govtprocurement.delhi.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "hptenders.gov.in",
+    "url": "https://hptenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "iocletenders.nic.in",
+    "url": "https://iocletenders.nic.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "jharkhandtenders.gov.in",
+    "url": "https://jharkhandtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "jktenders.gov.in",
+    "url": "https://jktenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "mahatenders.gov.in",
+    "url": "https://mahatenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "manipurtenders.gov.in",
+    "url": "https://manipurtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "meghalayatenders.gov.in",
+    "url": "https://meghalayatenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "mizoramtenders.gov.in",
+    "url": "https://mizoramtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "mptenders.gov.in",
+    "url": "http://mptenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "nagalandtenders.gov.in",
+    "url": "https://nagalandtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "pudutenders.gov.in",
+    "url": "https://pudutenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "sikkimtender.gov.in",
+    "url": "https://sikkimtender.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "tenders.ladakh.gov.in",
+    "url": "https://tenders.ladakh.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "tendersodisha.gov.in",
+    "url": "https://tendersodisha.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "tendersutl.gov.in",
+    "url": "https://tendersutl.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "tntenders.gov.in",
+    "url": "https://tntenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "tripuratenders.gov.in",
+    "url": "https://tripuratenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "uktenders.gov.in",
+    "url": "https://uktenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "wbtenders.gov.in",
+    "url": "https://wbtenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "www.pmgsytenders.gov.in",
+    "url": "https://www.pmgsytenders.gov.in/nicgep/app?page=FrontEndTendersByOrganisation&service=page",
+    "organisation": ""
+  },
+  {
+    "host": "eproc2.bihar.gov.in",
+    "url": "https://eproc2.bihar.gov.in/EPSV2Web/openarea/tenderListingPage.action",
+    "organisation": "",
+    "kind": "bihar"
+  }
+]

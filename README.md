@@ -1,6 +1,6 @@
 # gem-probe
 
-Watch the public [GeM BidPlus](https://bidplus.gem.gov.in/all-bids) feed for the work a company sells.
+Watch public GeM, GePNIC, Bihar EPS, and CPPP tender feeds for the work a company sells.
 
 An agent looks at the company first: products, where they are used, and the words a tender bill would use. That becomes a profile. The watch searches those phrases and keeps a bid only when the returned bill text contains one of the company's keep terms. Re-running the same command with `--state` reports only bids that were not in the last run.
 
@@ -31,7 +31,9 @@ If the page asks for a captcha, an OTP, or a password and no row is found, the r
 
 ## Watch a company
 
-`run` is the daily command. `watch` calls the same path.
+`run` is the daily command. `watch` calls the same path. Install Python 3 and curl alongside the Rust binary.
+
+The run searches GeM phrases, collects active listings from 44 GePNIC hosts and Bihar EPS, and reads four CPPP lists. It scans every listed organisation by default. Large portals can take several minutes. A GeM connection failure appears in the report while other feeds continue.
 
 ```bash
 cargo run --release -- run \
@@ -84,7 +86,7 @@ Rajasthan, Himachal Pradesh, Defence, Haryana, Coal India, and Jammu and Kashmir
 cargo run -- boards --out boards.csv
 ```
 
-`run` reads the same six pages. A title that contains a keep term is listed under title matches. It is not treated as bill text.
+`boards` keeps this six-page diagnostic. The daily `run` command uses the broader organisation listings below. A title match is not treated as a match in bill text.
 
 ## CPPP lists
 
@@ -95,7 +97,7 @@ These four pages already print tender titles. The keyword box on the same site a
 - High-value central notices
 - Notices closing today
 
-`run` reads the newest rows on each list. Those rows are title only. A keep term in the title is listed under title matches.
+`run` reads up to two pages per list, follows the actual encoded next-page links, and removes duplicate tender IDs. Those rows are title only. A keep term in the title is listed under title matches. CPPP Results of Tenders remains CAPTCHA-protected and is not covered by these active lists.
 
 ## One search
 
@@ -106,9 +108,35 @@ cargo run -- search "residential quarter" --kind house --pages 3
 
 `--kind` is `plaster`, `masonry`, or `house`.
 
-## Active tenders by organisation
+## Active tender collection
 
-`organisation_tenders.py` reads the public GePNIC organisation directory, keeps its session cookies, and fetches each buyer's active tenders. It searches the collected titles, references, and buyer chains locally.
+`run` and `watch` embed `organisation_tenders.py` and `gepnic-portals.json`. They preserve cookies per host and collect public active listings. The organisation directory works on many GePNIC hosts whose keyword search requires a CAPTCHA. Bihar uses an anonymous token issued by its public listing page.
+
+Select hosts for a shorter run:
+
+```bash
+cargo run --release -- run --profile profiles/navoday-sciences.json \
+  --portal arunachaltenders.gov.in --portal eproc2.bihar.gov.in \
+  --out out/navoday.md
+```
+
+Export all collected records and coverage counts without profile filtering:
+
+```bash
+cargo run --release -- organisations \
+  --portal eprocurebel.co.in --portal eproc2.bihar.gov.in \
+  --out out/active-tenders.json
+```
+
+Omit `--portal` to select all configured hosts. Repeat it to select several. `--max-organisations 0` scans every matching organisation and is the Rust default. Set a positive limit for a partial scan. `--portal-timeout 90` sets the timeout for each request. These limits apply to GePNIC organisation requests; Bihar returns its complete public list in one response.
+
+BEL, HSL, MDL, and GSL domains share a directory. Their configuration selects the named company, so an unrelated BEML listing does not count as that company's result. The daily run removes duplicate GePNIC tender IDs across hosts.
+
+Each JSON report includes advertised and parsed counts, scan errors, and completeness flags. A complete selected-buyer listing does not imply complete coverage of the shared portal. Bihar compares its unique record count with the portal's active-tender count. Records remain available when a later request fails. Counts can change while a scan runs.
+
+A partial scan with zero matches is not a portal-wide zero. All these listings contain titles and buyer names, not full tender documents or historical awards.
+
+The standalone collector remains available:
 
 ```bash
 python3 organisation_tenders.py \
@@ -117,14 +145,32 @@ python3 organisation_tenders.py \
   --query road --out out/rajasthan-active.json
 ```
 
-Python 3 uses the standard library. `--transport curl` uses the installed curl client with TLS verification enabled. The default limit is two organisations. Set `--max-orgs 0` to scan every listed buyer. Set `--organisation` to select a buyer.
+The standalone default is two organisations. Its local `--query` filter checks titles, references, and buyer chains. Normal daily profile matching checks these listing fields and labels the result as title-only coverage.
 
-The JSON separates fetched records from keyword matches. It includes per-buyer advertised and parsed counts, errors, and `complete_active_snapshot`. A partial scan with zero keyword matches is not a portal-wide zero. Complete snapshots cover the visible active listings at collection time.
+## Optional free CAPTCHA attempt
 
-On 11 October 2026, bounded tests returned records on 43 of 44 GePNIC hosts. All sampled buyer counts matched. Several company domains returned duplicate BEML records. Mizoram still requested a CAPTCHA before listing buyers. See [the findings](captcha-automation-findings.md) and [host evidence](organisation-route-summary.json). Protected keyword search, historical search, and the Rust daily `run` command still use their existing paths.
-
-Run the parser regression tests:
+The default is `--captcha-solver none`. `--captcha-solver local` tries an embedded GePNIC image at most twice. It keeps the same session and refreshes hidden form fields after rejection. It uses `ddddocr` and Pillow in the selected Python 3 environment. If Tesseract is on `PATH`, it also checks character case. No paid service or API key is used.
 
 ```bash
-python3 -m unittest discover -s tests -p 'test_organisation_tenders.py'
+python3 -m venv .venv
+.venv/bin/python -m pip install ddddocr Pillow
+PATH="$PWD/.venv/bin:$PATH" cargo run --release -- organisations \
+  --portal mizoramtenders.gov.in --captcha-solver local --out out/mizoram.json
 ```
+
+Live Mizoram tests on 11 October 2026 rejected the automatic predictions. The fallback is experimental, not a resolved connection. An empty response after submission remains unverified. The JSON keeps the challenge status and attempt outcomes without storing answers or session tokens.
+
+## Validation
+
+```bash
+cargo test --offline
+python3 -m unittest discover -s tests -p 'test_organisation*.py'
+```
+
+A separate network test checks CPPP pagination:
+
+```bash
+cargo test cppp::tests::live_two_pages_have_distinct_tenders -- --ignored --exact --nocapture
+```
+
+See [integration validation](integration-validation.md) for live results and remaining gaps. Earlier bounded tests returned records from 43 of 44 GePNIC hosts; they did not scan every buyer on each host. See [the earlier findings](captcha-automation-findings.md) and [host evidence](organisation-route-summary.json).

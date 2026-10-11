@@ -129,8 +129,9 @@ pub async fn list_feeds() -> Vec<(String, Result<Vec<Notice>, String>)> {
 
 async fn fetch_feed(http: &reqwest::Client, name: &str, url: &str, pages: u32) -> Result<Vec<Notice>, String> {
     let mut notices = Vec::new();
+    let mut seen = std::collections::HashSet::new();
+    let mut page_url = url.to_string();
     for page in 1..=pages {
-        let page_url = if page == 1 { url.to_string() } else { format!("{url}?page={page}") };
         let html = http
             .get(&page_url)
             .send()
@@ -145,10 +146,24 @@ async fn fetch_feed(http: &reqwest::Client, name: &str, url: &str, pages: u32) -
         if rows.is_empty() && page > 1 {
             break;
         }
-        notices.extend(rows);
+        notices.extend(rows.into_iter().filter(|row| seen.insert(row.id.clone())));
+        if page == pages { break; }
+        let Some(next) = next_page(&html, &page_url) else { break };
+        page_url = next;
         tokio::time::sleep(Duration::from_millis(150)).await;
     }
     Ok(notices)
+}
+
+fn next_page(html: &str, current: &str) -> Option<String> {
+    let pattern = Regex::new(r#"(?is)<a\b[^>]*href=["']([^"']+)["'][^>]*>\s*Next(?:\s|&|»)[^<]*</a>"#).ok()?;
+    let href = pattern.captures(html)?.get(1)?.as_str().replace("&amp;", "&");
+    let base = reqwest::Url::parse(current).ok()?;
+    let next = base.join(&href).ok()?;
+    if next.scheme() != "https" || next.host_str() != base.host_str() || next.as_str() == current {
+        return None;
+    }
+    Some(next.to_string())
 }
 
 pub fn parse_list(source: &str, html: &str) -> Vec<Notice> {
@@ -221,7 +236,7 @@ fn unescape(value: &str) -> String {
 
 fn id_pattern() -> &'static Regex {
     static PATTERN: OnceLock<Regex> = OnceLock::new();
-    PATTERN.get_or_init(|| Regex::new(r"20\d{2}_[A-Z][A-Z0-9]*_\d+(?:_\d+)*").expect("id"))
+    PATTERN.get_or_init(|| Regex::new(r"(?i)20\d{2}_[A-Z][A-Z0-9]*_\d+(?:_\d+)*").expect("id"))
 }
 
 fn cell_pattern() -> &'static Regex {
@@ -379,7 +394,7 @@ fn tag_pattern() -> &'static Regex {
 
 #[cfg(test)]
 mod tests {
-    use super::parse_list;
+    use super::{next_page, parse_list};
 
     const ROW: &str = r#"
 <tr style="border-bottom: 1px solid #ffffff;">
@@ -397,6 +412,28 @@ mod tests {
 <td>Rajasthan</td><td>--</td>
 </tr>
 "#;
+
+    #[tokio::test]
+    #[ignore = "live public CPPP requests"]
+    async fn live_two_pages_have_distinct_tenders() {
+        let http = reqwest::Client::builder().timeout(std::time::Duration::from_secs(60)).build().unwrap();
+        let url = "https://eprocure.gov.in/cppp/latestactivetendersnew/cpppdata";
+        let first = super::fetch_feed(&http, "CPPP central", url, 1).await.unwrap();
+        let two = super::fetch_feed(&http, "CPPP central", url, 2).await.unwrap();
+        println!("CPPP central: {} records on one page, {} unique records across two pages", first.len(), two.len());
+        assert!(!first.is_empty());
+        assert!(two.len() > first.len());
+        let ids: std::collections::HashSet<_> = two.iter().map(|row| &row.id).collect();
+        assert_eq!(ids.len(), two.len());
+    }
+
+    #[test]
+    fn pagination_uses_the_portals_encoded_next_link() {
+        let html = r#"<a href="https://eprocure.gov.in/cppp/list?url=encoded%3D%3D" class="paginate_button">Next »</a>"#;
+        assert_eq!(next_page(html, "https://eprocure.gov.in/cppp/list").unwrap(),
+                   "https://eprocure.gov.in/cppp/list?url=encoded%3D%3D");
+        assert!(next_page(&html.replace("eprocure.gov.in", "other.test"), "https://eprocure.gov.in/cppp/list").is_none());
+    }
 
     #[test]
     fn reads_a_state_row_and_a_plain_title() {

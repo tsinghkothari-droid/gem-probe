@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
 import argparse
+import base64
 import json
+import io
 import re
 import subprocess
+import sys
+from concurrent.futures import ThreadPoolExecutor
 import tempfile
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from html import unescape
+from html.parser import HTMLParser
 from http.cookiejar import CookieJar
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlencode, urljoin, urlparse
 from urllib.request import HTTPCookieProcessor, Request, build_opener
 
 
@@ -58,32 +63,154 @@ def tenders(body, source, organisation):
     return list(output.values())
 
 
-def collect(url, max_orgs=2, organisation='', delay=1, timeout=30, transport='urllib'):
+
+class CaptchaForm(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.forms = []
+        self.form = None
+        self.select = None
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'form':
+            self.form = {'action': attrs.get('action', ''), 'fields': {}, 'image': None}
+            self.forms.append(self.form)
+        if self.form is None:
+            return
+        if tag == 'input' and attrs.get('name') and 'disabled' not in attrs:
+            kind = attrs.get('type', 'text').lower()
+            if kind not in ('button', 'reset', 'checkbox', 'radio') or 'checked' in attrs:
+                self.form['fields'][attrs['name']] = attrs.get('value', '')
+        elif tag == 'select':
+            self.select = attrs.get('name')
+        elif tag == 'option' and self.select:
+            if self.select not in self.form['fields'] or 'selected' in attrs:
+                self.form['fields'][self.select] = attrs.get('value', '')
+        elif tag == 'img' and attrs.get('id') == 'captchaImage':
+            self.form['image'] = attrs.get('src')
+
+    def handle_endtag(self, tag):
+        if tag == 'form':
+            self.form = None
+        elif tag == 'select':
+            self.select = None
+
+
+def restore_case(prediction, reference):
+    if not re.fullmatch(r'[A-Za-z0-9]{6}', prediction):
+        return prediction
+    position = 0
+    corrected = []
+    for character in prediction:
+        match = reference.casefold().find(character.casefold(), position)
+        if match < 0:
+            return prediction
+        corrected.append(reference[match])
+        position = match + 1
+    return ''.join(corrected)
+
+
+def solve_image(image, solver):
+    try:
+        import ddddocr
+        from PIL import Image
+    except ImportError:
+        raise ValueError('Local solving requires ddddocr and Pillow in the Python environment') from None
+    prediction = ddddocr.DdddOcr(show_ad=False).classification(image, png_fix=True)
+    source = Image.open(io.BytesIO(image)).convert('RGBA')
+    background = Image.new('RGBA', source.size, 'white')
+    background.alpha_composite(source)
+    prepared = background.convert('RGB').resize((source.width * 4, source.height * 4))
+    data = io.BytesIO()
+    prepared.save(data, format='PNG')
+    try:
+        output = subprocess.run(['tesseract', 'stdin', 'stdout', '--psm', '7',
+                                 '-c', 'tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789',
+                                 '-c', 'load_system_dawg=0', '-c', 'load_freq_dawg=0'],
+                                input=data.getvalue(), capture_output=True, timeout=20, check=True)
+        reference = output.stdout.decode().strip()
+    except (FileNotFoundError, subprocess.SubprocessError):
+        return prediction
+    corrected = restore_case(prediction, reference)
+    if corrected != prediction:
+        return corrected
+    if re.fullmatch(r'[A-Za-z0-9]{6}', reference):
+        return reference
+    return prediction
+
+
+def unlock_directory(directory, url, fetch, solver):
+    attempts = []
+    for number in range(1, 3):
+        parser = CaptchaForm()
+        parser.feed(directory)
+        form = next((f for f in parser.forms if 'captchaText' in f['fields']), None)
+        attempt = {'attempt': number, 'solver': solver}
+        attempts.append(attempt)
+        if form is None or not (form['image'] or '').startswith('data:image/'):
+            attempt['status'] = 'unsupported_challenge'
+            break
+        target = urljoin(url, form['action'])
+        if urlparse(target).netloc != urlparse(url).netloc or urlparse(target).scheme != 'https':
+            attempt['status'] = 'invalid_form_action'
+            break
+        try:
+            answer = solve_image(base64.b64decode(form['image'].split(',', 1)[1]), solver)
+        except Exception as error:
+            attempt.update(status='solver_error', error=str(error)[:200])
+            break
+        if not re.fullmatch(r'[A-Za-z0-9]{6}', answer):
+            attempt['status'] = 'invalid_prediction'
+            directory = fetch(url)
+            continue
+        fields = dict(form['fields'])
+        fields['captchaText'] = answer
+        directory = fetch(target, fields)
+        visible = text(re.sub(r'<(?:script|style)\b[^>]*>[\s\S]*?</(?:script|style)>', '', directory, flags=re.I))
+        if re.search(r'(invalid|incorrect)\s+captcha|captcha\s+(?:mismatch|does not match)', visible, re.I):
+            attempt['status'] = 'challenge_rejected'
+        elif organisations(directory, url):
+            attempt['status'] = 'directory_returned'
+            break
+        else:
+            attempt['status'] = 'empty_unverified' if 'No Active Tenders found' in visible else 'unresolved_response'
+            break
+    return directory, attempts
+
+
+def collect(url, max_orgs=2, organisation='', delay=1, timeout=30, transport='urllib', captcha_solver='none'):
     result = {'source_url': url, 'checked_at': datetime.now(timezone.utc).isoformat(),
-              'status': 'unresolved', 'scans': [], 'tenders': [], 'transport': transport}
+              'status': 'unresolved', 'scans': [], 'tenders': [], 'transport': transport,
+              'organisation_filter': organisation, 'complete_active_snapshot': False,
+              'complete_selected_snapshot': False}
     http = build_opener(HTTPCookieProcessor(CookieJar()))
     cookie_file = tempfile.NamedTemporaryFile(prefix='gem-probe-cookies-', delete=False)
     cookie_file.close()
 
-    def fetch(target):
+    def fetch(target, fields=None):
+        payload = urlencode(fields).encode() if fields is not None else None
         if transport == 'curl':
-            response = subprocess.run([
+            command = [
                 'curl', '--fail', '--silent', '--show-error', '--location',
                 '--proto', '=https', '--proto-redir', '=https',
                 '--max-time', str(timeout), '--max-filesize', '16000000',
                 '--cookie', cookie_file.name, '--cookie-jar', cookie_file.name,
                 '--user-agent', 'gem-probe/0.1 (public organisation tender collector)',
                 '--header', 'Accept-Language: en-IN', '--write-out', '\n%{url_effective}', target,
-            ], capture_output=True)
+            ]
+            if payload is not None:
+                command += ['--header', 'Content-Type: application/x-www-form-urlencoded', '--referer', url, '--data-binary', '@-']
+            response = subprocess.run(command, input=payload, capture_output=True)
             if response.returncode:
                 raise ValueError(response.stderr.decode('utf-8', 'replace').strip()[:200])
             body, final_url = response.stdout.rsplit(b'\n', 1)
             if urlparse(final_url.decode()).netloc != urlparse(url).netloc:
                 raise ValueError('Portal redirected to another host')
             return body.decode('utf-8', 'replace')
-        request = Request(target, headers={
+        request = Request(target, data=payload, headers={
             'User-Agent': 'gem-probe/0.1 (public organisation tender collector)',
-            'Accept-Language': 'en-IN',
+            'Accept-Language': 'en-IN', 'Referer': url,
         })
         with http.open(request, timeout=timeout) as response:
             if urlparse(response.geturl()).netloc != urlparse(url).netloc:
@@ -96,22 +223,32 @@ def collect(url, max_orgs=2, organisation='', delay=1, timeout=30, transport='ur
     try:
         directory = fetch(url)
         orgs = organisations(directory, url)
+        if not orgs and 'captchaText' in directory and captcha_solver != 'none':
+            directory, attempts = unlock_directory(directory, url, fetch, captcha_solver)
+            result['captcha_attempts'] = attempts
+            orgs = organisations(directory, url)
         result['organisations_listed'] = len(orgs)
-        result['advertised_active_tenders'] = sum(org['count'] for org in orgs)
+        result['advertised_active_tenders'] = sum(org['count'] for org in orgs) if orgs else None
         if not orgs:
             result['status'] = 'challenge_required' if 'captchaText' in directory else 'directory_not_found'
             result['directory_reports_no_active_tenders'] = 'No Active Tenders found' in text(directory)
             return result
         selected = [org for org in orgs if organisation.casefold() in org['name'].casefold()]
+        result['organisations_matching'] = len(selected)
         if max_orgs:
             selected = selected[:max_orgs]
         result['organisations_selected'] = len(selected)
+        if not selected:
+            result['status'] = 'organisation_not_found'
+            return result
+        consecutive_errors = 0
         seen = set()
         for org in selected:
             time.sleep(delay)
             scan = {'organisation': org['name'], 'advertised_count': org['count']}
             try:
                 notices = tenders(fetch(org['url']), url, org['name'])
+                consecutive_errors = 0
                 scan['parsed_count'] = len(notices)
                 scan['status'] = 'count_matches' if len(notices) == org['count'] else 'count_mismatch'
                 for notice in notices:
@@ -119,11 +256,16 @@ def collect(url, max_orgs=2, organisation='', delay=1, timeout=30, transport='ur
                         result['tenders'].append(notice)
                         seen.add(notice['id'])
             except Exception as error:
+                consecutive_errors += 1
                 scan.update(status='fetch_error', error=str(error)[:200])
             result['scans'].append(scan)
+            if consecutive_errors >= 3:
+                result['stopped_after_errors'] = True
+                break
         result['status'] = 'records_returned' if result['tenders'] else 'no_records_returned'
-        result['complete_active_snapshot'] = bool(selected) and len(selected) == len(orgs) and all(
+        result['complete_selected_snapshot'] = len(result['scans']) == result['organisations_matching'] and all(
             scan['status'] == 'count_matches' for scan in result['scans'])
+        result['complete_active_snapshot'] = len(selected) == len(orgs) and result['complete_selected_snapshot']
     except Exception as error:
         result.update(status='fetch_error', error=str(error)[:200])
     finally:
@@ -131,27 +273,165 @@ def collect(url, max_orgs=2, organisation='', delay=1, timeout=30, transport='ur
     return result
 
 
+
+class PageToken(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.value = None
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'input' and attrs.get('id') == 'Authorization':
+            self.value = attrs.get('value', '')
+
+
+def bihar_notices(records, buyers, source):
+    names = {}
+
+    def visit(items, parents=()):
+        for item in items:
+            name = item.get('organizationName') or ''
+            chain = parents + (name,) if name and name != '-' else parents
+            names[item['organizationId']] = ' || '.join(chain)
+            visit(item.get('childOrgList') or [], chain)
+
+    visit(buyers)
+
+    def date(value):
+        if value is None:
+            return ''
+        return datetime.fromtimestamp(value / 1000, timezone(timedelta(hours=5, minutes=30))).isoformat()
+
+    notices = {}
+    for record in records:
+        tender_id = record.get('currenttenderid')
+        title = record.get('currentdescription')
+        if not tender_id or not title:
+            continue
+        buyer = names.get(record.get('currentdeptid')) or names.get(record.get('currentorgid')) or ''
+        identifier = 'BIHAR_' + str(tender_id)
+        notices[identifier] = {
+            'id': identifier, 'title': text(title), 'reference': record.get('currenttenderrefno') or '',
+            'organisation': buyer, 'buyer_chain': buyer,
+            'published': date(record.get('currentTenderPublishDate')),
+            'closing': date(record.get('currentbidEndDate')), 'opening': date(record.get('currentbidOpenDate')),
+            'source_url': source,
+        }
+    return list(notices.values())
+
+
+def collect_bihar(timeout=30):
+    base = 'https://eproc2.bihar.gov.in/EPSV2Web'
+    source = base + '/openarea/tenderListingPage.action'
+    result = {'host': 'eproc2.bihar.gov.in', 'kind': 'bihar', 'source_url': source,
+              'checked_at': datetime.now(timezone.utc).isoformat(), 'status': 'unresolved',
+              'scans': [], 'tenders': [], 'complete_active_snapshot': False}
+    with tempfile.TemporaryDirectory(prefix='gem-probe-bihar-') as directory:
+        cookie = Path(directory) / 'cookies.txt'
+        cookie.touch()
+        headers = Path(directory) / 'headers.txt'
+
+        def fetch(path, data=None, token=None, content_type='application/json;charset=utf-8;'):
+            fields = ['Content-Type: ' + content_type, 'Auth-Token: X-Requested-With']
+            if token is not None:
+                fields.append('Authorization: ' + token)
+            headers.write_text('\n'.join(fields) + '\n')
+            headers.chmod(0o600)
+            command = ['curl', '--fail', '--silent', '--show-error', '--max-time', str(timeout),
+                       '--max-filesize', '16000000', '--cookie', str(cookie), '--cookie-jar', str(cookie),
+                       '--header', '@' + str(headers), base + path]
+            if data is not None:
+                command += ['--data-binary', '@-']
+            response = subprocess.run(command, input=data, capture_output=True)
+            if response.returncode:
+                raise ValueError(response.stderr.decode('utf-8', 'replace').strip()[:200])
+            return response.stdout.decode('utf-8', 'replace')
+
+        try:
+            home = PageToken()
+            home.feed(fetch('/'))
+            if home.value is None:
+                raise ValueError('Anonymous navigation form was not found')
+            listing = PageToken()
+            listing.feed(fetch('/openarea/tenderListingPage.action',
+                               urlencode({'Authorization': home.value}).encode(),
+                               content_type='application/x-www-form-urlencoded'))
+            if not listing.value:
+                raise ValueError('Public listing did not issue an anonymous page token')
+            records = json.loads(fetch('/rest/openarea/getTenderList', b'{}', listing.value))
+            buyers = json.loads(fetch('/rest/organization/loadAllDeptWithParent?orgId=0', b'', listing.value))
+            if not isinstance(records, list) or not isinstance(buyers, list):
+                raise ValueError('Unexpected Bihar tender or buyer response format')
+            result['tenders'] = bihar_notices(records, buyers, source)
+            roots = {record.get('currentorgid') for record in records}
+            for buyer in buyers:
+                if buyer['organizationId'] in roots:
+                    children = json.loads(fetch('/rest/organization/getChildOrgUnderProvidedOrgID?orgId=' +
+                                                str(buyer['organizationId']), b'', listing.value))
+                    if not isinstance(children, list):
+                        raise ValueError('Unexpected Bihar department response format')
+                    buyer['childOrgList'] = children
+            result['tenders'] = bihar_notices(records, buyers, source)
+            counts = json.loads(fetch('/rest/tender/getStatistics', b'', listing.value))
+            count = counts.get('activeTenderCount')
+            complete = isinstance(count, int) and len(records) == len(result['tenders']) == count
+            result['advertised_active_tenders'] = count
+            result['complete_active_snapshot'] = complete
+            result['status'] = 'records_returned' if result['tenders'] else ('verified_empty' if complete else 'no_records_returned')
+            result['scans'] = [{'organisation': 'Bihar public active-tender list', 'advertised_count': count or 0,
+                               'parsed_count': len(result['tenders']), 'status': 'count_matches' if complete else 'count_mismatch'}]
+        except Exception as error:
+            result.update(status='fetch_error', error=str(error)[:200])
+    return result
+
+
 def main():
-    parser = argparse.ArgumentParser(description='Collect GePNIC active tenders through public organisation listings.')
-    parser.add_argument('--url', required=True)
-    parser.add_argument('--out', required=True, type=Path)
+    parser = argparse.ArgumentParser(description='Collect public active tenders from GePNIC and Bihar.')
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument('--url')
+    source.add_argument('--batch', action='store_true', help='Read portal configuration JSON from stdin.')
+    parser.add_argument('--out', required=True, help='JSON output path, or - for stdout.')
     parser.add_argument('--max-orgs', type=int, default=2, help='Default 2; use 0 to scan every organisation.')
     parser.add_argument('--organisation', default='')
     parser.add_argument('--transport', choices=('urllib', 'curl'), default='urllib')
+    parser.add_argument('--captcha-solver', choices=('none', 'local'), default='none')
     parser.add_argument('--timeout', type=int, default=30, help='Seconds per request; large organisations can need more time.')
     parser.add_argument('--query', default='', help='Filter collected titles, references and buyer chains locally.')
     args = parser.parse_args()
-    if args.max_orgs < 0 or args.timeout < 1 or not args.url.startswith('https://'):
+    if args.max_orgs < 0 or args.timeout < 1 or (args.url and not args.url.startswith('https://')):
         parser.error('Use an HTTPS URL, a nonnegative organisation limit and a positive timeout.')
-    report = collect(args.url, args.max_orgs, args.organisation, timeout=args.timeout, transport=args.transport)
-    words = args.query.casefold().split()
-    report['query'] = args.query
-    report['matches'] = [notice for notice in report['tenders'] if all(
-        word in ' '.join([notice['title'], notice['reference'], notice['buyer_chain']]).casefold() for word in words)]
-    args.out.parent.mkdir(parents=True, exist_ok=True)
-    args.out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
-    print(json.dumps({key: value for key, value in report.items() if key not in ('tenders', 'matches')}, indent=2))
-    print(f"Returned {len(report['tenders'])} records; {len(report['matches'])} match the local query.")
+    def run_one(portal):
+        if portal.get('kind') == 'bihar':
+            report = collect_bihar(timeout=args.timeout)
+        else:
+            report = collect(portal['url'], args.max_orgs, portal.get('organisation', ''),
+                             timeout=args.timeout, transport=args.transport, captcha_solver=args.captcha_solver)
+        report['host'] = portal['host']
+        words = args.query.casefold().split()
+        report['query'] = args.query
+        if words:
+            report['matches'] = [notice for notice in report['tenders'] if all(
+                word in ' '.join([notice['title'], notice['reference'], notice['buyer_chain']]).casefold()
+                for word in words)]
+        print(f"{portal['host']}: {report['status']}, {len(report['tenders'])} records", file=sys.stderr, flush=True)
+        return report
+
+    if args.batch:
+        portals = json.load(sys.stdin)
+        if not isinstance(portals, list) or any(not p.get('url', '').startswith('https://') for p in portals):
+            parser.error('Batch input must be a list of HTTPS portal configurations.')
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            report = list(pool.map(run_one, portals))
+    else:
+        report = run_one({'host': urlparse(args.url).hostname, 'url': args.url, 'organisation': args.organisation})
+    encoded = json.dumps(report, ensure_ascii=False, indent=2) + '\n'
+    if args.out == '-':
+        sys.stdout.write(encoded)
+    else:
+        path = Path(args.out)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(encoded)
+
 
 
 if __name__ == '__main__':

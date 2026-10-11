@@ -4,6 +4,7 @@ mod extract;
 mod filter;
 mod gem;
 mod gepnic;
+mod organisation;
 mod profile;
 mod prompt;
 mod row;
@@ -44,6 +45,13 @@ enum Command {
     },
     /// Open every public feed once and print whether it returned rows.
     Sample,
+    /// Collect active GePNIC and Bihar listings with coverage counts.
+    Organisations {
+        #[command(flatten)]
+        options: organisation::Options,
+        #[arg(long)]
+        out: PathBuf,
+    },
     /// Print the system prompt that turns a company description into a search profile.
     Prompt {
         #[arg(long)]
@@ -84,6 +92,8 @@ enum Command {
 
 #[derive(clap::Args)]
 struct RunArgs {
+    #[command(flatten)]
+    organisations: organisation::Options,
     #[arg(long)]
     profile: Option<PathBuf>,
     #[arg(long)]
@@ -162,9 +172,19 @@ async fn run() -> Result<(), String> {
         }
         Command::Navoday { out, state } => {
             let profile: Profile = serde_json::from_str(NAVODAY_PROFILE).map_err(|e| e.to_string())?;
-            watch(profile, &[], 14, out, state).await
+            watch(profile, &[], 14, out, state, organisation::Options::default()).await
         }
         Command::Sample => sample().await,
+        Command::Organisations { options, out } => {
+            let reports = organisation::fetch(options).await?;
+            if let Some(parent) = out.parent().filter(|p| !p.as_os_str().is_empty()) {
+                std::fs::create_dir_all(parent).map_err(|e| e.to_string())?;
+            }
+            let file = File::create(&out).map_err(|e| e.to_string())?;
+            serde_json::to_writer_pretty(file, &reports).map_err(|e| e.to_string())?;
+            for report in reports { eprintln!("{}: {}", report.host, report.coverage()); }
+            Ok(())
+        },
         Command::Boards { out } => boards(out).await,
         Command::Prompt { company, does } => {
             println!("{}", prompt::fill(&company, &does));
@@ -184,7 +204,7 @@ async fn run() -> Result<(), String> {
                 Some(path) => accounts::load(&path)?,
                 None => Vec::new(),
             };
-            watch(profile, &accounts, args.within, args.out, args.state).await
+            watch(profile, &accounts, args.within, args.out, args.state, args.organisations).await
         }
     }
 }
@@ -242,138 +262,140 @@ async fn watch(
     within: u32,
     out: Option<PathBuf>,
     state: Option<PathBuf>,
+    organisation_options: organisation::Options,
 ) -> Result<(), String> {
     eprintln!("{}: {}", profile.company, profile.does);
     let today = row::today_ymd();
     let mut seen = load_seen(state.as_ref())?;
     let known: HashSet<String> = seen.bids.iter().cloned().collect();
-    let client = Gem::connect().await?;
+    organisation::select(&organisation_options)?;
+    let client = Gem::connect().await;
     let mut rows = Vec::new();
     let mut this_run = HashSet::new();
     let mut phrases = Vec::new();
 
-    for phrase in &profile.phrases {
-        let status = status_code(phrase.status);
-        let limit = match phrase.status {
-            BidStatus::Awarded => phrase.pages.min(2),
-            BidStatus::Ongoing => phrase.pages,
-        };
-        let label = match phrase.status {
-            BidStatus::Awarded => format!("{} (awarded)", phrase.query),
-            BidStatus::Ongoing => phrase.query.clone(),
-        };
-        let first = match client.search(&phrase.query, 1, status).await {
-            Ok(page) => page,
-            Err(err) if err.contains("no results") => {
-                eprintln!("no results  {label}");
+    match client {
+        Ok(client) => {
+            for phrase in &profile.phrases {
+                let status = status_code(phrase.status);
+                let limit = match phrase.status {
+                    BidStatus::Awarded => phrase.pages.min(2),
+                    BidStatus::Ongoing => phrase.pages,
+                };
+                let label = match phrase.status {
+                    BidStatus::Awarded => format!("{} (awarded)", phrase.query),
+                    BidStatus::Ongoing => phrase.query.clone(),
+                };
+                let first = match client.search(&phrase.query, 1, status).await {
+                    Ok(page) => page,
+                    Err(err) if err.contains("no results") => {
+                        eprintln!("no results  {label}");
+                        phrases.push(PhraseStat {
+                            query: label,
+                            in_text: 0,
+                            in_index: 0,
+                            missing: true,
+                            error: None,
+                        });
+                        continue;
+                    }
+                    Err(err) => {
+                        eprintln!("skip {label}: {err}");
+                        phrases.push(PhraseStat {
+                            query: label,
+                            in_text: 0,
+                            in_index: 0,
+                            missing: false,
+                            error: Some(err),
+                        });
+                        continue;
+                    }
+                };
+                let pages = limit.min(first.num_found.div_ceil(10).max(1) as u32);
+                let mut text_ids = HashSet::new();
+                for page_no in 1..=pages {
+                    let page = if page_no == 1 {
+                        first.clone()
+                    } else {
+                        match client.search(&phrase.query, page_no, status).await {
+                            Ok(page) => page,
+                            Err(err) => {
+                                eprintln!("skip {label} page {page_no}: {err}");
+                                break;
+                            }
+                        }
+                    };
+                    for doc in &page.docs {
+                        let bid = bid_from_doc(doc);
+                        if bid.number.is_empty() {
+                            continue;
+                        }
+                        if term_hit(&bid.text, &phrase.query) {
+                            text_ids.insert(bid.number.clone());
+                        }
+                        let key = format!("GeM:{}", bid.number);
+                        if known.contains(&key) || known.contains(&bid.number) || this_run.contains(&key) {
+                            continue;
+                        }
+                        let Some(verdict) = judge(&bid.text, &profile) else { continue };
+                        this_run.insert(key);
+                        rows.push(row_from_bid(&bid, verdict));
+                    }
+                    tokio::time::sleep(std::time::Duration::from_millis(150)).await;
+                }
+                let in_text = text_ids.len() as u64;
+                eprintln!("{in_text} in text / {} in index  {label}", first.num_found);
                 phrases.push(PhraseStat {
                     query: label,
-                    in_text: 0,
-                    in_index: 0,
-                    missing: true,
+                    in_text,
+                    in_index: first.num_found,
+                    missing: false,
                     error: None,
                 });
-                continue;
             }
-            Err(err) => {
-                eprintln!("skip {label}: {err}");
-                phrases.push(PhraseStat {
-                    query: label,
-                    in_text: 0,
-                    in_index: 0,
-                    missing: false,
-                    error: Some(err),
-                });
-                continue;
-            }
-        };
-        let pages = limit.min(first.num_found.div_ceil(10).max(1) as u32);
-        let mut text_ids = HashSet::new();
-        for page_no in 1..=pages {
-            let page = if page_no == 1 {
-                first.clone()
-            } else {
-                match client.search(&phrase.query, page_no, status).await {
-                    Ok(page) => page,
-                    Err(err) => {
-                        eprintln!("skip {label} page {page_no}: {err}");
-                        break;
-                    }
-                }
-            };
-            for doc in &page.docs {
-                let bid = bid_from_doc(doc);
-                if bid.number.is_empty() {
+
+            for row in rows.iter_mut() {
+                if row.coverage != Coverage::Bill || row.matched.is_none() {
                     continue;
                 }
-                if term_hit(&bid.text, &phrase.query) {
-                    text_ids.insert(bid.number.clone());
-                }
-                let key = format!("GeM:{}", bid.number);
-                if known.contains(&key) || known.contains(&bid.number) || this_run.contains(&key) {
+                if !matches!(row::when(&today, &row.end, within), When::Inside | When::Undated) {
                     continue;
                 }
-                let Some(verdict) = judge(&bid.text, &profile) else { continue };
-                this_run.insert(key);
-                rows.push(row_from_bid(&bid, verdict));
+                let Some(id) = row.doc_id else { continue };
+                match client.document_text(id).await {
+                    Ok(text) => apply_document(row, &text, &profile),
+                    Err(err) => eprintln!("skip document {id}: {err}"),
+                }
             }
-            tokio::time::sleep(std::time::Duration::from_millis(150)).await;
         }
-        let in_text = text_ids.len() as u64;
-        eprintln!("{in_text} in text / {} in index  {label}", first.num_found);
-        phrases.push(PhraseStat {
-            query: label,
-            in_text,
-            in_index: first.num_found,
-            missing: false,
-            error: None,
-        });
-    }
-
-    for row in rows.iter_mut() {
-        if row.coverage != Coverage::Bill || row.matched.is_none() {
-            continue;
-        }
-        if !matches!(row::when(&today, &row.end, within), When::Inside | When::Undated) {
-            continue;
-        }
-        let Some(id) = row.doc_id else { continue };
-        match client.document_text(id).await {
-            Ok(text) => apply_document(row, &text, &profile),
-            Err(err) => eprintln!("skip document {id}: {err}"),
+        Err(error) => {
+            eprintln!("GeM unavailable: {error}; continuing other feeds");
+            phrases.push(PhraseStat { query: "GeM connection".into(), in_text: 0, in_index: 0,
+                                     missing: false, error: Some(error) });
         }
     }
-
-    let (boards, lists) = tokio::join!(gepnic::board_feeds(), cppp::list_feeds());
+    let (organisations, lists) = tokio::join!(organisation::fetch(organisation_options), cppp::list_feeds());
     let mut feeds = Vec::new();
-    for (name, result) in boards {
-        match result {
-            Ok(notices) => {
-                let count = notices.len();
-                eprintln!("{count:4} rows, title only  {name}");
-                for notice in notices {
-                    let text = notice.text();
-                    push_title_row(
-                        &mut rows,
-                        &mut this_run,
-                        &known,
-                        &profile,
-                        notice.source,
-                        notice.id,
-                        notice.organisation,
-                        notice.title,
-                        text,
-                        notice.closing,
-                        notice.list_url,
-                    );
+    match organisations {
+        Ok(reports) => {
+            let mut tender_ids = HashSet::new();
+            for report in reports {
+                let count = report.tenders.len();
+                let detail = report.coverage();
+                let error = report.failure();
+                eprintln!("{}: {count} rows; {detail}", report.host);
+                for notice in report.tenders {
+                    if !tender_ids.insert(notice.id.clone()) { continue; }
+                    let text = format!("{} {} {}", notice.title, notice.reference, notice.buyer_chain);
+                    push_title_row(&mut rows, &mut this_run, &known, &profile,
+                        if report.kind == "bihar" { "Bihar EPS".into() } else { "GePNIC".into() }, notice.id, notice.buyer_chain, notice.title, text,
+                        notice.closing, notice.source_url);
                 }
-                feeds.push(FeedStat { name, rows: count, error: None });
-            }
-            Err(err) => {
-                eprintln!("skip {name}: {err}");
-                feeds.push(FeedStat { name, rows: 0, error: Some(err) });
+                feeds.push(FeedStat { name: report.host, rows: count, error, detail: Some(detail) });
             }
         }
+        Err(error) => feeds.push(FeedStat { name: "Public tender collector".into(), rows: 0,
+                                          error: Some(error), detail: None }),
     }
     for (name, result) in lists {
         match result {
@@ -396,11 +418,11 @@ async fn watch(
                         notice.link,
                     );
                 }
-                feeds.push(FeedStat { name, rows: count, error: None });
+                feeds.push(FeedStat { name, rows: count, error: None, detail: None });
             }
             Err(err) => {
                 eprintln!("skip {name}: {err}");
-                feeds.push(FeedStat { name, rows: 0, error: Some(err) });
+                feeds.push(FeedStat { name, rows: 0, error: Some(err), detail: None });
             }
         }
     }
